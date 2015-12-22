@@ -1,0 +1,23 @@
+.mainpart {
+
+    min-width: 1220px;
+}
+.book_footer{
+    background: #4c4c4c url(/img/footer-bg.png) repeat-x;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    width:100%;
+    .mainpart{
+        min-width: 950px;
+
+        padding: 10px 0;
+        line-height: 25px;
+    }
+    .copyrught{
+
+        p{
+            margin: 0;
+        }
+    }
+}

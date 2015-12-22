@@ -20,7 +20,7 @@ const renderPage = (html, initialState) => {
           <html>
               <head>
                   <meta charset="utf-8">
-                  <title>Isomorphic Redux Example</title>
+                  <title>BookStore Online</title>
                   <link rel="stylesheet" type="text/css" href="/css/index.css">
               </head>
               <body>
@@ -38,12 +38,7 @@ export default function reactServerMiddleware(req,res,next){
 
     const { url } = req ;
     const location = createLocation(url);
-
-    getUser(user => {
-        if(!user) {
-            return res.status(401).end('Not Authorised');
-        }
-        match({routes, location}, (error, redirectLocation, renderProps) => {
+    match({routes, location}, (error, redirectLocation, renderProps) => {
 
             if(error){
                 console.error('ROUTER ERROR:', pretty.render(error));
@@ -52,8 +47,8 @@ export default function reactServerMiddleware(req,res,next){
                 return res.status(404).end('Not found');
             } else {
 
-                const store = configureStore({user : user, version : packagejson.version});
-                const initialState = store.getState();
+                const store = configureStore();
+
                 const InitialView = (
                     <Provider store={store} >
                         <RoutingContext {...renderProps} />
@@ -61,14 +56,16 @@ export default function reactServerMiddleware(req,res,next){
                 );
                 fetchComponentDataBeforeRender(store.dispatch, renderProps.components, renderProps.params)
                   .then(html=>{
-
-                      const componentHTML = renderToString(InitialView);
-
-                      res.status(200).send(renderPage(componentHTML,initialState))
-                  }).catch(err => res.send(err.message));
+                       const componentHTML = renderToString(InitialView);
+                       const initialState = store.getState();
+                       res.status(200).end(renderPage(componentHTML,initialState))
+                  }).catch(err =>{
+                        console.log(err)
+                        res.end(renderPage("",{}))
+                  });
             }
         });
-    });
+
 
 
 }

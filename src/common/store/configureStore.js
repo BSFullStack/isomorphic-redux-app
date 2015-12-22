@@ -6,13 +6,13 @@ import thunk from 'redux-thunk';
 import createHistory from 'history/lib/createBrowserHistory';
 import createLogger from 'redux-logger';
 
-import apiMiddleware from '../api/api-promise-middleware';
+import promiseMiddleware from '../api/promiseMiddleware';
 import rootReducer from '../reducers';
 
 const middlewareBuilder = () => {
 
   let middleware = {};
-  let universalMiddleware = [thunk,apiMiddleware];
+  let universalMiddleware = [thunk,promiseMiddleware];
   let allComposeElements = [];
 
   if(process.browser){
@@ -48,7 +48,7 @@ const finalCreateStore = compose(...middlewareBuilder())(createStore);
 
 export default function configureStore(initialState) {
   const store = finalCreateStore(rootReducer, initialState);
-  console.log(store.dispatch);
+
   if (module.hot) {
     // Enable Webpack hot module replacement for reducers
     module.hot.accept('../reducers', () => {

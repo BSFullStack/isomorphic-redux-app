@@ -5,12 +5,14 @@ import undoable from 'redux-undo';
 import user from './user';
 import layout from './layout';
 import version from './version';
+import book from './book';
 import register from './register'
 const rootReducer = combineReducers({
     user : user,
     version : version,
     layout : undoable(layout),
     register :register,
+    book:book,
     router : routerStateReducer
 });
 

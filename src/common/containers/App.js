@@ -8,18 +8,11 @@ import classNames from 'classnames';
 import * as LayoutActions from '../actions/layout';
 import Home from '../components/Home'
 import Header from '../components/layout/Header'
-import Sidebar from '../components/layout/Sidebar'
+import Footer from '../components/layout/Footer'
 
 //框架组件
 class App extends Component{
-    constructor(props){
-        super(props);
-        this.eventToggleSidebar = this.eventToggleSidebar.bind(this)
-    }
-    eventToggleSidebar(e) {
-        e.preventDefault();
-        this.props.toggleSidebar(!this.props.layout.sidebarOpen);
-    }
+
     render(){
         const { user , layout , version } = this.props;
         const { sidebarOpen } = layout;
@@ -27,15 +20,15 @@ class App extends Component{
 
         return (
           <div className={layoutClass}>
-            <Sidebar layout={layout} user={user} version={version} />
-            <div className="wrap">
-                <Header />
-                <div className="container content">
+
+                <div className="wrap">
+                    <Header />
+
                     {!this.props.children && <Home />}
                     {this.props.children}
+
                 </div>
-            </div>
-            <label className="sidebar-toggle" onClick={this.eventToggleSidebar}></label>
+                <Footer/>
           </div>
         );
     }
