@@ -6,9 +6,7 @@ import * as BookActions from '../actions/book';
 
 //Data that needs to be called before rendering the component
 //This is used for server side rending via the fetchComponentDataBeforeRending() method
-Book.need = [
-    BookActions.fetchBooks
-]
+
 
 function mapStateToProps(state) {
    /* let { selectedType, booksByType  } = state;
@@ -32,7 +30,7 @@ function mapStateToProps(state) {
       error
   };*/
     return {
-        counter: state.counter
+        item: state.item
     };
 }
 

@@ -5,7 +5,7 @@ import { reduxReactRouter } from 'redux-router';
 import thunk from 'redux-thunk';
 import createHistory from 'history/lib/createBrowserHistory';
 import createLogger from 'redux-logger';
-
+/*import apiMiddleware from '../api/api-promise-middleware';*/
 import promiseMiddleware from '../api/promiseMiddleware';
 import rootReducer from '../reducers';
 

@@ -5,7 +5,7 @@ import createLocation from 'history/lib/createLocation';
 import { fetchComponentDataBeforeRender } from '../../common/api/fetchComponentDataBeforeRender';
 
 import configureStore from '../../common/store/configureStore';
-import { getUser } from '../../common/api/user';
+
 
 import routes from '../../common/routes';
 import packagejson from '../../../package.json';
@@ -21,7 +21,7 @@ const renderPage = (html, initialState) => {
               <head>
                   <meta charset="utf-8">
                   <title>BookStore Online</title>
-                  <link rel="stylesheet" type="text/css" href="/css/index.css">
+
               </head>
               <body>
                   <div id="root">${html}</div>

@@ -7,10 +7,11 @@ import { Provider } from 'react-redux';
 import { ReduxRouter } from 'redux-router';
 import configureStore from '../common/store/configureStore';
 import routes from '../common/routes';
-/*import immutifyState        from '../common/helpers/immutifyState';*/
+import makeRouteHooksSafe from '../common/api/makeRouteHooksSafe';
+import immutifyState        from '../common/api/immutifyState';
 
 const history = createBrowserHistory();
-const initialState = window.__INITIAL_STATE__;
+const initialState = immutifyState(window.__INITIAL_STATE__);
 const store = configureStore(initialState);
 
 //引入样式
@@ -25,5 +26,5 @@ render(
             <Router children={routes} history={history} />
         </ReduxRouter>
     </Provider>,
-    document.getElementById('root')
+    mountId
 );
