@@ -1,42 +1,49 @@
 import React, { Component, PropTypes } from 'react';
-import {
-    Navbar ,
-    Nav ,
-    NavItem ,
-    NavDropdown ,
-    MenuItem ,
-    Input ,
-    Button
-} from 'react-bootstrap';
+
 export default class Header extends Component {
     render() {
         return (
-            <Navbar inverse staticTop>
-                <Navbar.Header>
-                    <Navbar.Brand>
-                        <a href="#">在线书店</a>
-                    </Navbar.Brand>
-                    <Navbar.Toggle />
-                </Navbar.Header>
-                <Navbar.Collapse>
-                    <Nav>
-                        <NavItem eventKey={1} href="#">首页</NavItem>
-                        <NavDropdown eventKey={3} title="文档" id="basic-nav-dropdown">
-                            <MenuItem eventKey={3.1}>Action</MenuItem>
-                            <MenuItem eventKey={3.2}>Another action</MenuItem>
-                            <MenuItem eventKey={3.3}>Something else here</MenuItem>
-                            <MenuItem divider />
-                            <MenuItem eventKey={3.3}>Separated link</MenuItem>
-                        </NavDropdown>
-                    </Nav>
+            <div className="bg-white">
+                <div className="wpn cl bg-white">
+                        <a className="icon-uimini logo-hd" href="http://www.ui.cn/" title="UI中国"></a>
+                        <ul className="nav-hd cl">
+                            <li id="nav-index">
+                                <a href="http://www.ui.cn/" className="">
+                                    首页
+                                </a>
+                            </li>
+                            <li id="nav-work">
+                                <a href="http://www.ui.cn/list.html" target="_self" className="">
+                                    作品
+                                </a>
+                            </li>
+                            <li id="nav-exp">
+                                <a href="http://www.ui.cn/exp.html" target="_self">
+                                    学习
+                                    <i className="icon-down"></i>
+                                </a>
+                                <div className="subnav-hd cl">
+                                    <ul className="subnav-ct-hd">
+                                        <li>
+                                            <a href="http://topic.ui.cn/" target="_self">专题</a>
+                                        </li>
+                                        <li>
+                                            <a href="http://www.ui.cn/exp.html?scatid=11" target="_blank">教程</a>
+                                        </li>
+                                        <li>
+                                            <a href="http://read.ui.cn" target="_self">书籍</a>
+                                        </li>
+                                        <li>
+                                            <a href="http://study.ui.cn/" target="_self">每周临摹</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
 
-                    <Navbar.Text pullRight>
-                        <Navbar.Link href="#">登录</Navbar.Link>{ '  |  ' }<Navbar.Link href="#">注册</Navbar.Link>
-                    </Navbar.Text>
+                </div>
+            </div>
 
-                </Navbar.Collapse>
-
-            </Navbar>
         );
     }
 }

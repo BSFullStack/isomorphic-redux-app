@@ -11,11 +11,11 @@ import makeRouteHooksSafe from '../common/api/makeRouteHooksSafe';
 import immutifyState        from '../common/api/immutifyState';
 
 const history = createBrowserHistory();
-const initialState = immutifyState(window.__INITIAL_STATE__);
+const initialState = window.__INITIAL_STATE__;
 const store = configureStore(initialState);
 
 //引入样式
-import "../../sass/all.scss";
+import "../../public/css/index.css";
 
 //挂载点
 const mountId = document.getElementById('root');

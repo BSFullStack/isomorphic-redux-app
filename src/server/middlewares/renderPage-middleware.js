@@ -21,7 +21,7 @@ const renderPage = (html, initialState) => {
               <head>
                   <meta charset="utf-8">
                   <title>BookStore Online</title>
-
+                  <link src="/css/index.css"/>
               </head>
               <body>
                   <div id="root">${html}</div>
