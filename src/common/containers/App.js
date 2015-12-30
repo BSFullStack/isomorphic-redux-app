@@ -19,16 +19,13 @@ class App extends Component{
         const layoutClass = classNames('wrapper',{open : sidebarOpen});
 
         return (
-          <div className={layoutClass}>
+          <div className="">
 
-                <div className="wrap">
-                    <Header />
 
                     {!this.props.children && <Home />}
                     {this.props.children}
 
-                </div>
-                <Footer/>
+
           </div>
         );
     }

@@ -5,15 +5,17 @@ import undoable from 'redux-undo';
 import user from './user';
 import layout from './layout';
 import version from './version';
-
+import publish from './publish';
+import login from './login';
 import register from './register';
 import { selectedCategory, topicsByCategory } from './topic';
 const rootReducer = combineReducers({
     user : user,
     version : version,
     layout : undoable(layout),
-    register :register,
-
+    login :login,
+    register:register,
+    publish:publish,
     selectedCategory : undoable(selectedCategory),
     topicsByCategory : undoable(topicsByCategory),
     router : routerStateReducer

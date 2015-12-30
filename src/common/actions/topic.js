@@ -16,17 +16,17 @@ export function selectCategory(category) {
 }
 
 export function invalidateCategory(category) {
-  return {
+    return {
       type: INVALIDATE_CATEGORY,
       category
-  };
+    };
 }
 
-export function fetchTopics(category = 'reactjs') {
+export function fetchTopics(category = 'hot') {
     return {
           type: TOPICS_GET,
           category,
-          promise: request.get(`http://www.reddit.com/r/${category}.json`)
+          promise: request.post("http://localhost:8000/topics/get",{category:category})
     }
 }
 

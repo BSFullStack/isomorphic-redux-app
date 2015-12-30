@@ -42,7 +42,7 @@ export default {
           , { test: /\.css$/, loader: 'style-loader!css-loader!autoprefixer-loader' }
           , { test: /\.scss$/, loader: 'style-loader!css-loader!autoprefixer-loader!sass-loader' }
           , { test: /\.(ttf|eot|svg|woff|woff2)?$/, loader: "file-loader?name=[hash:8].[name].[ext]" }
-          , { test: /\.png$/, loader: "file-loader?name=../../images/[hash:8].[name].[ext]" }
+          , { test: /\.(png|gif)$/, loader: "file-loader?name=../../images/[hash:8].[name].[ext]" }
 
         ]
     }

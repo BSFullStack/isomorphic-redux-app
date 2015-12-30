@@ -11,7 +11,7 @@ var config = {
     app: {
       name: 'webcy'
     },
-    port: 3000,
+    port: 8000,
     db: 'mongodb://localhost/webcy-development'
   },
 

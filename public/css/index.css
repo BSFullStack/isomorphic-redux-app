@@ -1,15 +1,22 @@
+@import url(base.css);
+@import url(font-awesome.css);
+@import url(simditor.css);
+ .simditor .simditor-wrapper .simditor-placeholder { left: 12px; top: 45px;}
+                .simditor .simditor-body { width: 824px; padding: 15px 0;}
+                .simditor .simditor-body p, .simditor .simditor-body div, .editor-style p, .editor-style div { margin: 0;}
 body{
     margin:0;
     padding:0;
     font-size:12px;
     font-family: "微软雅黑";
     color:#34495e;
+    background-color: #eff3f5;
 }
 div,h1,h2,p,ul,li,span,img,strong,input,button{
     margin:0;
     padding:0;
     border: 0;
-    list-style: none;
+
     outline:none
 }
 a{
@@ -21,6 +28,9 @@ a{
     padding:30px 0 20px 0;
     background: #EFF2F5;
     border-bottom: 2px solid #e4e9ee;
+}
+.nav-hd li{
+    list-style: none;
 }
 .head_content{
     width:1000px;
@@ -118,14 +128,14 @@ a{
     background: #fff;
     font-family: "微软雅黑";
 }
-/*.pos{
+.pos{
     position: absolute;
     left:30px;
     top:0;
 }
 .login_hidden,.login_pw_hidden{
     position:relative;
-}*/
+}
 .login-button{
     width:100%;
     height:50px;
@@ -143,6 +153,7 @@ a{
     margin-top: 15px;
     font-size: 14px;
     color: #b8c4ce;
+    margin-bottom: 20px;
 }
 .wj_pw{
     float:right;
@@ -171,6 +182,7 @@ a{
     line-height: 40px;
     float: left;
     margin-bottom: 20px;
+    list-style: none !important;
 }
 .login_party li a{
     width: 100%;
@@ -192,8 +204,8 @@ a{
 #footer_wrap{
     height:100px;
     width:100%;
-    margin-top:80px;
-    background: #EFF2F5;
+    margin-top:20px;
+
 }
 .footer{
     width:1000px;
@@ -311,10 +323,166 @@ a{
     width:100px;
     height:70px;
     float:left;
-    background: #f00;
+    position: relative;
 }
 .unflod{
     color: #4090d7;
     padding:2px 5px;
     cursor: pointer;
+}
+.listImage img.preview {
+    position: absolute;
+    top: 6px;
+    right: 0;
+    width: 100px;
+    height: 70px;
+}
+@import url('header.css');
+@import url('talk.css');
+
+body{
+    background-color: #ededef;
+
+}
+.g-bdc{
+    zoom: 1;
+    border-top: 1px solid #d4d4d5;
+}
+.g-bd2 .g-bdc{
+    background: #fff;
+}
+.g-bd2 {
+    width: 926px;
+    padding: 0 0 2px;
+    background-position: 0 bottom;
+     margin: 0 auto;
+    text-align: left;
+}
+
+.g-bd2 .g-bdc {
+    background-position: -994px 0;
+    background-repeat: repeat-y;
+}
+
+.g-bd2 .g-mn {
+      width: 926px;
+    padding: 0 1px;
+}
+.g-mn {
+    float: left;
+     width: 926px;
+}
+
+.g-box3 {
+    padding: 26px 30px 16px;
+    border-bottom: 1px solid #ebebeb;
+}
+.g-bdc:after{
+    display: block;
+    visibility: hidden;
+    clear: both;
+    height: 0;
+    content: ".";
+    overflow: hidden;
+}
+.w-fttl {
+    font-size: 32px;
+    font-weight: normal;
+}
+.g-box2 {
+    padding: 26px 30px 0;
+}
+.w-ttl {
+    position: relative;
+    zoom: 1;
+    padding-bottom: 10px;
+    font-weight: normal;
+}
+.w-ttl em {
+    font-size: 14px;
+    font-weight: normal;
+}
+.w-ttl small, .w-ttl span {
+    color: #9da5af;
+}
+.w-inputxt {
+    border: 1px solid #cececf;
+    outline: none;
+}
+.w-inputxt-1, .w-inputxt-2, .w-inputxt-3, .w-inputxt-4, .w-inputxt-5 {
+    font-size: 24px;
+    height: 30px;
+    padding: 7px;
+    line-height: 30px;
+}
+.w-inputxt-1 {
+    width: 850px;
+}
+
+.m-edtact {
+    position: relative;
+    zoom: 1;
+     padding-bottom: 20px;
+    text-align: right;
+}
+.w-bbtn{
+      background: url(/img/btn24.png?049) no-repeat 999px 999px;
+}
+.w-bbtn {
+    width: 104px;
+    height: 40px;
+    background-position: 0 -50px;
+    border: 0;
+    font-size: 16px;
+    text-shadow: -1px -1px 1px #fff;
+    cursor: pointer;
+
+}
+.w-bbtn:hover {
+    background-position: -114px -50px;
+}
+.m-edtact .w-bbtn {
+    margin-left: 10px;
+}
+.m-edtact .delete {
+    position: absolute;
+    left: -10px;
+}
+.m-edtact .w-bbtn {
+    color: #777;
+}
+.w-bbtn-0 {
+    background-position: 0 0;
+    color: #fff;
+    text-shadow: -1px -1px 0px #779e00;
+}
+.m-edtact .w-bbtn-0 {
+    color: #fff;
+}
+.w-bbtn-0:hover {
+    background-position: -114px 0;
+}
+.content-g-box2{
+    margin-top: -26px;
+}
+.postTextArea{
+    margin-top: 20px;
+}
+.icon-user-line:before {
+    content: "\e6c3";
+}
+.fss {
+    font-size: 24px!important;
+}
+.log-i {
+    position: absolute;
+    top: 8px;
+}
+
+.content_box{
+    padding-bottom: 80px;
+}
+
+.talk-nav li{
+    list-style: none;
 }

@@ -14,12 +14,12 @@ export default class Header extends Component {
                             </li>
                             <li id="nav-work">
                                 <a href="http://www.ui.cn/list.html" target="_self" className="">
-                                    作品
+                                    话题
                                 </a>
                             </li>
                             <li id="nav-exp">
                                 <a href="http://www.ui.cn/exp.html" target="_self">
-                                    学习
+                                    分享
                                     <i className="icon-down"></i>
                                 </a>
                                 <div className="subnav-hd cl">

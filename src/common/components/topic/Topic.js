@@ -27,7 +27,7 @@ class Topic extends Component{
                         </div>
                     </div>
                     <span className="listImage">
-                        <img src="http://img.ui.cn/talk/1450758487" />
+                        <img className="preview" src="http://img.ui.cn/talk/1450758487" />
                     </span>
                 </div>
             </li>

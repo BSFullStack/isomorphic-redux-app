@@ -21,14 +21,19 @@ const renderPage = (html, initialState) => {
               <head>
                   <meta charset="utf-8">
                   <title>BookStore Online</title>
+
                   <link src="/css/index.css"/>
               </head>
               <body>
-                  <div id="root">${html}</div>
-                  <script>
-                      window.__INITIAL_STATE__ = ${serialize(initialState)};
-                  </script>
-                  <script src="/bundle.js"></script>
+                    <div id="root">${html}</div>
+                    <script>
+                        window.__INITIAL_STATE__ = ${serialize(initialState)};
+                    </script>
+                    <script src="/scripts/bj-report.js"></script>
+                    <script src="/scripts/bj-wrap.js"></script>
+                    <script src="/scripts/jquery.js"></script>
+                    <script src="/scripts/simditor-all.js"></script>
+                    <script src="/bundle.js"></script>
               </body>
           </html>
   `;

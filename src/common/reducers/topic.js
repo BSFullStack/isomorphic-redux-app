@@ -9,6 +9,7 @@ import {
 
 const initialState = {
     error: {},
+
     isFetching: false,
     didInvalidate: false,
     topics: []
@@ -43,7 +44,7 @@ function topics(state = initialState , action) {
     }
 }
 
-export function selectedCategory(state = 'reactjs', action) {
+export function selectedCategory(state = 'hot', action) {
     switch (action.type) {
         case SELECT_CATEGORY:
             return action.category;
