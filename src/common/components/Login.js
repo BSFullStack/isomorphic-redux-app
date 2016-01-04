@@ -1,7 +1,33 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router';
 class Login extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {};
+    }
+    componentWillReceiveProps(nextProps){
+        const { loginInfo } = nextProps;
+
+        const { bl , msg , error  } = loginInfo.data;
+        if(bl == "1" && !error){
+            //登录成功
+            return this.props.history.push("/topics");
+        }
+        this.setState({
+            bl ,
+            msg ,
+            error
+        });
+
+  }
     render() {
+        const { bl , msg , error } = this.state;
+        let errorMsg ;
+        if(bl == "0" && error){
+            errorMsg = (
+                <p>{msg}</p>
+            );
+        }
         return (
             <div>
                 <div className="header">
@@ -27,23 +53,24 @@ class Login extends Component {
                             <span className="register">还没有账号？<Link to="register" className="register_blue">立即注册</Link></span>
                         </div>
                         <div className="con_inp login_left">
-                          <form>
+
                               <div className="login_inp login_name">
                                   <i className="icon-user-line fss log-i"></i>
-                                  <input type="text" className="login_txt msl" placeholder="请输入用户名/邮箱" />
+                                  <input type="text" className="login_txt msl" placeholder="请输入用户名/邮箱" ref="nameInput" />
                               </div>
                               <div className="login_inp login_password">
                                   <i></i>
-                                  <input type="password" className="login_pw msl" placeholder="请输入密码" />
+                                  <input type="password" className="login_pw msl" placeholder="请输入密码"  ref="passwordInput" />
                               </div>
                               <div>
-                                  <button className="login-button">登录</button>
-                                  <p className="login-msg">
+                                     { errorMsg }
+                                    <button className="login-button" onClick={::this.handlerClick}>登录</button>
+                                    <p className="login-msg">
                                       <span>如登录出现异常,请清理浏览器缓存后再尝试。</span>
                                       <a href="#" className="wj_pw">忘记密码？</a>
-                                  </p>
+                                    </p>
                               </div>
-                          </form>
+
 
                         </div>
 
@@ -76,6 +103,15 @@ class Login extends Component {
               </div>
             </div>
         );
+    }
+    handlerClick(){
+        const { nameInput , passwordInput } = this.refs;
+        const [ name , password ] = [nameInput.value,passwordInput.value];
+        this.props.doLogin({
+            name,
+            password,
+            r:Math.random()
+        });
     }
 }
 

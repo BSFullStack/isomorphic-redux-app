@@ -11,6 +11,7 @@ var config = {
     app: {
       name: 'webcy'
     },
+    cookieSecret: 'performanceapp',
     port: 8000,
     db: 'mongodb://localhost/webcy-development'
   },
@@ -20,6 +21,7 @@ var config = {
     app: {
       name: 'webcy'
     },
+    cookieSecret: 'performanceapp',
     port: 3000,
     db: 'mongodb://localhost/webcy-test'
   },
@@ -29,6 +31,7 @@ var config = {
     app: {
       name: 'webcy'
     },
+    cookieSecret: 'performanceapp',
     port: 3000,
     db: 'mongodb://localhost/webcy-production'
   }

@@ -8,8 +8,11 @@ import logger from 'morgan';
 import cookieParser from 'cookie-parser';
 import bodyParser from 'body-parser';
 import compress from 'compression';
+import session from 'express-session';
+import ConnectMongo from 'connect-mongo';
 import methodOverride from 'method-override';
 
+const mongoStore = new ConnectMongo(session);
 export default  function (app, config) {
 
     const env = process.env.NODE_ENV || 'development';
@@ -27,5 +30,13 @@ export default  function (app, config) {
     app.use(compress());
     app.use(express.static(config.root + '/public'));
     app.use(methodOverride());
-
+    app.use(session({
+        resave: false,
+        saveUninitialized: true,
+        secret: config.cookieSecret,
+        store:new mongoStore({
+            db:config.db,
+            secret: config.cookieSecret,
+        })
+    }));
 };

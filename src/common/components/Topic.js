@@ -26,7 +26,7 @@ class Topic extends Component {
 
         const { selectedCategory } = this.props;
         this.props.fetchTopicsIfNeeded(selectedCategory);
-        ahdd.name=123;
+
 
     }
 
@@ -42,7 +42,10 @@ class Topic extends Component {
         const { selectedCategory , topics ,  isFetching , lastUpdated , error } = this.props;
 
         return (
-             <div className="wp cl">
+            <div>
+                <Header></Header>
+                <div className="wp cl">
+
                     <div className="main cl">
                 <div className="wp cl">
                     <div className="main cl">
@@ -78,6 +81,8 @@ class Topic extends Component {
                       </div>
                 }
             </div>
+            </div>
+
             </div>
         );
     }

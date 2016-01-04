@@ -4,14 +4,10 @@ import { connect } from 'react-redux';
 import Login from '../components/Login';
 import * as LoginActions from '../actions/login';
 function mapStateToProps(state) {
-    const { bl , error , msg } = state ;
     return {
-        bl,
-        error,
-        msg
+        loginInfo:state.login
     };
 }
-
 function mapDispatchToProps(dispatch) {
     return bindActionCreators(LoginActions, dispatch);
 }

@@ -1,5 +1,5 @@
 import mongoose , { Schema } from 'mongoose';
-
+import { USER } from '../constants/index';
 const UserSchema = new Schema({
     id:String,
     name:String,
@@ -9,11 +9,27 @@ const UserSchema = new Schema({
         type:Date,
         default:Date.now
     },
-    role:String,
-    status:String,
-    score:Number,
-    tag:String
+    role:{
+        type:String,
+        default:USER.ROLE.NORMAL
+    },
+    status:{
+        type:String,
+        default:USER.STATUS.ACTIVE
+    },
+    score:{
+        type:Number,
+        default:0
+    },
+    tag:{
+        type:String,
+        default:""
+    }
 
 });
-//注册到mongoose的model里
+UserSchema.statics.findByName=function(params,cb){
+    return this.findOne(params,cb);
+}
+
+
 mongoose.model('User',UserSchema);

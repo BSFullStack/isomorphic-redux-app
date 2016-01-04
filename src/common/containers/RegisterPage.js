@@ -6,7 +6,7 @@ import * as RegisterActions from '../actions/register';
 
 function mapStateToProps(state) {
     return {
-        register:state.register
+        registerInfo:state.register
     };
 }
 

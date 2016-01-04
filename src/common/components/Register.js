@@ -3,11 +3,29 @@ import { Link } from 'react-router';
 class Reginster extends Component {
   constructor(props) {
     super(props);
+    this.state = {};
+  }
+  componentWillReceiveProps(nextProps){
+        const { registerInfo } = nextProps;
+
+        const { bl , msg , error  } = registerInfo.data;
+
+        this.setState({
+            bl ,
+            msg ,
+            error
+        });
 
   }
   render() {
     const { actions } = this.props;
-
+    const { bl , msg , error } = this.state;
+    let errorMsg ;
+    if(bl == "0" && error){
+        errorMsg = (
+            <p>{msg}</p>
+        );
+    }
     return (
         <div>
             <div className="header">
@@ -52,8 +70,9 @@ class Reginster extends Component {
                                         <input type="text" className="login_form msl" placeholder="设置邮箱" ref="emailInput"/>
                                     </div>
                                     <div>
-
+                                        { errorMsg}
                                         <button className="login-button" onClick={::this.handlerClick}>注册</button>
+
                                     </div>
 
                             </div>
@@ -89,7 +108,15 @@ class Reginster extends Component {
   }
   handlerClick(){
         const { nameInput, emailInput  , passwordInput  , repasswordInput } = this.refs;
+        const name = nameInput.value.trim() ,
+              email = emailInput.value.trim() ,
+              password = passwordInput.value.trim() ,
+              repassword = repasswordInput.value.trim() ;
 
+        if(repassword!=password){
+            alert("两次输入密码不对");
+            return ;
+        }
         this.props.register({
             name:nameInput.value,
             email:emailInput.value,

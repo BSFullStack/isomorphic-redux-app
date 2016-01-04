@@ -9,8 +9,7 @@ export default function login(state = initialState, action) {
 
     switch (action.type) {
         case LOGIN_SUCCESS:
-
-            return Object.assign({},state,action.response);
+            return Object.assign({},state,action.req.data);
         default:
             return state;
     }
