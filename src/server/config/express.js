@@ -1,8 +1,11 @@
 /**
  * express配置
  */
+import fs from 'fs';
 import express from 'express';
+
 import glob from 'glob';
+import mongoose from 'mongoose';
 import favicon from 'serve-favicon';
 import logger from 'morgan';
 import cookieParser from 'cookie-parser';
@@ -12,6 +15,9 @@ import session from 'express-session';
 import ConnectMongo from 'connect-mongo';
 import methodOverride from 'method-override';
 
+
+const accessLog = fs.createWriteStream('access.log', {flags: 'a'});
+const errorLog = fs.createWriteStream('error.log', {flags: 'a'});
 const mongoStore = new ConnectMongo(session);
 export default  function (app, config) {
 
@@ -22,21 +28,39 @@ export default  function (app, config) {
 
     // app.use(favicon(config.root + '/public/img/favicon.ico'));
     app.use(logger('dev'));
+    app.use(logger({stream: accessLog}));
     app.use(bodyParser.json());
     app.use(bodyParser.urlencoded({
         extended: true
     }));
-    app.use(cookieParser());
+
     app.use(compress());
     app.use(express.static(config.root + '/public'));
     app.use(methodOverride());
+
+    app.use(cookieParser());
     app.use(session({
         resave: false,
         saveUninitialized: true,
         secret: config.cookieSecret,
         store:new mongoStore({
-            db:config.db,
+            url:config.db,
             secret: config.cookieSecret,
         })
     }));
+    const models = glob.sync(config.root + '/src/server/models/*.js');
+    models.forEach(function (model) {
+       require(model);
+    });
+
+    const controllers = glob.sync(config.root + '/src/server/controllers/*.js');
+
+    controllers.forEach(function (controller) {
+        require(controller)(app);
+   });
+    app.use(function (err, req, res, next) {
+        const meta = '[' + new Date() + '] ' + req.url + '\n';
+        errorLog.write(meta + err.stack + '\n');
+        next();
+    });
 };

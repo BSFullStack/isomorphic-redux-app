@@ -19,12 +19,12 @@ import "../../public/css/index.css";
 
 //挂载点
 const mountId = document.getElementById('root');
-  BJ_REPORT.init({
+ /* BJ_REPORT.init({
                 id: 1,
                 url: "http://127.0.0.1/badjs"
         });
 
-        BJ_REPORT.tryJs().spyAll();
+        BJ_REPORT.tryJs().spyAll();*/
 //渲染
 render(
     <Provider store={store} >

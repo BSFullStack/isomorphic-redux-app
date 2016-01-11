@@ -29,8 +29,7 @@ const renderPage = (html, initialState) => {
                     <script>
                         window.__INITIAL_STATE__ = ${serialize(initialState)};
                     </script>
-                    <script src="/scripts/bj-report.js"></script>
-                    <script src="/scripts/bj-wrap.js"></script>
+
                     <script src="/scripts/jquery.js"></script>
                     <script src="/scripts/simditor-all.js"></script>
                     <script src="/bundle.js"></script>

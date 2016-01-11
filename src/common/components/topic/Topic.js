@@ -14,7 +14,7 @@ class Topic extends Component{
                 <div className="listItemCon">
                     <div className="listItemLeft summary">
                         <h2 className="hcon">
-                            <a href="#">#每周临摹第十六期#：三十分钟画EVA</a>
+                            <a href="#">三十分钟画EVA</a>
                         </h2>
                         <p className="info">
                             <span className="listSp user">肚脐美少年</span>

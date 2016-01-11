@@ -52,7 +52,7 @@ class Topic extends Component {
                         <div className="main tit">
                             <div className="h1">
                                 <p><a href="javascript:;">话题首页</a></p>
-                                <span>共151个话题</span>
+                                <span>共152个话题</span>
                             </div>
                             <CategoryBar activeKey={selectedCategory}  onSelectCategory={::this.handlerCategoryChange}>
                                 <CategoryItem cateKey="hot" link="/topics/hot" text="本周热门"/>
