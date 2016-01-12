@@ -60,15 +60,18 @@ module.exports = React.createClass({
     this.setState(this.copyPropsToState(newProps));
   },
 
-  handleClick(e) {
+  /*handleClick(e) {
+    debugger;
 
     let node = e.target;
-    alert(node.getAttribute( 'data-index' ));
-
-  },
+    const index = node.getAttribute('data-index') -0 ;
+    this.setSelected(index);
+     return;
+  },*/
 
   handleKeyDown(e) {
     if (isTabNode(e.target)) {
+
       let index = this.state.selectedIndex;
       let preventDefault = false;
 
@@ -78,7 +81,7 @@ module.exports = React.createClass({
         preventDefault = true;
       }
       // Select next tab to the right
-      /* eslint brace-style:0 */
+
       else if (e.keyCode === 39 || e.keyCode === 40) {
         index = this.getNextTab(index);
         preventDefault = true;
@@ -94,6 +97,7 @@ module.exports = React.createClass({
   },
 
   setSelected(index, focus) {
+
     // Don't do anything if nothing has changed
     if (index === this.state.selectedIndex) return;
     // Check index boundary
@@ -212,6 +216,7 @@ module.exports = React.createClass({
         // TODO try setting the uuid in the "constructor" for `Tab`/`TabPanel`
         result = cloneElement(child, {
           ref: 'tablist',
+           onSelectTab:this.onSelectTab,
           children: React.Children.map(child.props.children, (tab) => {
             // null happens when conditionally rendering TabPanel/Tab
             // see https://github.com/rackt/react-tabs/issues/37
@@ -231,6 +236,7 @@ module.exports = React.createClass({
               ref,
               id,
               panelId,
+              onSelectTab:this.onSelectTab,
               selected,
               focus
             });
@@ -253,6 +259,7 @@ module.exports = React.createClass({
           ref,
           id,
           tabId,
+          onSelectTab:this.onSelectTab,
           selected
         });
       }
@@ -291,7 +298,9 @@ module.exports = React.createClass({
       </div>
     );
   },
-
+  onSelectTab(index){
+     this.setSelected(index);
+  },
   // This is an anti-pattern, so sue me
   copyPropsToState(props) {
     let selectedIndex = props.selectedIndex;

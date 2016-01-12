@@ -15,14 +15,20 @@ module.exports = React.createClass({
   render() {
     const { children } = this.props;
     let activeIndex = 0;
-    React.Children.forEach(children,(item,index)=>{
+    let cList = React.Children.map(children,(item,index)=>{
         const { selected } = item.props;
         if(selected){
             activeIndex = index;
         }
+        return React.cloneElement(item,{
+            selectTab:this.selectTab
+        });
+
     });
 
     return (
+
+
         <div
             className={cx(
               'navs-slider',
@@ -32,9 +38,14 @@ module.exports = React.createClass({
             data-active-index={activeIndex}
             role="tablist"
         >
-        {this.props.children}
+        {cList}
         <span className="navs-slider-bar"></span>
         </div>
     );
+  },
+  selectTab(item) {
+
+        this.props.onSelectTab && this.props.onSelectTab(item);
   }
+
 });

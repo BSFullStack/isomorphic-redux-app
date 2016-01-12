@@ -4,7 +4,9 @@ import { Tab , Tabs , TabList , TabPanel  } from './ui/tabs';
 class Login extends Component {
     constructor(props) {
         super(props);
-        this.state = {};
+        this.state = {
+            selectedIndex:0
+        };
     }
     componentWillReceiveProps(nextProps){
         const { loginInfo } = nextProps;
@@ -22,7 +24,7 @@ class Login extends Component {
 
     }
     render() {
-        const { bl , msg , error } = this.state;
+        const { bl , msg , error ,selectedIndex } = this.state;
         let errorMsg ;
         if(bl == "0" && error){
             errorMsg = (
@@ -39,7 +41,7 @@ class Login extends Component {
                         </div>
                         <div className="desk-front sign-flow clearfix sign-flow-simple">
                             <Tabs
-                                selectedIndex={0}
+                                selectedIndex={selectedIndex}
                                 onSelect={::this.handlerChangeTab}
                                 >
                                 <TabList>
@@ -119,8 +121,9 @@ class Login extends Component {
             </div>
         );
     }
-    handlerChangeTab(){
-        alert("xxx");
+    handlerChangeTab(selectedIndex){
+
+        this.setState({selectedIndex});
     }
     handlerClick(){
         const { nameInput , passwordInput } = this.refs;

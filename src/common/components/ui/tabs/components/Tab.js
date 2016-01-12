@@ -48,11 +48,18 @@ module.exports = React.createClass({
             'disabled': this.props.disabled
           }
         )}
+        onClick={this.handlerClick}
         role="tab"
         data-index={this.props.index}
       >
         {this.props.children}
       </a>
     );
+  },
+  handlerClick(e){
+
+    let node = e.target;
+    const index = node.getAttribute('data-index') -0 ;
+    this.props.selectTab(index);
   }
 });
