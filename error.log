@@ -16,3 +16,129 @@ Error: Error setting TTL index on collection : sessions
     at Collection.ensureIndex (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\collection\index.js:65:11)
     at F:\yowork\isomorphic-redux-app\node_modules\connect-mongo\lib\connect-mongo.js:159:29
     at Db.collection (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:495:44)
+[Tue Jan 12 2016 17:09:50 GMT+0800 (中国标准时间)] /login
+TypeError: this.model(...).save is not a function
+    at model.TopicSchema.methods.publish (F:/yowork/isomorphic-redux-app/src/server/models/Topic.js:23:25)
+    at F:/yowork/isomorphic-redux-app/src/server/controllers/login.js:31:15
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\route.js:131:13)
+    at Route.dispatch (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:277:22
+    at Function.process_params (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:330:12)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:271:10)
+    at Function.handle (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:176:3)
+    at router (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:46:12)
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:312:13)
+    at F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:330:12)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:271:10)
+[Tue Jan 12 2016 17:11:11 GMT+0800 (中国标准时间)] /login
+TypeError: this.model(...).save is not a function
+    at model.TopicSchema.methods.publish (F:/yowork/isomorphic-redux-app/src/server/models/Topic.js:23:25)
+    at F:/yowork/isomorphic-redux-app/src/server/controllers/login.js:31:15
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\route.js:131:13)
+    at Route.dispatch (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:277:22
+    at Function.process_params (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:330:12)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:271:10)
+    at Function.handle (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:176:3)
+    at router (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:46:12)
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:312:13)
+    at F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:330:12)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:271:10)
+[Tue Jan 12 2016 17:11:16 GMT+0800 (中国标准时间)] /login
+TypeError: this.model(...).save is not a function
+    at model.TopicSchema.methods.publish (F:/yowork/isomorphic-redux-app/src/server/models/Topic.js:23:25)
+    at F:/yowork/isomorphic-redux-app/src/server/controllers/login.js:31:15
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\route.js:131:13)
+    at Route.dispatch (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:277:22
+    at Function.process_params (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:330:12)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:271:10)
+    at Function.handle (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:176:3)
+    at router (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:46:12)
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:312:13)
+    at F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:330:12)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:271:10)
+[Tue Jan 12 2016 17:13:43 GMT+0800 (中国标准时间)] /topics/get
+ReferenceError: data is not defined
+    at F:/yowork/isomorphic-redux-app/src/server/controllers/topics.js:12:30
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\route.js:131:13)
+    at Route.dispatch (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:277:22
+    at Function.process_params (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:330:12)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:271:10)
+    at Function.handle (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:176:3)
+    at router (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:46:12)
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:312:13)
+    at F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:330:12)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:271:10)
+    at F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:618:15
+[Tue Jan 12 2016 17:17:20 GMT+0800 (中国标准时间)] /login
+TypeError: this.model(...).save is not a function
+    at model.TopicSchema.methods.publish (F:/yowork/isomorphic-redux-app/src/server/models/Topic.js:23:25)
+    at F:/yowork/isomorphic-redux-app/src/server/controllers/login.js:31:15
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\route.js:131:13)
+    at Route.dispatch (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:277:22
+    at Function.process_params (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:330:12)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:271:10)
+    at Function.handle (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:176:3)
+    at router (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:46:12)
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:312:13)
+    at F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:330:12)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:271:10)
+[Tue Jan 12 2016 17:18:55 GMT+0800 (中国标准时间)] /login
+TypeError: this.model(...).save is not a function
+    at model.TopicSchema.methods.publish (F:/yowork/isomorphic-redux-app/src/server/models/Topic.js:23:25)
+    at F:/yowork/isomorphic-redux-app/src/server/controllers/login.js:31:15
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\route.js:131:13)
+    at Route.dispatch (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:277:22
+    at Function.process_params (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:330:12)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:271:10)
+    at Function.handle (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:176:3)
+    at router (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:46:12)
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:312:13)
+    at F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:330:12)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:271:10)
+[Tue Jan 12 2016 17:21:09 GMT+0800 (中国标准时间)] /topics/get
+ReferenceError: data is not defined
+    at F:/yowork/isomorphic-redux-app/src/server/controllers/topics.js:12:30
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\route.js:131:13)
+    at Route.dispatch (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:277:22
+    at Function.process_params (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:330:12)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:271:10)
+    at Function.handle (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:176:3)
+    at router (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:46:12)
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:312:13)
+    at F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:330:12)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:271:10)
+    at F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:618:15
