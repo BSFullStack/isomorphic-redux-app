@@ -57,7 +57,8 @@ export default  function (app, config) {
 
     controllers.forEach(function (controller) {
         require(controller)(app);
-   });
+    });
+
     app.use(function (err, req, res, next) {
         const meta = '[' + new Date() + '] ' + req.url + '\n';
         errorLog.write(meta + err.stack + '\n');

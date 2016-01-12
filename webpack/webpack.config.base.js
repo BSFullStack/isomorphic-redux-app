@@ -7,11 +7,11 @@ import path from 'path';
 import webpack from 'webpack';
 const srcRoot = path.join(__dirname, '../src');
 const nodeRoot = path.join(__dirname, '../node_modules');
-
+const publicRoot = path.join(__dirname, '../public');
 export default {
 
     resolve: {
-        root: [srcRoot, nodeRoot],
+        root: [srcRoot, nodeRoot,publicRoot],
         extensions: ['', '.js', '.jsx', '.css']
     },
 

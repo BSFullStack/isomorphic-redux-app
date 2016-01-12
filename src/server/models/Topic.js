@@ -22,6 +22,7 @@ const TopicSchema = new Schema({
 /*TopicSchema.methods.publish = function(cb){
     this.model('Topic').save(cb)
 };*/
+
 //分页查询
 TopicSchema.statics.get = function({ pageIndex , pageSize , queryParam } , cb ){
     const { editTime , category , ...other } = queryParam ;
