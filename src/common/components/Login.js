@@ -28,7 +28,8 @@ class Login extends Component {
             bl : bl  == "" || regbl,
             msg :msg || regmsg,
             error:error || regerr ,
-            showError :error || regerr
+            showError :error || regerr,
+            errArr:[]
         });
 
     }
@@ -38,17 +39,23 @@ class Login extends Component {
             msg ,
             error ,
             showError ,
-            selectedIndex
+            selectedIndex,
+            
         } = this.state;
 
-        debugger;
+        var errItems =[];
+       
+        this.state.errArr&&this.state.errArr.split(",").forEach(function(e,i){
+            errItems[i] = <label key={i}>{e}</label>;                      
+        })
+
         return (
             <div className="zhi  no-auth">
                 <div className="index-main">
                     <div className="index-main-body">
                         <div className="index-header">
-                            <h1 className="logo hide-text">知乎</h1>
-                            <h2 className="subtitle">与世界分享你的知识、经验和见解</h2>
+                            <h1 className="logo hide-text">SKT-Topic</h1>
+                            <h2 className="subtitle">share your exprience with BEISEN colleague</h2>
                         </div>
                         <div className="desk-front sign-flow clearfix sign-flow-simple">
                             <Tabs
@@ -66,18 +73,24 @@ class Login extends Component {
                                         <div className="group-inputs">
                                             <div className="name input-wrapper">
                                                 <input required type="text" name="name" ref="registerUserNameInput" aria-label="用户名" placeholder="用户名" />
+                                                {errItems[0]} 
                                             </div>
                                             <div className="email input-wrapper">
                                                 <input required="" type="text" className="account"  ref="registerEmailInput" name="phone_num" aria-label="常用邮箱" placeholder="常用邮箱" />
+                                                {errItems[1]} 
                                             </div>
                                             <div className="input-wrapper">
                                                 <input required="" type="password" name="password"  ref="registerPasswordInput" aria-label="密码" placeholder="密码（不少于 6 位）"/>
+                                                {errItems[2]} 
                                             </div>
                                         </div>
                                         <div className="failure" id="summary"><ul></ul></div>
+
                                         <div className="button-wrapper command">
                                             <button className="sign-button submit" type="button" onClick={::this.handlerRegister}>注册SKT-Topic</button>
                                         </div>
+
+                                                                              
                                         {showError && <label className="error show">{msg}</label> }
                                 </TabPanel>
                                 <TabPanel className="view-signup" >
@@ -142,7 +155,28 @@ class Login extends Component {
                 registerPasswordInput.value ,
                 registerUserNameInput.value
             ];
-        //验证 交给盛刚
+        //前端验证 交给盛刚
+        let valid = true
+        let errmsg =[]
+        if(!/\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*/.test(email)){
+            errmsg.push("请填写正确的E-Mail");
+            valid = false;
+        }
+        if(!/^[a-zA-z][a-zA-Z0-9_]{2,9}$/.test(name)){
+            errmsg.push("请填写正确的名字");
+            valid = false;
+        }
+        if(!/^[\@A-Za-z0-9\!\#\$\%\^\&\*\.\~]{6,22}$/.test(password)){
+            errmsg.push("请填写正确的密码");
+            valid = false;
+        }
+        this.setState({errArr:errmsg.join()},()=>{
+
+        })
+        if(!valid) return false;
+
+      
+        // 
         this.props.doRegister({
             email,
             password,
@@ -156,6 +190,20 @@ class Login extends Component {
         const { loginEmailInput , loginPasswordInput } = this.refs;
         const [ email , password ] = [ loginEmailInput.value , loginPasswordInput.value ];
         //书写验证规则 盛刚做
+        let valid = true
+        let errmsg =[]
+        if(!/\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*/.test(email)){
+            errmsg.push("请填写正确的E-Mail");
+            valid = false;
+        }
+        if(!/^[\@A-Za-z0-9\!\#\$\%\^\&\*\.\~]{6,22}$/.test(password)){
+            errmsg.push("请填写正确的密码");
+            valid = false;
+        }
+        this.setState({errArr:errmsg.join()},()=>{
+
+        })
+        if(!valid) return false;
 
         this.props.doLogin({
             email,
