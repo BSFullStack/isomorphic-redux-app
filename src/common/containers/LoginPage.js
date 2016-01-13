@@ -5,7 +5,8 @@ import Login from '../components/Login';
 import * as LoginActions from '../actions/login';
 function mapStateToProps(state) {
     return {
-        loginInfo:state.login
+        loginInfo:state.login,
+        registerInfo:state.register
     };
 }
 function mapDispatchToProps(dispatch) {

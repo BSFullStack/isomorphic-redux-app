@@ -6,7 +6,6 @@ import HomePage from "./components/Home";
 import TopicPage from "./containers/TopicPage";
 import PublishPage from './containers/PublishPage';
 import LoginPage from './containers/LoginPage';
-import RegisterPage from './containers/RegisterPage';
 
 export default (
   <Route name="app" component={App} path="/">
@@ -15,6 +14,6 @@ export default (
         <Route path="topics/:category" component={TopicPage} />
         <Route path="Publish" component={PublishPage} />
         <Route path="login" component={LoginPage} />
-        <Route path="register" component={RegisterPage} />
+
   </Route>
 );

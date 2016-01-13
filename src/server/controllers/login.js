@@ -12,10 +12,10 @@ module.exports= function (app) {
 };
 //用户登录
 router.post('/', function (req, res) {
-    const { password , name } = req.body || {};
+    const { password , email } = req.body || {};
     const passHash = crypto.createHash('md5').update(password).digest('hex');
     //根据用户名查询
-    User.findByName({name:name,password:passHash},(error,user)=>{
+    User.checkUser({email,password:passHash},(error,user)=>{
         if(!user){
             return res.status(200).json(setError({msg:"账号或者密码不正确!"}));
         }else {

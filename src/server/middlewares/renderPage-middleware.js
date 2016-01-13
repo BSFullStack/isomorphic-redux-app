@@ -20,7 +20,7 @@ const renderPage = (html, initialState) => {
           <html>
               <head>
                   <meta charset="utf-8">
-                  <title>BookStore Online</title>
+                  <title>SKT-Topic</title>
 
                   <link src="/css/index.css"/>
               </head>

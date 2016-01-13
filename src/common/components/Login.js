@@ -4,33 +4,44 @@ import { Tab , Tabs , TabList , TabPanel  } from './ui/tabs';
 class Login extends Component {
     constructor(props) {
         super(props);
+        let selectedIndex=1;
+        if(props.location.hash == "#signin"){
+            selectedIndex = 0;
+        }else{
+            selectedIndex = 1;
+        }
         this.state = {
-            selectedIndex:0
+            selectedIndex:selectedIndex
         };
     }
     componentWillReceiveProps(nextProps){
-        const { loginInfo } = nextProps;
-
+        debugger;
+        const { loginInfo , registerInfo } = nextProps;
         const { bl , msg , error  } = loginInfo.data;
-        if(bl == "1" && !error){
-            //登录成功
+        const { bl:regbl , msg:regmsg , error:regerr } = registerInfo.data;
+        //登录成功 || 注册成功
+        if( ( bl == "1" && !error ) || (regbl == "1" && !regerr) ){
             return this.props.history.push("/topics");
         }
+
         this.setState({
-            bl ,
-            msg ,
-            error
+            bl : bl  == "" || regbl,
+            msg :msg || regmsg,
+            error:error || regerr ,
+            showError :error || regerr
         });
 
     }
     render() {
-        const { bl , msg , error ,selectedIndex } = this.state;
-        let errorMsg ;
-        if(bl == "0" && error){
-            errorMsg = (
-                <p>{msg}</p>
-            );
-        }
+        const {
+            bl ,
+            msg ,
+            error ,
+            showError ,
+            selectedIndex
+        } = this.state;
+
+        debugger;
         return (
             <div className="zhi  no-auth">
                 <div className="index-main">
@@ -49,87 +60,105 @@ class Login extends Component {
                                     <Tab index="1">登录</Tab>
                                 </TabList>
                                 <TabPanel className="view-signin">
-                                    <form className="zu-side-login-box" action="/register/email" id="sign-form-1" >
+
                                         <input type="password" hidden />
                                         <input type="hidden" name="_xsrf" value="d97121370f3efb32b5463d734fed325d" />
                                         <div className="group-inputs">
                                             <div className="name input-wrapper">
-                                                <input required="" type="text" name="fullname" aria-label="姓名" placeholder="姓名" />
+                                                <input required type="text" name="name" ref="registerUserNameInput" aria-label="用户名" placeholder="用户名" />
                                             </div>
                                             <div className="email input-wrapper">
-                                                <input required="" type="text" className="account" name="phone_num" aria-label="手机号（仅支持中国大陆）" placeholder="手机号（仅支持中国大陆）" />
+                                                <input required="" type="text" className="account"  ref="registerEmailInput" name="phone_num" aria-label="常用邮箱" placeholder="常用邮箱" />
                                             </div>
                                             <div className="input-wrapper">
-                                                <input required="" type="password" name="password" aria-label="密码" placeholder="密码（不少于 6 位）"/>
+                                                <input required="" type="password" name="password"  ref="registerPasswordInput" aria-label="密码" placeholder="密码（不少于 6 位）"/>
                                             </div>
                                         </div>
                                         <div className="failure" id="summary"><ul></ul></div>
                                         <div className="button-wrapper command">
-                                            <button className="sign-button submit" type="submit">注册SKT-Topic</button>
+                                            <button className="sign-button submit" type="button" onClick={::this.handlerRegister}>注册SKT-Topic</button>
                                         </div>
-                                    </form>
+                                        {showError && <label className="error show">{msg}</label> }
                                 </TabPanel>
                                 <TabPanel className="view-signup" >
-                                    <form>
+
                                         <input type="hidden" name="_xsrf" value="d97121370f3efb32b5463d734fed325d" />
                                         <div className="group-inputs">
                                             <div className="email input-wrapper">
-                                                <input type="text" name="account" aria-label="手机号或邮箱" placeholder="手机号或邮箱" required="" />
+                                                <input type="text" name="email" onFocus={::this.hideError}  aria-label="邮箱" ref="loginEmailInput" placeholder="邮箱" required="" />
                                             </div>
                                             <div className="input-wrapper">
-                                                <input type="password" name="password" aria-label="密码" placeholder="密码" required="" />
+                                                <input type="password" name="password"  aria-label="密码" ref="loginPasswordInput" placeholder="密码" required="" />
+
                                             </div>
-                                            <div className="input-wrapper captcha-module">
-                                                <input id="captcha" name="captcha" placeholder="验证码" required="" />
-                                                <div className="captcha-container">
-                                                    <img className="js-refresh-captcha captcha" width="120" height="30" data-tip="s$t$看不清楚？换一张" alt="验证码" />
-                                                </div>
-                                            </div>
+
                                         </div>
                                         <div className="failure" id="summary">
                                             <ul></ul>
                                         </div>
                                         <div className="button-wrapper command">
-                                            <button className="sign-button submit" type="submit">登录</button>
+                                            <button className="sign-button submit" type="button" onClick={::this.handlerLogin}>登录</button>
                                         </div>
-                                        <div className="signin-misc-wrapper clearfix">
-                                            <label className="remember-me">
-                                                <input type="checkbox" name="remember_me" checked="" value="true" /> 记住我
-                                            </label>
 
-                                        </div>
                                         <div className="weibo-signup-wrapper">
                                         </div>
-                                    </form>
+                                        {showError && <label className="error show">{msg}</label> }
                                 </TabPanel>
                             </Tabs>
 
                         </div>
-                        <div className="qrcode-app-download">
-                            <a href="/app" className="app-link">
-                                <i className="sprite-index-icon-qrcode"></i>
-                                <span className="text">下载知乎 App</span>
-                                <span className="hovercard">
-                                    <span className="intro">扫一扫二维码下载</span>
-                                    <span className="image"></span>
-                                </span>
-                            </a>
-                        </div>
+
 
                     </div>
                 </div>
             </div>
         );
     }
-    handlerChangeTab(selectedIndex){
-
-        this.setState({selectedIndex});
+    //隐藏错误信息
+    hideError(){
+        this.setState({
+            showError:false
+        });
     }
-    handlerClick(){
-        const { nameInput , passwordInput } = this.refs;
-        const [ name , password ] = [nameInput.value,passwordInput.value];
+    //切换标签页，粗劣实现
+    handlerChangeTab(selectedIndex){
+        if(selectedIndex == 1){
+            this.props.history.replace("/login#signup")
+         }else{
+            this.props.history.replace("/login#signin")
+         }
+
+        //this.setState({selectedIndex});
+    }
+    //注册
+    handlerRegister(){
+        const { registerEmailInput , registerPasswordInput , registerUserNameInput } = this.refs;
+        const [
+                email ,
+                password ,
+                name
+            ] = [
+                registerEmailInput.value ,
+                registerPasswordInput.value ,
+                registerUserNameInput.value
+            ];
+        //验证 交给盛刚
+        this.props.doRegister({
+            email,
+            password,
+            name
+        });
+
+    }
+    //登录
+    handlerLogin(){
+
+        const { loginEmailInput , loginPasswordInput } = this.refs;
+        const [ email , password ] = [ loginEmailInput.value , loginPasswordInput.value ];
+        //书写验证规则 盛刚做
+
         this.props.doLogin({
-            name,
+            email,
             password,
             r:Math.random()
         });
