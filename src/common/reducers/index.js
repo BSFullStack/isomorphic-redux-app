@@ -1,7 +1,6 @@
 import { combineReducers } from 'redux';
 import { routerStateReducer } from 'redux-router';
 import undoable from 'redux-undo';
-//引入reducers
 
 import layout from './layout';
 

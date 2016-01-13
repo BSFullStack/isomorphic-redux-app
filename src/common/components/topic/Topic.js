@@ -7,30 +7,39 @@ class Topic extends Component{
 
     render(){
         return (
-            <li className="listItem">
-                <span className="ansNum">
-                    <a href="/detail/2170#rpn">2回复</a>
-                </span>
-                <div className="listItemCon">
-                    <div className="listItemLeft summary">
-                        <h2 className="hcon">
-                            <a href="#">三十分钟画EVA</a>
-                        </h2>
-                        <p className="info">
-                            <span className="listSp user">肚脐美少年</span>
-                            <span className="listSp">今天 16:01发布</span>
-                            <span className="listSp">191浏览</span>
-                        </p>
-                        <div className="infoHide">
-                            <p className="pinfo">#每周临摹# 开话题啦~第十六期：三十分钟画EVA发起人：栗子老师 主持人：小u妹教程传送门：http://study.ui.cn/栗子老师坐镇UI中国话题区域，教大家如何利用sketch和ps....
-                            </p>
-                        </div>
+            <section className="stream-list__item">
+                <div className="qa-rank">
+                    <div className="votes hidden-xs">
+                        0
+                        <small>投票</small>
                     </div>
-                    <span className="listImage">
-                        <img className="preview" src="http://img.ui.cn/talk/1450758487" />
-                    </span>
+                    <div className="answers answered">
+                        1
+                        <small>回答</small>
+                    </div>
+                    <div className="views hidden-xs">
+                        15
+                        <small>浏览</small>
+                    </div>
                 </div>
-            </li>
+                <div className="summary">
+                    <ul className="author list-inline">
+                        <li>
+                            <a href="/u/jellybool">
+                                JellyBool
+                            </a>
+                            <span className="split"></span>
+                            <a href="/q/1010000004302145/a-1020000004302162">1 分钟前回答</a>
+                         </li>
+                    </ul>
+                    <h2 className="title">
+                        <a href="/q/1010000004302145">
+                            laravel 5.1的.env里的APP_ENV是怎么用呢？
+                        </a>
+                    </h2>
+
+                </div>
+            </section>
         );
     }
 }

@@ -8,8 +8,14 @@ module.exports= function (app) {
 };
 //查询列表
 router.post('/get', function (req, res) {
+    const { pageIndex = 1 , pageSize = 15 } = req.body;
+    Topic.get({pageIndex,pageSize,queryParam:{}},(err,result)=>{
+        if(result){
+            res.status(200).json({...result});
+        }
 
-    res.status(200).json({...data});
+    })
+
 });
 //发布话题
 router.post('/publish', function (req, res) {

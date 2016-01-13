@@ -25,19 +25,22 @@ const TopicSchema = new Schema({
 
 //分页查询
 TopicSchema.statics.get = function({ pageIndex , pageSize , queryParam } , cb ){
-    const { editTime , category , ...other } = queryParam ;
+    const { editTime , ...other } = queryParam ;
     //获取总数
-    this.count({category},(err,count)=>{
+    this.count((err,count)=>{
         if(err){
             return cb(err);
         }
-        let list ;
         if(pageIndex == 1 || !editTime){
-            list = this.find({...other}).sort({"editTime":-1}).limit(pageSize);
+            this.find({...other}).sort({"editTime":-1}).limit(pageSize).find((err,list)=>{
+                return cb(err,{topics:list,count})
+            });
         }else{
-            list = this.find({"editTime":{"$gt":editTime},...other}).sort({"editTime":-1}).limit(pageSize);
+            this.find({"editTime":{"$gt":editTime},...other}).sort({"editTime":-1}).limit(pageSize).find((err,list)=>{
+                 return cb(err,{topics:list,count})
+            });
         }
-        //return cb(err,data:{topics:list,count})
+
     });
 
 
