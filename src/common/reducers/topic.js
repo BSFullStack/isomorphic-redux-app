@@ -59,9 +59,12 @@ export function topicsByCategory(state = { }, action) {
     case TOPICS_GET_REQUEST:
     case TOPICS_GET_SUCCESS:
         let topicsArray = [];
+
         if(action.req && action.req.data){
-            let data = action.req.data.data;
+
+            let data = action.req.data.topics;
             topicsArray = data.children.map(child => child.data);
+            console.log(topicsArray);
         }
         return Object.assign({}, state, {
             [action.category]: topics(state[action.category], {

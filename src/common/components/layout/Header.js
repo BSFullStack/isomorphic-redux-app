@@ -3,47 +3,52 @@ import React, { Component, PropTypes } from 'react';
 export default class Header extends Component {
     render() {
         return (
-            <div className="bg-white">
-                <div className="wpn cl bg-white">
-                        <a className="icon-uimini logo-hd" href="http://www.ui.cn/" title="UI中国"></a>
-                        <ul className="nav-hd cl">
-                            <li id="nav-index">
-                                <a href="http://www.ui.cn/" className="">
-                                    首页
+           <div className="global-nav" xmlns="http://www.w3.org/1999/html">
+                <nav className="container nav">
+                    <div className="dropdown m-menu">
+                        <a href="javascript:void(0);" id="dLabel" className="visible-xs-block m-toptools" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span className="glyphicon glyphicon-align-justify"></span>
+                            <span className="mobile-menu__unreadpoint"></span>
+                        </a>
+                        <ul className="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                            <li className="mobile-menu__item">
+                                <a href="/questions/newest">
+                                    问答
                                 </a>
                             </li>
-                            <li id="nav-work">
-                                <a href="http://www.ui.cn/list.html" target="_self" className="">
-                                    话题
+                            <li className="mobile-menu__item">
+                                <a href="/blogs">
+                                    文章
                                 </a>
-                            </li>
-                            <li id="nav-exp">
-                                <a href="http://www.ui.cn/exp.html" target="_self">
-                                    分享
-                                    <i className="icon-down"></i>
-                                </a>
-                                <div className="subnav-hd cl">
-                                    <ul className="subnav-ct-hd">
-                                        <li>
-                                            <a href="http://topic.ui.cn/" target="_self">专题</a>
-                                        </li>
-                                        <li>
-                                            <a href="http://www.ui.cn/exp.html?scatid=11" target="_blank">教程</a>
-                                        </li>
-                                        <li>
-                                            <a href="http://read.ui.cn" target="_self">书籍</a>
-                                        </li>
-                                        <li>
-                                            <a href="http://study.ui.cn/" target="_self">每周临摹</a>
-                                        </li>
-                                    </ul>
-                                </div>
                             </li>
                         </ul>
+                    </div>
 
-                </div>
-            </div>
+                    <h1 className="logo"><a className="sf" href="/">SKT-TOPIC</a></h1>
 
+                    <a href="/ask" className="visible-xs-block pull-right m-ask m-toptools">
+                        <span className="glyphicon glyphicon-pencil"></span>
+                    </a>
+
+                    <form action="/search" className="header-search pull-left hidden-sm hidden-xs">
+                        <button className="btn btn-link">
+                            <span className="sr-only">搜索</span>
+                            <span className="glyphicon glyphicon-search"></span>
+                        </button>
+                        <input id="searchBox" name="q" type="text" placeholder="输入关键字搜索" className="form-control" value="" />
+                    </form>
+
+                    <ul className="menu list-inline pull-left hidden-xs">
+                        <li className="menu__item"><a href="/questions">问答</a></li>
+                        <li className="menu__item"><a href="/blogs">文章</a></li>
+                    </ul>
+                    <ul className="opts pull-right list-inline hidden-xs">
+                        <li className="opts__item dropdown hoverDropdown write-btns">
+                        <a className="dropdownBtn" data-toggle="dropdown" href="/ask" >我要提问</a>
+                        </li>
+                    </ul>
+            </nav>
+        </div>
         );
     }
 }

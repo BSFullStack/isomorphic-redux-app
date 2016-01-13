@@ -8,15 +8,22 @@ class Topics extends Component{
 
     render(){
         const { topics } = this.props;
+        let topicsComponent ;
+        if( topics.length == 0 ){
+            topicsComponent = (
+                <p>暂无问题!</p>
+            );
+        } else {
+            topicsComponent = this._renderTopic(topics);
+        }
         return (
-            <ul className="talk-list cl">
-                { !topics && <NoTopic /> }
-                { this._renderTopic() }
-            </ul>
+            <div className="stream-list question-stream">
+                {topicsComponent}
+            </div>
         );
     }
-    _renderTopic(){
-        const { topics  } = this.props;
+    _renderTopic(topics){
+
         return topics.map((topic,index)=>{
             return (
                 <Topic key={index} {...topic} />
