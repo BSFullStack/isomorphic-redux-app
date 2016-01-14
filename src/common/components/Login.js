@@ -46,7 +46,7 @@ class Login extends Component {
         var errItems =[];
        
         this.state.errArr&&this.state.errArr.split(",").forEach(function(e,i){
-            errItems[i] = <label key={i}>{e}</label>;                      
+            errItems[i] = <div className="errTip" key={i}>{e}</div>;                      
         })
 
         return (

@@ -6,6 +6,7 @@ import React , { Component } from 'react';
 class Topic extends Component{
 
     render(){
+        console.log(this.props);
         return (
             <section className="stream-list__item">
                 <div className="qa-rank">
