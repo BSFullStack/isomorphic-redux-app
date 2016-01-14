@@ -11,9 +11,14 @@ class Login extends Component {
             selectedIndex = 1;
         }
         this.state = {
-            selectedIndex:selectedIndex
+            selectedIndex:selectedIndex,
+            showErr:'showErr'
         };
+
+
+
     }
+
     componentWillReceiveProps(nextProps){
         debugger;
         const { loginInfo , registerInfo } = nextProps;
@@ -30,6 +35,7 @@ class Login extends Component {
             error:error || regerr ,
             showError :error || regerr,
             errArr:[]
+
         });
 
     }
@@ -41,13 +47,14 @@ class Login extends Component {
             showError ,
             selectedIndex,
 
+            showErr
         } = this.state;
+        // var errItems =[];
 
-        var errItems =[];
+        // this.state.errArr&&this.state.errArr.split(",").forEach(function(e,i){
+        //     errItems[i] = <label className="errTip" key={i}>{e}</label>;
+        // })
 
-        this.state.errArr&&this.state.errArr.split(",").forEach(function(e,i){
-            errItems[i] = <div className="errTip" key={i}>{e}</div>;
-        })
 
         return (
             <div className="zhi  no-auth">
@@ -72,16 +79,19 @@ class Login extends Component {
                                         <input type="hidden" name="_xsrf" value="d97121370f3efb32b5463d734fed325d" />
                                         <div className="group-inputs">
                                             <div className="name input-wrapper">
-                                                <input required type="text" name="name" ref="registerUserNameInput" aria-label="用户名" placeholder="用户名" />
-                                                {errItems[0]}
+
+                                                <input required type="text" name="name" onFocus={::this.hideError} ref="registerUserNameInput" aria-label="用户名" placeholder="用户名" />
+                                                <label className="errTip" ref="e1" >请填写正确的</label>
+
                                             </div>
                                             <div className="email input-wrapper">
                                                 <input required="" type="text" className="account"  ref="registerEmailInput" name="phone_num" aria-label="常用邮箱" placeholder="常用邮箱" />
-                                                {errItems[1]}
+                                                <label className="errTip" ref="e2">请填写正确的E-Mail</label>
                                             </div>
                                             <div className="input-wrapper">
                                                 <input required="" type="password" name="password"  ref="registerPasswordInput" aria-label="密码" placeholder="密码（不少于 6 位）"/>
-                                                {errItems[2]}
+                                                <label className="errTip" ref="e3">请填写正确的密码</label>
+
                                             </div>
                                         </div>
                                         <div className="failure" id="summary"><ul></ul></div>
@@ -99,10 +109,11 @@ class Login extends Component {
                                         <div className="group-inputs">
                                             <div className="email input-wrapper">
                                                 <input type="text" name="email" onFocus={::this.hideError}  aria-label="邮箱" ref="loginEmailInput" placeholder="邮箱" required="" />
+                                                <label className="errTip" ref="e4">请填写正确的E-Mail</label>
                                             </div>
                                             <div className="input-wrapper">
                                                 <input type="password" name="password"  aria-label="密码" ref="loginPasswordInput" placeholder="密码" required="" />
-
+                                                <label className="errTip" ref="e5">请填写正确的密码</label>
                                             </div>
 
                                         </div>
@@ -127,11 +138,18 @@ class Login extends Component {
             </div>
         );
     }
+    componentDidMount(){
+         const { registerEmailInput , registerPasswordInput , registerUserNameInput ,e1,e2,e3} = this.refs;
+
+        $(registerEmailInput).click(function(){
+            alert()
+        })
+    }
     //隐藏错误信息
     hideError(){
-        this.setState({
-            showError:false
-        });
+
+
+
     }
     //切换标签页，粗劣实现
     handlerChangeTab(selectedIndex){
@@ -145,7 +163,7 @@ class Login extends Component {
     }
     //注册
     handlerRegister(){
-        const { registerEmailInput , registerPasswordInput , registerUserNameInput } = this.refs;
+        const { registerEmailInput , registerPasswordInput , registerUserNameInput ,e1,e2,e3} = this.refs;
         const [
                 email ,
                 password ,
@@ -155,24 +173,36 @@ class Login extends Component {
                 registerPasswordInput.value ,
                 registerUserNameInput.value
             ];
-        //前端验证 交给盛刚
-        let valid = true
-        let errmsg =[]
-        if(!/\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*/.test(email)){
-            errmsg.push("请填写正确的E-Mail");
-            valid = false;
-        }
-        if(!/^[a-zA-z][a-zA-Z0-9_]{2,9}$/.test(name)){
-            errmsg.push("请填写正确的名字");
-            valid = false;
-        }
-        if(!/^[\@A-Za-z0-9\!\#\$\%\^\&\*\.\~]{6,22}$/.test(password)){
-            errmsg.push("请填写正确的密码");
-            valid = false;
-        }
-        this.setState({errArr:errmsg.join()},()=>{
 
-        })
+
+        //前端验证 交给盛刚 提示淡入效果 粗劣实现!!!
+        let valid = true
+
+        let errmsg =[]
+
+        if(!/^[a-z0-9_-]{3,15}$/.test(name)){
+            $(e1).css({"opacity":100,"visibility":"visible"})
+            valid = false;
+        }else{
+            $(e1).css({"opacity":0,"visibility":"hidden"})
+        }
+
+        if(!/\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*/.test(email)){
+             $(e2).css({"opacity":100,"visibility":"visible"})
+            valid = false;
+        }else{
+            $(e2).css({"opacity":0,"visibility":"hidden"})
+        }
+
+        if(!/^[\@A-Za-z0-9\!\#\$\%\^\&\*\.\~]{6,22}$/.test(password)){
+             $(e3).css({"opacity":100,"visibility":"visible"})
+            valid = false;
+        }else{
+            $(e3).css({"opacity":0,"visibility":"hidden"})
+        }
+        // this.setState({errArr:errmsg.join()},()=>{
+
+        // })
         if(!valid) return false;
 
 
@@ -182,26 +212,33 @@ class Login extends Component {
             password,
             name
         });
+        this.props.history.replace("/topics")
 
     }
     //登录
     handlerLogin(){
-        const { loginEmailInput , loginPasswordInput } = this.refs;
+
+        const { loginEmailInput , loginPasswordInput,e4,e5 } = this.refs;
+
         const [ email , password ] = [ loginEmailInput.value , loginPasswordInput.value ];
         //书写验证规则 盛刚做
         let valid = true
         let errmsg =[]
         if(!/\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*/.test(email)){
-            errmsg.push("请填写正确的E-Mail");
+            $(e4).css({"opacity":100,"visibility":"visible"})
             valid = false;
+        }else{
+            $(e4).css({"opacity":0,"visibility":"hidden"})
         }
         if(!/^[\@A-Za-z0-9\!\#\$\%\^\&\*\.\~]{6,22}$/.test(password)){
-            errmsg.push("请填写正确的密码");
+            $(e5).css({"opacity":100,"visibility":"visible"})
             valid = false;
+        }else{
+            $(e5).css({"opacity":0,"visibility":"hidden"})
         }
-        this.setState({errArr:errmsg.join()},()=>{
+        // this.setState({errArr:errmsg.join()},()=>{
 
-        })
+        // })
         if(!valid) return false;
 
         this.props.doLogin({

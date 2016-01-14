@@ -8,9 +8,11 @@ import {
 } from '../actions/login';
 
 const initialState = {
-    bl:0,
-    msg:"",
-    error:false
+    data:{
+        bl:0,
+        msg:"",
+        error:false
+    }
 };
 
 //登录
@@ -20,6 +22,7 @@ export function login(state = initialState , action) {
         case LOGIN_REQUEST:
             return Object.assign({},initialState);
         case LOGIN_SUCCESS:
+
             return Object.assign({},state,action.req.data);
         default:
             return state;
@@ -35,7 +38,7 @@ export function register(state = initialState , action) {
             return Object.assign({},initialState);
         case REGISTER_SUCCESS:
             console.log("xxxx");
-            return Object.assign({},state,action.req.data);
+            return Object.assign({},state,action.req.data.data);
         default:
             return state;
     }

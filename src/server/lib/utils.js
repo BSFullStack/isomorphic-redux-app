@@ -1,14 +1,14 @@
 import assign from 'object-assign';
 export function setError (data){
     const { bl = '0', msg = '操作失败！' , error = true , ...other } = data || {};
-
     return {
         data:{
-            bl,
-            msg,
-            error,
+              bl ,
+            msg ,
+            error ,
             ...other
         }
+
     }
 
 }
@@ -16,11 +16,14 @@ export function setOk (data){
     const { bl = '1', msg = "操作成功！" , error=false,...other} = data || {};
     return {
         data:{
-            bl,
+              bl,
             msg,
             error,
             ...other
+
+
         }
+
     }
 }
 export function sendOk(res){
