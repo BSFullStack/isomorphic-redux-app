@@ -15,10 +15,10 @@ class Login extends Component {
             showErr:'showErr'
         };
 
-        
+
 
     }
-   
+
     componentWillReceiveProps(nextProps){
         debugger;
         const { loginInfo , registerInfo } = nextProps;
@@ -35,7 +35,7 @@ class Login extends Component {
             error:error || regerr ,
             showError :error || regerr,
             errArr:[]
-            
+
         });
 
     }
@@ -46,14 +46,16 @@ class Login extends Component {
             error ,
             showError ,
             selectedIndex,
+
             showErr
         } = this.state;
         // var errItems =[];
-        
+
         // this.state.errArr&&this.state.errArr.split(",").forEach(function(e,i){
-        //     errItems[i] = <label className="errTip" key={i}>{e}</label>;                      
+        //     errItems[i] = <label className="errTip" key={i}>{e}</label>;
         // })
-       
+
+
         return (
             <div className="zhi  no-auth">
                 <div className="index-main">
@@ -77,6 +79,7 @@ class Login extends Component {
                                         <input type="hidden" name="_xsrf" value="d97121370f3efb32b5463d734fed325d" />
                                         <div className="group-inputs">
                                             <div className="name input-wrapper">
+
                                                 <input required type="text" name="name" onFocus={::this.hideError} ref="registerUserNameInput" aria-label="用户名" placeholder="用户名" />
                                                 <label className="errTip" ref="e1" >请填写正确的</label>
 
@@ -87,7 +90,8 @@ class Login extends Component {
                                             </div>
                                             <div className="input-wrapper">
                                                 <input required="" type="password" name="password"  ref="registerPasswordInput" aria-label="密码" placeholder="密码（不少于 6 位）"/>
-                                                <label className="errTip" ref="e3">请填写正确的密码</label> 
+                                                <label className="errTip" ref="e3">请填写正确的密码</label>
+
                                             </div>
                                         </div>
                                         <div className="failure" id="summary"><ul></ul></div>
@@ -96,7 +100,7 @@ class Login extends Component {
                                             <button className="sign-button submit" type="button" onClick={::this.handlerRegister}>注册SKT-Topic</button>
                                         </div>
 
-                                                                              
+
                                         {showError && <label className="error show">{msg}</label> }
                                 </TabPanel>
                                 <TabPanel className="view-signup" >
@@ -136,7 +140,7 @@ class Login extends Component {
     }
     componentDidMount(){
          const { registerEmailInput , registerPasswordInput , registerUserNameInput ,e1,e2,e3} = this.refs;
-        
+
         $(registerEmailInput).click(function(){
             alert()
         })
@@ -144,8 +148,8 @@ class Login extends Component {
     //隐藏错误信息
     hideError(){
 
-       
-        
+
+
     }
     //切换标签页，粗劣实现
     handlerChangeTab(selectedIndex){
@@ -169,7 +173,7 @@ class Login extends Component {
                 registerPasswordInput.value ,
                 registerUserNameInput.value
             ];
-            
+
 
         //前端验证 交给盛刚 提示淡入效果 粗劣实现!!!
         let valid = true
@@ -189,7 +193,7 @@ class Login extends Component {
         }else{
             $(e2).css({"opacity":0,"visibility":"hidden"})
         }
-        
+
         if(!/^[\@A-Za-z0-9\!\#\$\%\^\&\*\.\~]{6,22}$/.test(password)){
              $(e3).css({"opacity":100,"visibility":"visible"})
             valid = false;
@@ -201,8 +205,8 @@ class Login extends Component {
         // })
         if(!valid) return false;
 
-      
-        // 
+
+        //
         this.props.doRegister({
             email,
             password,
@@ -215,6 +219,7 @@ class Login extends Component {
     handlerLogin(){
 
         const { loginEmailInput , loginPasswordInput,e4,e5 } = this.refs;
+
         const [ email , password ] = [ loginEmailInput.value , loginPasswordInput.value ];
         //书写验证规则 盛刚做
         let valid = true
