@@ -40,13 +40,13 @@ class Login extends Component {
             error ,
             showError ,
             selectedIndex,
-            
+
         } = this.state;
 
         var errItems =[];
-       
+
         this.state.errArr&&this.state.errArr.split(",").forEach(function(e,i){
-            errItems[i] = <div className="errTip" key={i}>{e}</div>;                      
+            errItems[i] = <div className="errTip" key={i}>{e}</div>;
         })
 
         return (
@@ -73,15 +73,15 @@ class Login extends Component {
                                         <div className="group-inputs">
                                             <div className="name input-wrapper">
                                                 <input required type="text" name="name" ref="registerUserNameInput" aria-label="用户名" placeholder="用户名" />
-                                                {errItems[0]} 
+                                                {errItems[0]}
                                             </div>
                                             <div className="email input-wrapper">
                                                 <input required="" type="text" className="account"  ref="registerEmailInput" name="phone_num" aria-label="常用邮箱" placeholder="常用邮箱" />
-                                                {errItems[1]} 
+                                                {errItems[1]}
                                             </div>
                                             <div className="input-wrapper">
                                                 <input required="" type="password" name="password"  ref="registerPasswordInput" aria-label="密码" placeholder="密码（不少于 6 位）"/>
-                                                {errItems[2]} 
+                                                {errItems[2]}
                                             </div>
                                         </div>
                                         <div className="failure" id="summary"><ul></ul></div>
@@ -90,7 +90,7 @@ class Login extends Component {
                                             <button className="sign-button submit" type="button" onClick={::this.handlerRegister}>注册SKT-Topic</button>
                                         </div>
 
-                                                                              
+
                                         {showError && <label className="error show">{msg}</label> }
                                 </TabPanel>
                                 <TabPanel className="view-signup" >
@@ -175,8 +175,8 @@ class Login extends Component {
         })
         if(!valid) return false;
 
-      
-        // 
+
+        //
         this.props.doRegister({
             email,
             password,
@@ -186,7 +186,6 @@ class Login extends Component {
     }
     //登录
     handlerLogin(){
-
         const { loginEmailInput , loginPasswordInput } = this.refs;
         const [ email , password ] = [ loginEmailInput.value , loginPasswordInput.value ];
         //书写验证规则 盛刚做

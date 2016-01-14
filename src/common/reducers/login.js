@@ -14,7 +14,7 @@ const initialState = {
 };
 
 //登录
-export default function login(state = initialState , action) {
+export function login(state = initialState , action) {
 
     switch (action.type) {
         case LOGIN_REQUEST:
@@ -28,7 +28,7 @@ export default function login(state = initialState , action) {
 
 
 //注册
-export default function register(state = initialState , action) {
+export function register(state = initialState , action) {
 
     switch (action.type) {
         case REGISTER_REQUEST:
