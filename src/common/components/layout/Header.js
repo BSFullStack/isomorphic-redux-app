@@ -11,16 +11,7 @@ export default class Header extends Component {
                             <span className="mobile-menu__unreadpoint"></span>
                         </a>
                         <ul className="dropdown-menu" role="menu" aria-labelledby="dLabel">
-                            <li className="mobile-menu__item">
-                                <a href="/questions/newest">
-                                    问答
-                                </a>
-                            </li>
-                            <li className="mobile-menu__item">
-                                <a href="/blogs">
-                                    文章
-                                </a>
-                            </li>
+
                         </ul>
                     </div>
 
@@ -38,10 +29,7 @@ export default class Header extends Component {
                         <input id="searchBox" name="q" type="text" placeholder="输入关键字搜索" className="form-control" value="" />
                     </form>
 
-                    <ul className="menu list-inline pull-left hidden-xs">
-                        <li className="menu__item"><a href="/questions">问答</a></li>
-                        <li className="menu__item"><a href="/blogs">文章</a></li>
-                    </ul>
+
                     <ul className="opts pull-right list-inline hidden-xs">
                         <li className="opts__item dropdown hoverDropdown write-btns">
                         <a className="dropdownBtn" data-toggle="dropdown" href="/ask" >我要提问</a>

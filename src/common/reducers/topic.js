@@ -62,8 +62,8 @@ export function topicsByCategory(state = { }, action) {
 
         if(action.req && action.req.data && action.req.data.topics){
 
-            let data = action.req.data.topics;
-            topicsArray = data.map(child => child.data);
+           topicsArray = action.req.data.topics;
+           // topicsArray = data.map(child => child.data);
 
         }
         return Object.assign({}, state, {

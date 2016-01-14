@@ -30,6 +30,12 @@ const UserSchema = new Schema({
 UserSchema.statics.checkUser=function(params,cb){
     return this.findOne(params,cb);
 }
+UserSchema.statics.getOne=function(params,cb){
+    return this.findOne(params,cb);
+}
+UserSchema.statics.getAllByIds=function(params,fieldsStr,ids,cb){
+    return this.find(params).select(fieldsStr).where('id').in(ids).exec(cb);
+}
 
 
 mongoose.model('User',UserSchema);

@@ -15,10 +15,11 @@ import session from 'express-session';
 import ConnectMongo from 'connect-mongo';
 import methodOverride from 'method-override';
 
-
 const accessLog = fs.createWriteStream('access.log', {flags: 'a'});
 const errorLog = fs.createWriteStream('error.log', {flags: 'a'});
 const mongoStore = new ConnectMongo(session);
+
+
 export default  function (app, config) {
 
     const env = process.env.NODE_ENV || 'development';
