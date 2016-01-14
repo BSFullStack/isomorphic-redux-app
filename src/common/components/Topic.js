@@ -34,7 +34,7 @@ class Topic extends Component {
 
     render () {
         const { selectedCategory , topics ,  isFetching , lastUpdated , error } = this.props;
-        console.log(topics);
+
         return (
             <div>
                 <Header />
