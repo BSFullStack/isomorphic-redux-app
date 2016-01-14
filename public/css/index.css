@@ -9604,5 +9604,13 @@ li>.widget-codetool {
     vertical-align: middle;
 }
 
-
+.errTip {
+	position:absolute;
+	width:130px;
+	margin:16px 0 0 -130px;
+	color:#0FB2FF;
+	transition:1s all;
+	opacity: 0;
+	visibility: hidden;
+}
 
