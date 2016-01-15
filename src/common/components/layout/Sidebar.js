@@ -12,7 +12,6 @@ class Sidebar extends Component {
       const {version,user} = this.props;
       return (
         <div className="sidebar">
-
         </div>
       );
   }
