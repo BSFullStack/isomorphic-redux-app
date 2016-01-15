@@ -38,7 +38,7 @@ export default class TopHeader extends Component {
                         <div className="col-md-3">
                             <ul className="widget-action--ver list-unstyled">
                                 <li>
-                                    <button type="button" id="sideFollow" className="btn btn-success btn-sm" data-id="1010000004307161" data-do="follow" data-type="question" data-toggle="tooltip" data-placement="right" title="" data-original-title="关注后将获得更新提醒">
+                                    <button type="button" id="sideFollow" className="ttip btn btn-success btn-sm" data-id="1010000004307161" data-do="follow" data-type="question" data-toggle="tooltip" data-placement="e" title="" data-original-title="关注后将获得更新提醒">
                                         关注
                                     </button>
                                     <strong>8</strong> 关注
