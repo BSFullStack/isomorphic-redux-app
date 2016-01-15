@@ -2,12 +2,14 @@
  * 问题详情页
  */
 import React, { Component, PropTypes } from 'react';
-import { connect } from 'react-redux';
+
+import mditor from 'mditor';
 import TopHeader from './ui/topicDetail/TopHeader';
 import Question from './ui/topicDetail/Question';
 import Header from './layout/Header';
 import AnswersWidget from './ui/topicDetail/widgets/Answers'
-import AnswersDetail from './ui/topicDetail/Answers'
+import AnswersDetail from './ui/topicDetail/Answers';
+
 class Topic extends Component {
 
     constructor(props) {
@@ -17,14 +19,21 @@ class Topic extends Component {
     }
 
     componentDidMount() {
-        $('[data-toggle="tooltip"]').tipsy({
-            gravity:function(){
-                return this.getAttribute('data-placement');
-            },
-            title: function() {
-                return this.getAttribute('data-original-title');
-            }
-         });
+        const { answerEditor } = this.refs;
+        setTimeout(()=>{
+            $('[data-toggle="tooltip"]').tipsy({
+                gravity:function(){
+                    return this.getAttribute('data-placement');
+                },
+                title: function() {
+                    return this.getAttribute('data-original-title');
+                }
+            });
+            new Mditor(answerEditor,{
+                    height:300,
+                    fixedHeight:true
+            });
+        },0);
     }
 
     componentWillReceiveProps(nextProps) {
@@ -49,6 +58,20 @@ class Topic extends Component {
                                 <AnswersDetail />
                                 <AnswersDetail />
                                 <h4>我来回答</h4>
+                                <form action="/question/1010000004308144/answers/add" method="post" className="editor-wrap">
+                                     <div className="editor" id="questionText">
+                                            <textarea ref="answerEditor" name="text"
+                                                className="form-control" rows="4"
+                                                            placeholder="告诉ta答案..."></textarea>
+                                    </div>
+                                    <div id="answerSubmit" className="mt15 clearfix">
+                                        <div className="pull-right">
+                                            <button type="submit" id="answerIt" data-id="1010000004308144" className="btn btn-lg btn-primary ml20">
+                                                一键回答
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
                             </div>
                         </div>
                     </div>

@@ -10,11 +10,11 @@ export default class TopHeader extends Component {
                             <ol className="breadcrumb">
                                 <li>
                                     <a href="/questions/newest">
-                                        问答
+                                        问题
                                     </a>
                                 </li>
                                 <li className="active">
-                                    问答详情
+                                    详情
                                 </li>
                             </ol>
                             <h1 className="h3 title" id="questionTitle" data-id="1010000004307161">
