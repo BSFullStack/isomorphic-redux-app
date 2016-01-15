@@ -1222,3 +1222,21 @@ Error: Error setting TTL index on collection : sessions
     at Db.indexInformation (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1539:8)
     at Db.ensureIndex (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1403:8)
     at Collection.ensureIndex (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\collection\index.js:65:11)
+[Sat Jan 16 2016 00:24:18 GMT+0800 (中国标准时间)] /__webpack_hmr
+Error: Error setting TTL index on collection : sessions
+    at F:\yowork\isomorphic-redux-app\node_modules\connect-mongo\lib\connect-mongo.js:161:23
+    at F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1404:28
+    at F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1542:30
+    at F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\cursor.js:159:22
+    at commandHandler (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\cursor.js:678:48)
+    at Db._executeQueryCommand (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1802:12)
+    at Cursor.nextObject (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\cursor.js:729:13)
+    at Cursor.toArray (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\cursor.js:158:10)
+    at Cursor.toArray (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\scope.js:10:20)
+    at F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1541:65
+    at Db.collection (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:495:44)
+    at Db.indexInformation (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1539:8)
+    at Db.ensureIndex (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1403:8)
+    at Collection.ensureIndex (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\collection\index.js:65:11)
+    at F:\yowork\isomorphic-redux-app\node_modules\connect-mongo\lib\connect-mongo.js:159:29
+    at Db.collection (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:495:44)
