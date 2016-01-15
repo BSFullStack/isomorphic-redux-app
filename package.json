@@ -48,7 +48,7 @@
     "isomorphic-fetch": "^2.2.0",
     "js-stylesheet": "0.0.1",
     "lodash": "^3.10.1",
-    "node-sass": "^3.4.2",
+    "moment": "^2.11.1",
     "node-uuid": "^1.4.7",
     "nodemailer": "^1.10.0",
     "object-assign": "^4.0.1",

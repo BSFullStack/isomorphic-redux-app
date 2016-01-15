@@ -1,5 +1,5 @@
 import React, { Component, PropTypes } from 'react';
-
+import FromNow from '../common/FromNow';
 export default class TopHeader extends Component {
     render(){
         return (
@@ -32,7 +32,7 @@ export default class TopHeader extends Component {
                                 <strong className="text-black mr10">
                                     {' '}
                                 </strong>
-                                1 小时前 提问
+                                <FromNow time={new Date()} type="0"/>
                             </div>
                         </div>
                         <div className="col-md-3">

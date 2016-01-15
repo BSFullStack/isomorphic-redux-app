@@ -12,7 +12,7 @@ export default (
         <Route path="home" component={HomePage} />
         <Route path="topics" component={TopicPage} />
         <Route path="topics/:category" component={TopicPage} />
-        <Route path="Publish" component={PublishPage} />
+        <Route path="ask" component={PublishPage} />
         <Route path="login" component={LoginPage} />
         <Route path="/t/:topicId" component={TopicDetailPage} />
   </Route>
