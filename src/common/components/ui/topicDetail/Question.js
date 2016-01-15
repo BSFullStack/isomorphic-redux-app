@@ -10,7 +10,7 @@ export default class Question extends Component {
         return (
             <article className="widget-question__item">
                 <div className="post-col">
-                    <VoteWidget />
+                    <VoteWidget likeText="好问题。我也想知道答案" hateText="骚年，这个问题不太好呦"/>
                 </div>
                 <div className="post-offset">
                     <div className="question fmt">

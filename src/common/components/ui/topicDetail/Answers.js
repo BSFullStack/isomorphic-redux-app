@@ -10,7 +10,7 @@ export default class Answers extends Component {
         return (
             <article className="clearfix widget-answers__item" id="a-1020000004308865">
                 <div className="post-col">
-                    <VoteWidget />
+                    <VoteWidget likeText="赞一个！回答非常棒！" hateText="差评！答得太差了！"/>
                 </div>
                 <div className="post-offset ">
                     {/*头像组件*/}
