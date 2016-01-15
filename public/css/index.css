@@ -13128,3 +13128,6 @@ Original style from softwaremaniacs.org (c) Ivan Sagalaev <Maniac@SoftwareManiac
 .mditor.toolbar-hidden .viewer {
     border-radius: 3px;
 }
+/*.global-nav .nav .opts .opts__item{ background-color:#47a447!important;}*/
+.global-nav .opts__item>a:link{background:#47a447; color:#fff;}
+.global-nav .opts__item>a:hover{background:#47a447; color:#fff;}
