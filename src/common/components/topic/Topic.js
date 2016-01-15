@@ -21,11 +21,11 @@ class Topic extends Component{
 
         if(commentstotal === 0){
             replyTime = (
-                <a href="javascript:;">{moment(createTime).fromNow()}提问</a>
+                <a href="javascript:;">{moment(createTime).fromNow()}{' '}提问</a>
             );
         }else{
             replyTime = (
-                <a href="javascript:;">{moment(answeredTime).fromNow()}回答</a>
+                <a href="javascript:;">{moment(answeredTime).fromNow()}{' '}回答</a>
             );
         }
         return (

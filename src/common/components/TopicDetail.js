@@ -58,7 +58,7 @@ class Topic extends Component {
                                 <AnswersDetail />
                                 <AnswersDetail />
                                 <h4>我来回答</h4>
-                                <form action="/question/1010000004308144/answers/add" method="post" className="editor-wrap">
+                                <div className="editor-wrap">
                                      <div className="editor" id="questionText">
                                             <textarea ref="answerEditor" name="text"
                                                 className="form-control" rows="4"
@@ -71,7 +71,7 @@ class Topic extends Component {
                                             </button>
                                         </div>
                                     </div>
-                                </form>
+                                </div>
                             </div>
                         </div>
                     </div>
