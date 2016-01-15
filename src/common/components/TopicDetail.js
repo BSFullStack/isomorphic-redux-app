@@ -7,8 +7,10 @@ import mditor from 'mditor';
 import TopHeader from './ui/topicDetail/TopHeader';
 import Question from './ui/topicDetail/Question';
 import Header from './layout/Header';
-import AnswersWidget from './ui/topicDetail/widgets/Answers'
+import AnswersWidget from './ui/topicDetail/widgets/Answers';
 import AnswersDetail from './ui/topicDetail/Answers';
+
+import Sidebar from './ui/sidebar/Sidebar';
 
 class Topic extends Component {
 
@@ -73,8 +75,11 @@ class Topic extends Component {
                                     </div>
                                 </form>
                             </div>
+                            <Sidebar />
                         </div>
+
                     </div>
+
                 </div>
             </div>
         );
