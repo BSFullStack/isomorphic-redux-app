@@ -7,6 +7,7 @@ import mditor from 'mditor';
 import TopHeader from './ui/topicDetail/TopHeader';
 import Question from './ui/topicDetail/Question';
 import Header from './layout/Header';
+import Footer from './layout/Footer';
 import AnswersWidget from './ui/topicDetail/widgets/Answers';
 import AnswersDetail from './ui/topicDetail/Answers';
 
@@ -81,6 +82,8 @@ class Topic extends Component {
                     </div>
 
                 </div>
+                <Footer />
+               
             </div>
         );
     }

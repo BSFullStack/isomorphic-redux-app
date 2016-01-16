@@ -16,11 +16,8 @@ export default class HotTopic extends Component {
                 +   ' <small className="text-muted">'+dataArr[i].answers+' 回答 | '+dataArr[i].isSolved?"已解决":"未解决"+'</small>'
                 +  '</li>'
     	}
+      
 
-       
-
-        return (
-            {str}
-        );
+        return null;
     }
 }
