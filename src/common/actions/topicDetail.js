@@ -8,6 +8,7 @@ export const TOPICDETAIL_FAILURE = 'TOPICDETAIL_FAILURE';
 
 
 export function fetchTopicDetail(topicId) {
+
     return {
           type: TOPICDETAIL,
           topicId,
@@ -16,21 +17,23 @@ export function fetchTopicDetail(topicId) {
 }
 
 function shouldFetchTopicDetail(state, topicId) {
+   // debugger;
+    //const topicDetail = state.topicDetail;
 
-    const topicDetail = state.topicDetail;
-
-    if (!topicDetail) {
+    //if (!topicDetail) {
         return true;
-    } else if (topicDetail.isFetching) {
-        return false;
-    } else {
-        return topicDetail.didInvalidate;
-    }
+    //} else if (topicDetail.isFetching) {
+     //   return false;
+   // } else {
+   //     return topicDetail.didInvalidate;
+   // }
 }
 
 export function fetchTopicDetailIfNeeded(topicId) {
+
     return (dispatch, getState) => {
       if (shouldFetchTopicDetail(getState(), topicId)) {
+
         return dispatch(fetchTopicDetail(topicId));
       }
     };

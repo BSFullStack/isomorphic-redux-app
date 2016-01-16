@@ -13128,12 +13128,12 @@ Original style from softwaremaniacs.org (c) Ivan Sagalaev <Maniac@SoftwareManiac
 .mditor.toolbar-hidden .viewer {
     border-radius: 3px;
 }
-<<<<<<< HEAD
+
 .sidebar-dd{
 	margin-bottom:8px;
 }
-=======
+
 /*.global-nav .nav .opts .opts__item{ background-color:#47a447!important;}*/
 .global-nav .opts__item>a:link{background:#47a447; color:#fff;}
 .global-nav .opts__item>a:hover{background:#47a447; color:#fff;}
->>>>>>> 8a5fd8bab16501bd658fda828a4de7c70bbfc73e
+

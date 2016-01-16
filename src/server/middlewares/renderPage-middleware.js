@@ -31,7 +31,6 @@ const renderPage = (html, initialState) => {
                     </script>
 
                     <script src="/scripts/jquery.js"></script>
-                    <script src="/scripts/simditor-all.js"></script>
                     <script src="/bundle.js"></script>
               </body>
           </html>

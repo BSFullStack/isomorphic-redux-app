@@ -2,7 +2,7 @@
  * 发表话题
  */
 import  React , { Component } from 'react';
-import mditor from 'mditor';
+
 import TopHeader from './ui/topicDetail/TopHeader';
 import Question from './ui/topicDetail/Question';
 import Header from './layout/Header';

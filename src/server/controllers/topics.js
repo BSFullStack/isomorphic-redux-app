@@ -1,5 +1,6 @@
 import express from 'express';
 import  mongoose from 'mongoose';
+import { setError , setOk ,sendOk} from '../lib/utils';
 const router = express.Router();
 
 const Topic = mongoose.model('Topic');
@@ -15,8 +16,20 @@ router.post('/get', function (req, res) {
         }
 
     })
-
 });
+
+//详情页
+router.post('/getDetail', function (req, res) {
+    const { topicId } = req.body;
+
+    Topic.getDetail(topicId,(err,result)=>{
+        if(result){
+            res.status(200).json({data:result});
+        }
+
+    })
+});
+
 //发布话题
 router.post('/publish', function (req, res) {
 
