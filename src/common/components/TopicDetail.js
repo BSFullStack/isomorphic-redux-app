@@ -6,10 +6,12 @@ import React, { Component, PropTypes } from 'react';
 import TopHeader from './ui/topicDetail/TopHeader';
 import Question from './ui/topicDetail/Question';
 import Header from './layout/Header';
+import Footer from './layout/Footer';
 import AnswersWidget from './ui/topicDetail/widgets/Answers';
 import AnswersDetail from './ui/topicDetail/Answers';
 
 import Sidebar from './ui/sidebar/Sidebar';
+import LoadingWidget from './ui/common/Loading';
 
 class TopicDetail extends Component {
 
@@ -69,7 +71,7 @@ class TopicDetail extends Component {
         if(isFetching || data== null){
             contentComponent = (
                 <div className="wrap">
-                    正在加载...
+                    <LoadingWidget />
                  </div>
             );
         }else{
@@ -109,12 +111,17 @@ class TopicDetail extends Component {
                         </div>
                     </div>
                 </div>
+
             );
         }
         return (
             <div>
                 <Header />
                 {contentComponent}
+
+                <Footer />
+               
+
             </div>
         );
     }

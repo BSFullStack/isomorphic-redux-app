@@ -3,7 +3,6 @@ import React, { Component, PropTypes } from 'react';
 
 export default class HotTopic extends Component {
 
-
     render(){
 
         return (
@@ -12,6 +11,7 @@ export default class HotTopic extends Component {
                 <small className="text-muted">{this.props.answers}回答 | {this.props.isSolved?"已解决":"未解决"}</small>
             </li>
         );
+
 
     }
 }
