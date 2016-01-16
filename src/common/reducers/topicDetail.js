@@ -1,36 +1,38 @@
 import {
-
+    TOPICDETAIL,
     TOPICDETAIL_REQUEST,
     TOPICDETAIL_SUCCESS,
     TOPICDETAIL_FAILURE
-} from '../actions/topic';
+} from '../actions/topicDetail';
 
 const initialState = {
-    error: {},
-    data: []
+
+    error: false,
+    isFetching:false,
+    data:null
+
 }
 
 export default function topicDetail(state = initialState , action) {
+
     switch (action.type) {
 
         case TOPICDETAIL_REQUEST:
+
             return Object.assign({}, state, {
                 isFetching: true,
-                data:[] ,
-                didInvalidate: false
+                data:null
             });
         case TOPICDETAIL_SUCCESS:
-            const { data } = state;
+
+            const { data } = action.req.data;
             return Object.assign({}, state, {
                 isFetching: false,
-                didInvalidate: false,
-                data,
-                lastUpdated: action.receivedAt
+                data
             });
         case TOPICDETAIL_FAILURE:
             return Object.assign({}, state, {
-                isFetching: false,
-                didInvalidate: false
+                isFetching: false
             });
         default:
             return state;

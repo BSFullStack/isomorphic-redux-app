@@ -2,6 +2,7 @@ import React, { Component, PropTypes } from 'react';
 import FromNow from '../common/FromNow';
 export default class TopHeader extends Component {
     render(){
+        const  { title , userInfo , createTime} = this.props;
         return (
             <div className="post-topheader">
                 <div className="container">
@@ -18,21 +19,19 @@ export default class TopHeader extends Component {
                                 </li>
                             </ol>
                             <h1 className="h3 title" id="questionTitle" data-id="1010000004307161">
-                                <a href="/q/1010000004307161">
-                                    求推荐几个前端框架 ...
+                                <a href="javascript:;">
+                                    {title}
                                 </a>
                             </h1>
                             <div className="author">
-                                <a href="/u/gclove" className="mr5">
+                                <a href="javascript:;" className="mr5">
                                     <img className="avatar-24 mr10" src="http://sfault-avatar.b0.upaiyun.com/372/756/3727565787-551fd966d9593_big64" alt="gclove" />
                                     <strong>
-                                        gclove
+                                        {userInfo.name}
                                     </strong>
                                 </a>
-                                <strong className="text-black mr10">
-                                    {' '}
-                                </strong>
-                                <FromNow time={new Date()} type="0"/>
+
+                                <FromNow time={createTime} type="0"/>
                             </div>
                         </div>
                         <div className="col-md-3">

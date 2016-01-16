@@ -43,13 +43,17 @@ class Topic extends Component {
                         <div className="row">
                             <div className="col-xs-12 col-md-9 main">
                                 <p className="main-title hidden-xs"></p>
-                                <Topics topics={topics}></Topics>
+                                <Topics topics={topics} handlerClickTitle={::this.handlerClickTitle}></Topics>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         );
+    }
+    handlerClickTitle(id){
+
+       return this.props.history.push("/t/"+id);
     }
     handlerCategoryChange(nextCategory){
 

@@ -26,9 +26,13 @@ class Topics extends Component{
 
         return topics.map((topic,index)=>{
             return (
-                <Topic key={index} {...topic} />
+                <Topic key={index} {...topic} viewDetail={::this.handlerViewDetail} />
             );
         });
+    }
+    handlerViewDetail(topicId){
+        const { handlerClickTitle } = this.props;
+        handlerClickTitle && handlerClickTitle(topicId);
     }
 }
 

@@ -18,7 +18,7 @@
     "express": "^4.13.3",
     "express-session": "",
     "glob": "^5.0.3",
-    "mditor": "^0.1.4",
+
     "method-override": "^2.3.0",
     "mongoose": "^4.1.2",
     "morgan": "^1.6.1",
