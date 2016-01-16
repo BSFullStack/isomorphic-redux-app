@@ -40,10 +40,10 @@ class TopicDetail extends Component {
                     return this.getAttribute('data-original-title');
                 }
             });
-           /* new Mditor(answerEditor,{
+           new Mditor(answerEditor,{
                     height:300,
                     fixedHeight:true
-            });*/
+            });
         },0);
     }
 
