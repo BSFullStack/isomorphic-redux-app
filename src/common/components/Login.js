@@ -20,7 +20,7 @@ class Login extends Component {
     }
 
     componentWillReceiveProps(nextProps){
-        debugger;
+       
         const { loginInfo , registerInfo } = nextProps;
         const { bl , msg , error  } = loginInfo.data;
         const { bl:regbl , msg:regmsg , error:regerr } = registerInfo.data;

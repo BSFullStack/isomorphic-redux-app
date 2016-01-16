@@ -7,6 +7,7 @@ function mapStateToProps(state) {
     return {
         loginInfo:state.login,
         registerInfo:state.register
+
     };
 }
 function mapDispatchToProps(dispatch) {

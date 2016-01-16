@@ -6,17 +6,10 @@ import * as PublishActions from '../actions/publish';
 
 function mapStateToProps(state) {
 
-    const {
-      isFetching,
-      bl ,
-      error
-    } = state
-
+    var publishInfo= state;
+       console.log(publishInfo+"123")
     return {
-
-      isFetching,
-      bl ,
-      error
+        publishInfo
     };
 }
 
