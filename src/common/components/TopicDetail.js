@@ -6,6 +6,7 @@ import React, { Component, PropTypes } from 'react';
 import TopHeader from './ui/topicDetail/TopHeader';
 import Question from './ui/topicDetail/Question';
 import Header from './layout/Header';
+import Footer from './layout/Footer';
 import AnswersWidget from './ui/topicDetail/widgets/Answers';
 import AnswersDetail from './ui/topicDetail/Answers';
 
@@ -105,12 +106,17 @@ class TopicDetail extends Component {
                         </div>
                     </div>
                 </div>
+
             );
         }
         return (
             <div>
                 <Header />
                 {contentComponent}
+
+                <Footer />
+               
+
             </div>
         );
     }

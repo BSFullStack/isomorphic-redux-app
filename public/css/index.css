@@ -13141,3 +13141,248 @@ Original style from softwaremaniacs.org (c) Ivan Sagalaev <Maniac@SoftwareManiac
 .global-nav .opts__item>a:link{background:#47a447; color:#fff;}
 .global-nav .opts__item>a:hover{background:#47a447; color:#fff;}
 
+.container .widget-attention{float:left;}
+.container .num-attention{float:left; margin-top: 6px;}
+.container .col-md-3 .widget-action--ver li{overflow:hidden;}
+
+/* footer */
+#footer {
+    border-top: 1px solid #EEE;
+    padding: 40px 0;
+    line-height: 1.6;
+    vertical-align: top
+}
+
+#footer .site-link {
+    margin: 0 0 40px
+}
+
+#footer .site-link dt {
+    margin-bottom: 20px;
+    color: #333
+}
+
+#footer .site-link dd {
+    margin: 5px 0;
+    font-size: 13px
+}
+
+#footer .copyright {
+    text-align: center;
+    font-size: 13px
+}
+
+#fixedTools {
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+    border: 1px solid #DDD;
+    background: #FFF;
+    width: 36px;
+    text-align: center;
+    border-radius: 2px;
+    line-height: 1.25;
+    z-index: 1000
+}
+
+#fixedTools a {
+    padding: 10px;
+    display: block;
+    color: #999;
+    text-decoration: none
+}
+
+#fixedTools a:hover {
+    background: #F3F3F3;
+    text-decoration: none
+}
+
+#fixedTools .qrcodeWraper {
+    position: relative
+}
+
+#fixedTools .qrcodeWraper .qrcode-text {
+    position: absolute;
+    width: 111px;
+    left: -120px;
+    display: none;
+    color: #666;
+    margin: 0;
+    padding: .5rem;
+    background-color: #fff;
+    line-height: 1;
+    z-index: -1
+}
+
+#fixedTools .qrcodeWraper:hover #qrcode,#fixedTools .qrcodeWraper:hover .qrcode-text {
+    display: block
+}
+
+#fixedTools #qrcode {
+    display: none;
+    position: absolute;
+    width: 111px;
+    height: 111px;
+    left: -120px;
+    bottom: -1px;
+    padding: 5px;
+    background: #fff;
+    border-radius: 2px
+}
+
+#fixedTools #qrcode:hover {
+    background: #f3f3f3
+}
+
+@media (max-width: 414px) {
+    #fixedTools {
+        position:static!important;
+        display: none;
+        z-index: -1
+    }
+}
+
+.atwho-view .cur {
+    color: #000;
+    background-color: #F3F3F3
+}
+
+.atwho-view .cur small {
+    color: #000
+}
+
+.ani-num {
+    position: absolute;
+    left: -30px;
+    top: 20px;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    -webkit-transition: all .5s;
+    transition: all .5s
+}
+
+.ani-num.active {
+    top: -20px;
+    opacity: 0;
+    filter: alpha(opacity=0)
+}
+
+@-webkit-keyframes bouncedelay {
+    0%,100%,80% {
+        -webkit-transform: scale(0)
+    }
+
+    40% {
+        -webkit-transform: scale(1)
+    }
+}
+
+@keyframes bouncedelay {
+    0%,100%,80% {
+        transform: scale(0);
+        -webkit-transform: scale(0)
+    }
+
+    40% {
+        transform: scale(1);
+        -webkit-transform: scale(1)
+    }
+}
+
+.glyphicon.rotate {
+    -moz-animation: rotate 1s infinite linear;
+    -webkit-animation: rotate 1s infinite linear;
+    animation: rotate 1s infinite linear
+}
+
+.glyphicon.rotate.white {
+    color: #fff
+}
+
+@-webkit-keyframes rotate {
+    from {
+        -webkit-transform: rotate(0)
+    }
+
+    to {
+        -webkit-transform: rotate(360deg)
+    }
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0);
+        -webkit-transform: rotate(0)
+    }
+
+    to {
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg)
+    }
+}
+
+.side-system-notice {
+    border-top: 1px solid #FBEED5
+}
+
+.side-system-notice--title {
+    padding-left: 20px;
+    display: block;
+    font-size: 13px;
+    color: #8a6d3b
+}
+
+/*热议标签*/
+.widget-box .widget-box__title {
+    margin: 0 0 20px;
+    font-size: 16px
+}
+
+.widget-box.no-border,.widget-box:first-child {
+    margin-top: 0;
+    padding-top: 0;
+    border: none
+}
+
+.widget-top10 {
+    padding-left: 30px
+}
+
+.widget-top10 li {
+    margin-bottom: 8px
+}
+
+.widget-top10 img {
+    margin-right: 10px
+}
+
+.widget-messages {
+    margin-bottom: 15px
+}
+#scrollUp {
+	bottom: 40px;
+	right: 40px;
+	padding: 10px;
+    color: #999;
+	border: 1px solid #DDD;
+    background: #FFF;
+    width: 36px;
+    text-align: center;
+    border-radius: 2px;
+    line-height: 1.25;
+    z-index: 1000;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	-webkit-transition: background 200ms linear;
+	-moz-transition: background 200ms linear;
+	transition: background 200ms linear;
+}
+#scrollUp:hover {
+	background: #ECECEC;
+}
+
+#searchBox{	
+	background:url('/img/search.png') no-repeat 5px center #3F4F49; 
+}
+
