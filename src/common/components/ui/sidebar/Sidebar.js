@@ -11,7 +11,7 @@ export default class Sidebar extends Component {
     }
     render(){
         
-         var dataArr=[{title:"222",answers:10,isSolved:true,href:"222.com"}
+         let dataArr=[{title:"222",answers:10,isSolved:true,href:"222.com"}
                     ,{title:"222",answers:10,isSolved:true,href:"222.com"}
                     ,{title:"222",answers:10,isSolved:true,href:"222.com"}
                     ,{title:"222",answers:10,isSolved:true,href:"222.com"}
