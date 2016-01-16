@@ -21,6 +21,7 @@ function mapStateToProps(state) {
     };
 
     return {
+
         data,
         error,
         isFetching

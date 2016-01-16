@@ -1,5 +1,6 @@
 import express from 'express';
 import  mongoose from 'mongoose';
+import _ from 'lodash';
 import { setError , setOk ,sendOk} from '../lib/utils';
 const router = express.Router();
 
@@ -29,6 +30,23 @@ router.post('/getDetail', function (req, res) {
 
     })
 });
+
+//详情页 发表回答
+router.post('/addAnswer',function(req,res){
+   const { answerUserId , topicId , answerContent } = req.body;
+   console.log("---------------------------------------------------");
+   Topic.addAnswer({answerUserId , topicId , answerContent},(err,answer)=>{
+        if(err || !answer){
+            res.status(200).json(setError());
+        }
+        if(answer){
+            res.status(200).json({data:answer});
+        }
+   });
+
+
+});
+
 
 //发布话题
 router.post('/publish', function (req, res) {

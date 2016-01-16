@@ -14,7 +14,7 @@ import serialize from 'serialize-javascript';
 import { renderToString } from 'react-dom/server';
 
 //渲染页面
-const renderPage = (html, initialState) => {
+const renderPage = (html, initialState,extraData) => {
     return `
           <!doctype html>
           <html>
@@ -23,10 +23,16 @@ const renderPage = (html, initialState) => {
                   <title>SKT-Topic</title>
 
                   <link src="/css/index.css"/>
+                  <script>
+                        window.BSGlobeData={
+                            extraData:${serialize(extraData)}
+                        };
+                  </script>
               </head>
               <body>
                     <div id="root">${html}</div>
                     <script>
+
                         window.__INITIAL_STATE__ = ${serialize(initialState)};
                     </script>
 
@@ -39,7 +45,10 @@ const renderPage = (html, initialState) => {
 
 export default function reactServerMiddleware(req,res,next){
 
-    const { url } = req ;
+    const { url ,session } = req ;
+    let extraData = {
+        loginUser:(session &&session.user) || null
+    };
     const location = createLocation(url);
     match({routes, location}, (error, redirectLocation, renderProps) => {
 
@@ -61,7 +70,7 @@ export default function reactServerMiddleware(req,res,next){
                   .then(html=>{
                        const componentHTML = renderToString(InitialView);
                        const initialState = store.getState();
-                       res.status(200).end(renderPage(componentHTML,initialState))
+                       res.status(200).end(renderPage(componentHTML,initialState,extraData))
                   }).catch(err =>{
                         console.log(err)
                         res.end(renderPage("",{}))

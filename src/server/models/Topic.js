@@ -1,6 +1,7 @@
 import mongoose , { Schema } from 'mongoose';
 import async from 'async';
 import moment from 'moment';
+import uuid from 'node-uuid';
 import _ from 'lodash';
 /**
  * Topic实体
@@ -51,6 +52,28 @@ TopicSchema.statics.getTags = function(topicIds,cb){
 }
 
 /**
+ * 发表答案接口
+ * @param {[type]}   topicIds [description]
+ * @param {Function} cb       [description]
+ */
+TopicSchema.statics.addAnswer = function({answerUserId,topicId,answerContent},cb){
+    const Answers = mongoose.model('Answers');
+
+    const nowTime = moment(new Date()).format("YYYY-MM-DD HH:mm:ss");
+    console.log(nowTime);
+    const answers = new Answers({
+        id:uuid.v4(),
+        content:answerContent,
+        topicId:topicId,
+        userId:answerUserId,
+        answerTime:nowTime
+    });
+    answers.save(cb);
+}
+
+
+
+/**
  * 详情页接口
  *     参数：topicId
  */
@@ -64,7 +87,13 @@ TopicSchema.statics.getDetail = function(topicId , callback ){
     async.waterfall([
         function (cb){ //获取topic实体
             that.findOne({id:topicId},(err,topic)=>{
-                cb(err,topic.toObject());
+                if(topic){
+                    cb(err,topic.toObject());
+                }else{
+                    cb(new Error("没有查到"))
+                }
+
+
             })
         }
         ,function (topic,cb){ //获取所属标签
@@ -83,7 +112,7 @@ TopicSchema.statics.getDetail = function(topicId , callback ){
             let { id } = topic;
 
             Answers.getAllByTopicId(id,(err,answers)=>{
-                console.log(answers);
+
                 let _answers = answers.map((item)=>{
                      return item.toObject();
                 });

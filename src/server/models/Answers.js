@@ -21,14 +21,10 @@ const Answers = new Schema({
         type:Number,
         default:1
     },
-    answerTime:{ //回答时间
-        type:Date,
-        default:Date.now
-    },
-    updateTime:{ //更新时间
-        type:Date,
-        default:Date.now
-    }
+    answerTime:String, //回答时间
+
+    updateTime:String //更新时间
+
 });
 
 Answers.statics.getAllByTopicIds=function(topicIds,cb){
@@ -88,5 +84,6 @@ Answers.statics.getAllByTopicId=function(topicId,cb){
     return this.find({topicId},cb)
 
 }
+
 
 mongoose.model('Answers',Answers);
