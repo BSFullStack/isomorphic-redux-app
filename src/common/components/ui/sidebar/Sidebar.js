@@ -20,14 +20,14 @@ export default class Sidebar extends Component {
 
         return (
             <div className="col-xs-12 col-md-3 side mt30">
-            <div className="widget-box">
-                    <h2 className="h4 widget-box__title">最近热门的</h2>
-                    <ul className="widget-links list-unstyled">
-                        
-                        {this._getHotTopics(dataArr)}
-                    </ul>
+                <div className="widget-box">
+                        <h2 className="h4 widget-box__title">最近热门的</h2>
+                        <ul className="widget-links list-unstyled">
+                            
+                            {this._getHotTopics(dataArr)}
+                        </ul>
                 </div>
-                </div>
+            </div>
         );
     }
 }
