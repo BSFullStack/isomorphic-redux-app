@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 [Mon Jan 11 2016 20:45:14 GMT+0800 (中国标准时间)] /__webpack_hmr
 Error: Error setting TTL index on collection : sessions
     at F:\yowork\isomorphic-redux-app\node_modules\connect-mongo\lib\connect-mongo.js:161:23
@@ -2878,3 +2879,5 @@ TypeError: Cannot read property 'id' of undefined
     at Function.process_params (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:330:12)
     at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:271:10)
     at F:\yowork\isomorphic-redux-app\node_modules\express-session\index.js:385:7
+=======
+>>>>>>> faba4a025109760bce5ca79c288b8d9da24c97fb

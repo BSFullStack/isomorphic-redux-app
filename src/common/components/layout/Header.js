@@ -1,5 +1,5 @@
 import React, { Component, PropTypes } from 'react';
-
+import EixtWidget from './ExitHeader';
 export default class Header extends Component {
     render() {
         return (
@@ -29,12 +29,13 @@ export default class Header extends Component {
                         <input id="searchBox" name="q" type="text" placeholder="输入关键字搜索" className="form-control" value="" />
                     </form>
 
-
+                    <EixtWidget />
                     <ul className="opts pull-right list-inline hidden-xs">
                         <li className="opts__item dropdown hoverDropdown write-btns">
                         <a className="dropdownBtn" data-toggle="dropdown" href="/ask" >我要提问</a>
                         </li>
                     </ul>
+                    
             </nav>
         </div>
         );

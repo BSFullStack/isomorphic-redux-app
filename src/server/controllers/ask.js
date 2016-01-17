@@ -11,6 +11,7 @@ module.exports= function (app) {
 };
 
 //发布话题
+
 router.post('/ask/publish', function (req, res) {
 
 	const {
@@ -42,7 +43,6 @@ router.post('/ask/publish', function (req, res) {
                 id:uuid.v4()
             };
         });
-
         //保存关联
         TopicTagRelation.create(ttrArray,(err)=>{
             if(err){
