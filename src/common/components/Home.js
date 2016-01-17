@@ -12,7 +12,7 @@ class Home extends Component {
                   </div>
             </CarouselItem>
             <CarouselItem>
-              <Image  src="/img/carousel.png" responsive/>
+              <Image src="/img/carousel.png" responsive/>
               <div className="carousel-caption">
                     <h3>电子图书馆</h3>
                     <p>基于Sass+React+Redux+React-Router+React-Bootstrap+Express MVC+MongoDB实现！</p>

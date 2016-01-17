@@ -8,19 +8,23 @@ import * as TopicDetailActions from '../actions/topicDetail';
 //This is used for server side rending via the fetchComponentDataBeforeRending() method
 
 function mapStateToProps(state) {
-    let { topicDetail } = state;
 
+    let { topicDetail } = state;
     const {
+        data,
         error,
-        data
-    } = topicDetail || {
-        error:{},
-        data: []
+        isFetching
+    } =  topicDetail || {
+        data:null,
+        error:false,
+        isFetching:false
     };
 
     return {
-        data ,
-        error
+
+        data,
+        error,
+        isFetching
     };
 }
 

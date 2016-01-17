@@ -21,14 +21,10 @@ const Answers = new Schema({
         type:Number,
         default:1
     },
-    answerTime:{ //回答时间
-        type:Date,
-        default:Date.now
-    },
-    updateTime:{ //更新时间
-        type:Date,
-        default:Date.now
-    }
+    answerTime:String, //回答时间
+
+    updateTime:String //更新时间
+
 });
 
 Answers.statics.getAllByTopicIds=function(topicIds,cb){
@@ -44,22 +40,49 @@ Answers.statics.getAllByTopicIds=function(topicIds,cb){
         },
         {
             $group:{
-                "_id":{'id':'$id'},
-                count:{
+                "_id":"$topicId",
+                "count":{
                     $sum:1
                 }
             }
         }
 
     ], function (err, res) {
+        let topicArr = [];
         if (err){
-            console.log('outdoorDao.getOutdoorApplyCount Error'+err);
+
             return cb(err,null);
         }
+        if(!res){
+            topicArr = topicIds.map((topicId)=>{
+                return {
+                    _id:topicId,
+                    count:0
+                }
+            });
+        }else{
+           topicArr = topicIds.map((topicId)=>{
+                let target = _.find(res,(item)=>{
+                    return item._id == topicId;
+                });
+                if(!target){
+                    target = {
+                        _id:topicId,
+                        count:0
+                    }
+                }
+                return target;
+            });
+        }
 
-        return cb(err,res);
+        return cb(err,topicArr);
     })
-    //return this.count(cb).where('topicId').in(topicIds).aggregate().group('id').exec(cb);
+
+}
+Answers.statics.getAllByTopicId=function(topicId,cb){
+
+    return this.find({topicId},cb)
+
 }
 
 

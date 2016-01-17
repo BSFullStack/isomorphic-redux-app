@@ -1,5 +1,7 @@
 import express from 'express';
 import  mongoose from 'mongoose';
+import _ from 'lodash';
+import { setError , setOk ,sendOk} from '../lib/utils';
 const router = express.Router();
 
 const Topic = mongoose.model('Topic');
@@ -15,5 +17,42 @@ router.post('/get', function (req, res) {
         }
 
     })
+});
+
+//详情页
+router.post('/getDetail', function (req, res) {
+    const { topicId } = req.body;
+
+    Topic.getDetail(topicId,(err,result)=>{
+        if(result){
+            res.status(200).json({data:result});
+        }
+
+    })
+});
+
+//详情页 发表回答
+router.post('/addAnswer',function(req,res){
+   const { answerUserId , topicId , answerContent } = req.body;
+   console.log("---------------------------------------------------");
+   Topic.addAnswer({answerUserId , topicId , answerContent},(err,answer)=>{
+        if(err || !answer){
+            res.status(200).json(setError());
+        }
+        if(answer){
+            res.status(200).json({data:answer});
+        }
+   });
+
 
 });
+<<<<<<< HEAD
+=======
+
+
+//发布话题
+router.post('/publish', function (req, res) {
+
+    res.status(200).json({...data});
+});
+>>>>>>> ab47b857e3107717a7bbad7658276cf05b29d030

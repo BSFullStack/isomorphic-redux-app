@@ -17,7 +17,7 @@ const rootReducer = combineReducers({
     publish:publish,
     selectedCategory : undoable(selectedCategory),
     topicsByCategory : undoable(topicsByCategory),
-    topicDetail:undoable(topicDetail),
+    topicDetail:topicDetail,
     router : routerStateReducer
 });
 
