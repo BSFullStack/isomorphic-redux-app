@@ -26,7 +26,7 @@ export default class Publish extends Component {
         const { bl, msg , error } = nextProps.publishInfo;
         
         //发布成功
-        //alert(msg);
+        alert(msg);
         if(  bl == 1  ){
            return this.props.history.push("/t/123");
         }
