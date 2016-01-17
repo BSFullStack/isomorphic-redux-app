@@ -20,10 +20,9 @@ class Login extends Component {
     }
 
     componentWillReceiveProps(nextProps){
-       
         const { loginInfo , registerInfo } = nextProps;
         const { bl , msg , error  } = loginInfo.data;
-        const { bl:regbl , msg:regmsg , error:regerr } = registerInfo.data;
+        const { bl:regbl , msg:regmsg , error:regerr } = registerInfo;
         //登录成功 || 注册成功
         if( ( bl == "1" && !error ) || (regbl == "1" && !regerr) ){
             return this.props.history.push("/topics");
@@ -212,7 +211,7 @@ class Login extends Component {
             password,
             name
         });
-        this.props.history.replace("/topics")
+        // this.props.history.replace("/topics")
 
     }
     //登录

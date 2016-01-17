@@ -1240,3 +1240,195 @@ Error: Error setting TTL index on collection : sessions
     at Collection.ensureIndex (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\collection\index.js:65:11)
     at F:\yowork\isomorphic-redux-app\node_modules\connect-mongo\lib\connect-mongo.js:159:29
     at Db.collection (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:495:44)
+[Sat Jan 16 2016 21:44:39 GMT+0800 (中国标准时间)] /ask/publish
+ReferenceError: userId is not defined
+    at D:/bs_fullstack1/web-bookstore/src/server/controllers/ask.js:18:53
+    at Layer.handle [as handle_request] (D:\bs_fullstack1\web-bookstore\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\bs_fullstack1\web-bookstore\node_modules\express\lib\router\route.js:131:13)
+    at jsonParser (D:\bs_fullstack1\web-bookstore\node_modules\body-parser\lib\types\json.js:93:44)
+    at Layer.handle [as handle_request] (D:\bs_fullstack1\web-bookstore\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\bs_fullstack1\web-bookstore\node_modules\express\lib\router\route.js:131:13)
+    at Route.dispatch (D:\bs_fullstack1\web-bookstore\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\bs_fullstack1\web-bookstore\node_modules\express\lib\router\layer.js:95:5)
+    at D:\bs_fullstack1\web-bookstore\node_modules\express\lib\router\index.js:277:22
+    at Function.process_params (D:\bs_fullstack1\web-bookstore\node_modules\express\lib\router\index.js:330:12)
+    at next (D:\bs_fullstack1\web-bookstore\node_modules\express\lib\router\index.js:271:10)
+    at Function.handle (D:\bs_fullstack1\web-bookstore\node_modules\express\lib\router\index.js:176:3)
+    at router (D:\bs_fullstack1\web-bookstore\node_modules\express\lib\router\index.js:46:12)
+    at Layer.handle [as handle_request] (D:\bs_fullstack1\web-bookstore\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\bs_fullstack1\web-bookstore\node_modules\express\lib\router\index.js:312:13)
+    at D:\bs_fullstack1\web-bookstore\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (D:\bs_fullstack1\web-bookstore\node_modules\express\lib\router\index.js:330:12)
+    at next (D:\bs_fullstack1\web-bookstore\node_modules\express\lib\router\index.js:271:10)
+    at MongoStore.<anonymous> (D:\bs_fullstack1\web-bookstore\node_modules\express-session\index.js:432:7)
+    at MongoStore.tryCatcher (D:\bs_fullstack1\web-bookstore\node_modules\bluebird\js\release\util.js:11:23)
+    at Promise.successAdapter [as _fulfillmentHandler0] (D:\bs_fullstack1\web-bookstore\node_modules\bluebird\js\release\nodeify.js:23:30)
+    at Promise._settlePromise (D:\bs_fullstack1\web-bookstore\node_modules\bluebird\js\release\promise.js:543:21)
+[Sat Jan 16 2016 21:49:24 GMT+0800 (中国标准时间)] /ask/publish
+ReferenceError: userId is not defined
+    at D:/bs_fullstack1/web-bookstore/src/server/controllers/ask.js:18:53
+    at Layer.handle [as handle_request] (D:\bs_fullstack1\web-bookstore\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\bs_fullstack1\web-bookstore\node_modules\express\lib\router\route.js:131:13)
+    at jsonParser (D:\bs_fullstack1\web-bookstore\node_modules\body-parser\lib\types\json.js:93:44)
+    at Layer.handle [as handle_request] (D:\bs_fullstack1\web-bookstore\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\bs_fullstack1\web-bookstore\node_modules\express\lib\router\route.js:131:13)
+    at Route.dispatch (D:\bs_fullstack1\web-bookstore\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\bs_fullstack1\web-bookstore\node_modules\express\lib\router\layer.js:95:5)
+    at D:\bs_fullstack1\web-bookstore\node_modules\express\lib\router\index.js:277:22
+    at Function.process_params (D:\bs_fullstack1\web-bookstore\node_modules\express\lib\router\index.js:330:12)
+    at next (D:\bs_fullstack1\web-bookstore\node_modules\express\lib\router\index.js:271:10)
+    at Function.handle (D:\bs_fullstack1\web-bookstore\node_modules\express\lib\router\index.js:176:3)
+    at router (D:\bs_fullstack1\web-bookstore\node_modules\express\lib\router\index.js:46:12)
+    at Layer.handle [as handle_request] (D:\bs_fullstack1\web-bookstore\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\bs_fullstack1\web-bookstore\node_modules\express\lib\router\index.js:312:13)
+    at D:\bs_fullstack1\web-bookstore\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (D:\bs_fullstack1\web-bookstore\node_modules\express\lib\router\index.js:330:12)
+    at next (D:\bs_fullstack1\web-bookstore\node_modules\express\lib\router\index.js:271:10)
+    at MongoStore.<anonymous> (D:\bs_fullstack1\web-bookstore\node_modules\express-session\index.js:432:7)
+    at MongoStore.tryCatcher (D:\bs_fullstack1\web-bookstore\node_modules\bluebird\js\release\util.js:11:23)
+    at Promise.successAdapter [as _fulfillmentHandler0] (D:\bs_fullstack1\web-bookstore\node_modules\bluebird\js\release\nodeify.js:23:30)
+    at Promise._settlePromise (D:\bs_fullstack1\web-bookstore\node_modules\bluebird\js\release\promise.js:543:21)
+[Sat Jan 16 2016 22:16:40 GMT+0800 (中国标准时间)] /ask/publish
+ReferenceError: userId is not defined
+    at D:/bs_fullstack1/web-bookstore/src/server/controllers/ask.js:18:53
+    at Layer.handle [as handle_request] (D:\bs_fullstack1\web-bookstore\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\bs_fullstack1\web-bookstore\node_modules\express\lib\router\route.js:131:13)
+    at jsonParser (D:\bs_fullstack1\web-bookstore\node_modules\body-parser\lib\types\json.js:93:44)
+    at Layer.handle [as handle_request] (D:\bs_fullstack1\web-bookstore\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\bs_fullstack1\web-bookstore\node_modules\express\lib\router\route.js:131:13)
+    at Route.dispatch (D:\bs_fullstack1\web-bookstore\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\bs_fullstack1\web-bookstore\node_modules\express\lib\router\layer.js:95:5)
+    at D:\bs_fullstack1\web-bookstore\node_modules\express\lib\router\index.js:277:22
+    at Function.process_params (D:\bs_fullstack1\web-bookstore\node_modules\express\lib\router\index.js:330:12)
+    at next (D:\bs_fullstack1\web-bookstore\node_modules\express\lib\router\index.js:271:10)
+    at Function.handle (D:\bs_fullstack1\web-bookstore\node_modules\express\lib\router\index.js:176:3)
+    at router (D:\bs_fullstack1\web-bookstore\node_modules\express\lib\router\index.js:46:12)
+    at Layer.handle [as handle_request] (D:\bs_fullstack1\web-bookstore\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\bs_fullstack1\web-bookstore\node_modules\express\lib\router\index.js:312:13)
+    at D:\bs_fullstack1\web-bookstore\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (D:\bs_fullstack1\web-bookstore\node_modules\express\lib\router\index.js:330:12)
+    at next (D:\bs_fullstack1\web-bookstore\node_modules\express\lib\router\index.js:271:10)
+    at MongoStore.<anonymous> (D:\bs_fullstack1\web-bookstore\node_modules\express-session\index.js:432:7)
+    at MongoStore.tryCatcher (D:\bs_fullstack1\web-bookstore\node_modules\bluebird\js\release\util.js:11:23)
+    at Promise.successAdapter [as _fulfillmentHandler0] (D:\bs_fullstack1\web-bookstore\node_modules\bluebird\js\release\nodeify.js:23:30)
+    at Promise._settlePromise (D:\bs_fullstack1\web-bookstore\node_modules\bluebird\js\release\promise.js:543:21)
+[Sat Jan 16 2016 22:52:25 GMT+0800 (中国标准时间)] /ask/publish
+ReferenceError: userId is not defined
+    at D:/bs_fullstack1/web-bookstore/src/server/controllers/ask.js:18:53
+    at Layer.handle [as handle_request] (D:\bs_fullstack1\web-bookstore\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\bs_fullstack1\web-bookstore\node_modules\express\lib\router\route.js:131:13)
+    at jsonParser (D:\bs_fullstack1\web-bookstore\node_modules\body-parser\lib\types\json.js:93:44)
+    at Layer.handle [as handle_request] (D:\bs_fullstack1\web-bookstore\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\bs_fullstack1\web-bookstore\node_modules\express\lib\router\route.js:131:13)
+    at Route.dispatch (D:\bs_fullstack1\web-bookstore\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\bs_fullstack1\web-bookstore\node_modules\express\lib\router\layer.js:95:5)
+    at D:\bs_fullstack1\web-bookstore\node_modules\express\lib\router\index.js:277:22
+    at Function.process_params (D:\bs_fullstack1\web-bookstore\node_modules\express\lib\router\index.js:330:12)
+    at next (D:\bs_fullstack1\web-bookstore\node_modules\express\lib\router\index.js:271:10)
+    at Function.handle (D:\bs_fullstack1\web-bookstore\node_modules\express\lib\router\index.js:176:3)
+    at router (D:\bs_fullstack1\web-bookstore\node_modules\express\lib\router\index.js:46:12)
+    at Layer.handle [as handle_request] (D:\bs_fullstack1\web-bookstore\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\bs_fullstack1\web-bookstore\node_modules\express\lib\router\index.js:312:13)
+    at D:\bs_fullstack1\web-bookstore\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (D:\bs_fullstack1\web-bookstore\node_modules\express\lib\router\index.js:330:12)
+    at next (D:\bs_fullstack1\web-bookstore\node_modules\express\lib\router\index.js:271:10)
+    at MongoStore.<anonymous> (D:\bs_fullstack1\web-bookstore\node_modules\express-session\index.js:432:7)
+    at MongoStore.tryCatcher (D:\bs_fullstack1\web-bookstore\node_modules\bluebird\js\release\util.js:11:23)
+    at Promise.successAdapter [as _fulfillmentHandler0] (D:\bs_fullstack1\web-bookstore\node_modules\bluebird\js\release\nodeify.js:23:30)
+    at Promise._settlePromise (D:\bs_fullstack1\web-bookstore\node_modules\bluebird\js\release\promise.js:543:21)
+[Sat Jan 16 2016 23:08:47 GMT+0800 (中国标准时间)] /ask/publish
+ReferenceError: userId is not defined
+    at D:/bs_fullstack1/web-bookstore/src/server/controllers/ask.js:18:53
+    at Layer.handle [as handle_request] (D:\bs_fullstack1\web-bookstore\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\bs_fullstack1\web-bookstore\node_modules\express\lib\router\route.js:131:13)
+    at jsonParser (D:\bs_fullstack1\web-bookstore\node_modules\body-parser\lib\types\json.js:93:44)
+    at Layer.handle [as handle_request] (D:\bs_fullstack1\web-bookstore\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\bs_fullstack1\web-bookstore\node_modules\express\lib\router\route.js:131:13)
+    at Route.dispatch (D:\bs_fullstack1\web-bookstore\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\bs_fullstack1\web-bookstore\node_modules\express\lib\router\layer.js:95:5)
+    at D:\bs_fullstack1\web-bookstore\node_modules\express\lib\router\index.js:277:22
+    at Function.process_params (D:\bs_fullstack1\web-bookstore\node_modules\express\lib\router\index.js:330:12)
+    at next (D:\bs_fullstack1\web-bookstore\node_modules\express\lib\router\index.js:271:10)
+    at Function.handle (D:\bs_fullstack1\web-bookstore\node_modules\express\lib\router\index.js:176:3)
+    at router (D:\bs_fullstack1\web-bookstore\node_modules\express\lib\router\index.js:46:12)
+    at Layer.handle [as handle_request] (D:\bs_fullstack1\web-bookstore\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\bs_fullstack1\web-bookstore\node_modules\express\lib\router\index.js:312:13)
+    at D:\bs_fullstack1\web-bookstore\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (D:\bs_fullstack1\web-bookstore\node_modules\express\lib\router\index.js:330:12)
+    at next (D:\bs_fullstack1\web-bookstore\node_modules\express\lib\router\index.js:271:10)
+    at MongoStore.<anonymous> (D:\bs_fullstack1\web-bookstore\node_modules\express-session\index.js:432:7)
+    at MongoStore.tryCatcher (D:\bs_fullstack1\web-bookstore\node_modules\bluebird\js\release\util.js:11:23)
+    at Promise.successAdapter [as _fulfillmentHandler0] (D:\bs_fullstack1\web-bookstore\node_modules\bluebird\js\release\nodeify.js:23:30)
+    at Promise._settlePromise (D:\bs_fullstack1\web-bookstore\node_modules\bluebird\js\release\promise.js:543:21)
+[Sat Jan 16 2016 23:09:37 GMT+0800 (中国标准时间)] /ask/publish
+ReferenceError: userId is not defined
+    at D:/bs_fullstack1/web-bookstore/src/server/controllers/ask.js:18:53
+    at Layer.handle [as handle_request] (D:\bs_fullstack1\web-bookstore\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\bs_fullstack1\web-bookstore\node_modules\express\lib\router\route.js:131:13)
+    at jsonParser (D:\bs_fullstack1\web-bookstore\node_modules\body-parser\lib\types\json.js:93:44)
+    at Layer.handle [as handle_request] (D:\bs_fullstack1\web-bookstore\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\bs_fullstack1\web-bookstore\node_modules\express\lib\router\route.js:131:13)
+    at Route.dispatch (D:\bs_fullstack1\web-bookstore\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\bs_fullstack1\web-bookstore\node_modules\express\lib\router\layer.js:95:5)
+    at D:\bs_fullstack1\web-bookstore\node_modules\express\lib\router\index.js:277:22
+    at Function.process_params (D:\bs_fullstack1\web-bookstore\node_modules\express\lib\router\index.js:330:12)
+    at next (D:\bs_fullstack1\web-bookstore\node_modules\express\lib\router\index.js:271:10)
+    at Function.handle (D:\bs_fullstack1\web-bookstore\node_modules\express\lib\router\index.js:176:3)
+    at router (D:\bs_fullstack1\web-bookstore\node_modules\express\lib\router\index.js:46:12)
+    at Layer.handle [as handle_request] (D:\bs_fullstack1\web-bookstore\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\bs_fullstack1\web-bookstore\node_modules\express\lib\router\index.js:312:13)
+    at D:\bs_fullstack1\web-bookstore\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (D:\bs_fullstack1\web-bookstore\node_modules\express\lib\router\index.js:330:12)
+    at next (D:\bs_fullstack1\web-bookstore\node_modules\express\lib\router\index.js:271:10)
+    at MongoStore.<anonymous> (D:\bs_fullstack1\web-bookstore\node_modules\express-session\index.js:432:7)
+    at MongoStore.tryCatcher (D:\bs_fullstack1\web-bookstore\node_modules\bluebird\js\release\util.js:11:23)
+    at Promise.successAdapter [as _fulfillmentHandler0] (D:\bs_fullstack1\web-bookstore\node_modules\bluebird\js\release\nodeify.js:23:30)
+    at Promise._settlePromise (D:\bs_fullstack1\web-bookstore\node_modules\bluebird\js\release\promise.js:543:21)
+[Sat Jan 16 2016 23:10:35 GMT+0800 (中国标准时间)] /ask/publish
+ReferenceError: userId is not defined
+    at D:/bs_fullstack1/web-bookstore/src/server/controllers/ask.js:18:53
+    at Layer.handle [as handle_request] (D:\bs_fullstack1\web-bookstore\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\bs_fullstack1\web-bookstore\node_modules\express\lib\router\route.js:131:13)
+    at jsonParser (D:\bs_fullstack1\web-bookstore\node_modules\body-parser\lib\types\json.js:93:44)
+    at Layer.handle [as handle_request] (D:\bs_fullstack1\web-bookstore\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\bs_fullstack1\web-bookstore\node_modules\express\lib\router\route.js:131:13)
+    at Route.dispatch (D:\bs_fullstack1\web-bookstore\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\bs_fullstack1\web-bookstore\node_modules\express\lib\router\layer.js:95:5)
+    at D:\bs_fullstack1\web-bookstore\node_modules\express\lib\router\index.js:277:22
+    at Function.process_params (D:\bs_fullstack1\web-bookstore\node_modules\express\lib\router\index.js:330:12)
+    at next (D:\bs_fullstack1\web-bookstore\node_modules\express\lib\router\index.js:271:10)
+    at Function.handle (D:\bs_fullstack1\web-bookstore\node_modules\express\lib\router\index.js:176:3)
+    at router (D:\bs_fullstack1\web-bookstore\node_modules\express\lib\router\index.js:46:12)
+    at Layer.handle [as handle_request] (D:\bs_fullstack1\web-bookstore\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\bs_fullstack1\web-bookstore\node_modules\express\lib\router\index.js:312:13)
+    at D:\bs_fullstack1\web-bookstore\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (D:\bs_fullstack1\web-bookstore\node_modules\express\lib\router\index.js:330:12)
+    at next (D:\bs_fullstack1\web-bookstore\node_modules\express\lib\router\index.js:271:10)
+    at MongoStore.<anonymous> (D:\bs_fullstack1\web-bookstore\node_modules\express-session\index.js:432:7)
+    at MongoStore.tryCatcher (D:\bs_fullstack1\web-bookstore\node_modules\bluebird\js\release\util.js:11:23)
+    at Promise.successAdapter [as _fulfillmentHandler0] (D:\bs_fullstack1\web-bookstore\node_modules\bluebird\js\release\nodeify.js:23:30)
+    at Promise._settlePromise (D:\bs_fullstack1\web-bookstore\node_modules\bluebird\js\release\promise.js:543:21)
+[Sat Jan 16 2016 23:11:41 GMT+0800 (中国标准时间)] /ask/publish
+ReferenceError: userId is not defined
+    at D:/bs_fullstack1/web-bookstore/src/server/controllers/ask.js:18:53
+    at Layer.handle [as handle_request] (D:\bs_fullstack1\web-bookstore\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\bs_fullstack1\web-bookstore\node_modules\express\lib\router\route.js:131:13)
+    at jsonParser (D:\bs_fullstack1\web-bookstore\node_modules\body-parser\lib\types\json.js:93:44)
+    at Layer.handle [as handle_request] (D:\bs_fullstack1\web-bookstore\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\bs_fullstack1\web-bookstore\node_modules\express\lib\router\route.js:131:13)
+    at Route.dispatch (D:\bs_fullstack1\web-bookstore\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\bs_fullstack1\web-bookstore\node_modules\express\lib\router\layer.js:95:5)
+    at D:\bs_fullstack1\web-bookstore\node_modules\express\lib\router\index.js:277:22
+    at Function.process_params (D:\bs_fullstack1\web-bookstore\node_modules\express\lib\router\index.js:330:12)
+    at next (D:\bs_fullstack1\web-bookstore\node_modules\express\lib\router\index.js:271:10)
+    at Function.handle (D:\bs_fullstack1\web-bookstore\node_modules\express\lib\router\index.js:176:3)
+    at router (D:\bs_fullstack1\web-bookstore\node_modules\express\lib\router\index.js:46:12)
+    at Layer.handle [as handle_request] (D:\bs_fullstack1\web-bookstore\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\bs_fullstack1\web-bookstore\node_modules\express\lib\router\index.js:312:13)
+    at D:\bs_fullstack1\web-bookstore\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (D:\bs_fullstack1\web-bookstore\node_modules\express\lib\router\index.js:330:12)
+    at next (D:\bs_fullstack1\web-bookstore\node_modules\express\lib\router\index.js:271:10)
+    at MongoStore.<anonymous> (D:\bs_fullstack1\web-bookstore\node_modules\express-session\index.js:432:7)
+    at MongoStore.tryCatcher (D:\bs_fullstack1\web-bookstore\node_modules\bluebird\js\release\util.js:11:23)
+    at Promise.successAdapter [as _fulfillmentHandler0] (D:\bs_fullstack1\web-bookstore\node_modules\bluebird\js\release\nodeify.js:23:30)
+    at Promise._settlePromise (D:\bs_fullstack1\web-bookstore\node_modules\bluebird\js\release\promise.js:543:21)

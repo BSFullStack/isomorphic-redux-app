@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import Login from '../components/Login';
 import * as LoginActions from '../actions/login';
 function mapStateToProps(state) {
+	
     return {
         loginInfo:state.login,
         registerInfo:state.register

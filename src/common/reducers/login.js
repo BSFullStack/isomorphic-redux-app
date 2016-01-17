@@ -25,6 +25,7 @@ export function login(state = initialState , action) {
 
             return Object.assign({},state,action.req.data);
         default:
+
             return state;
     }
 }
@@ -32,14 +33,15 @@ export function login(state = initialState , action) {
 
 //注册
 export function register(state = initialState , action) {
-
+    
     switch (action.type) {
         case REGISTER_REQUEST:
             return Object.assign({},initialState);
         case REGISTER_SUCCESS:
             console.log("xxxx");
-            return Object.assign({},state,action.req.data.data);
+            return Object.assign({},state.data,action.req.data.data);
         default:
+
             return state;
     }
 }

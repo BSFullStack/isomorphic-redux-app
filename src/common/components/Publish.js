@@ -23,11 +23,11 @@ export default class Publish extends Component {
     componentWillReceiveProps(nextProps){
         
        
-        const { bl, msg , error } = nextProps.publishInfo.publish.data;
+        const { bl, msg , error } = nextProps.publishInfo;
         
         //发布成功
         //alert(msg);
-        if(  bl == "0"  ){
+        if(  bl == 1  ){
            return this.props.history.push("/t/123");
         }
     
