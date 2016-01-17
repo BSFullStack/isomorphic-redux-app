@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import Topics from './topic/Topics';
 import Footer from './layout/Footer';
 import Header from './layout/Header';
-
+import Sidebar from './ui/sidebar/Sidebar';
 class Topic extends Component {
 
     constructor(props) {
@@ -55,6 +55,7 @@ class Topic extends Component {
 
                         </div>
                     </div>
+                    <Sidebar />
                 </div>
                 <Footer />
             </div>

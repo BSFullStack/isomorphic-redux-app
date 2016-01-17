@@ -20,14 +20,9 @@ export default class Sidebar extends Component {
         
 
         return (
-            <div className="col-xs-12 col-md-3 side mt30">
-                
-                <div>
-                    <h2 className="h4 widget-box__title">关注了3个标签 <a href="/tags" title="更多">»</a></h2>
-                     <TagList className="mb20" tags={[{},{},{}]}/>
-                </div>
+            <div className="col-xs-12 col-md-3 side mt30">                              
                 <div className="widget-box">
-                    <h2 className="h4 widget-box__title">热议标签 <a href="/tags" title="更多">»</a></h2>
+                    <h2 className="h4 widget-box__title">全部标签 <a href="/tags" title="更多">»</a></h2>
                      <TagList className="mb20" tags={[{},{},{}]}/>
                 </div>
                 <div className="widget-box">
