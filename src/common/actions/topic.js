@@ -51,3 +51,21 @@ export function fetchTopicsIfNeeded(reddit) {
     };
 }
 
+
+function _getTopics({pageIndex,pageSize,lastTime,category='hot'}) {
+    return {
+          type: TOPICS_GET,
+          pageIndex,
+          pageSize,
+          lastTime,
+          category,
+          promise: request.post("http://localhost:8000/topics/get",{pageIndex,pageSize,lastTime,category})
+    }
+}
+//获取更多
+export function getTopics({pageIndex,pageSize,lastTime,category='hot'}) {
+    return (dispatch, getState) => {
+        return dispatch(_getTopics({pageIndex,pageSize,lastTime,category}));
+    };
+}
+
