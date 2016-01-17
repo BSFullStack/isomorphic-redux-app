@@ -11,18 +11,18 @@ Topic.need = [
 
 function mapStateToProps(state) {
 
-    let { selectedCategory, topicsByCategory  } = state;
+    let { selectedCategory, topicsByCategory  , user } = state;
     selectedCategory = selectedCategory.present;
     topicsByCategory = topicsByCategory.present;
     const {
         isFetching,
-        user,
         lastUpdated,
         error,
         count,
         topics
     } = topicsByCategory[selectedCategory] || {
-        isFetching: true,
+        isFetching: false,
+        lastUpdated:false,
         error:{},
         count:0,
         topics: []

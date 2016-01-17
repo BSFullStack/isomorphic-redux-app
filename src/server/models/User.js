@@ -28,7 +28,7 @@ const UserSchema = new Schema({
 
 });
 UserSchema.statics.checkUser=function(params,cb){
-    return this.findOne(params,cb);
+    return this.findOne(params,'id name',cb);
 }
 UserSchema.statics.getOne=function(params,cb){
     return this.findOne(params,cb);

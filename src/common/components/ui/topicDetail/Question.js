@@ -2,12 +2,14 @@ import React, { Component, PropTypes } from 'react';
 import VoteWidget from './widgets/Vote';
 import TagList from './TagList';
 import OperationWidget from './widgets/Operation';
+import _ from 'lodash';
 /**
  *问题详情
  */
 export default class Question extends Component {
     render(){
         const { title , content } = this.props;
+
         return (
             <article className="widget-question__item">
                 <div className="post-col">
@@ -15,12 +17,8 @@ export default class Question extends Component {
                 </div>
                 <div className="post-offset">
                     <div className="question fmt">
-                        <p>
-                           {content}
-                        </p>
+                        <div  dangerouslySetDefaultInnerHTML={{__html: content }}></div>
                     </div>
-                    {/*标签组件  <TagList className="mb20" tags={[{},{}]}/> */}
-
                     <OperationWidget />
                 </div>
             </article>

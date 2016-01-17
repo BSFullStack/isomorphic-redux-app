@@ -14,7 +14,7 @@ import serialize from 'serialize-javascript';
 import { renderToString } from 'react-dom/server';
 
 //渲染页面
-const renderPage = (html, initialState,loginUser) => {
+const renderPage = (html, initialState) => {
 
     return `
         <!doctype html>
@@ -23,11 +23,7 @@ const renderPage = (html, initialState,loginUser) => {
                 <meta charset="utf-8" />
                 <title>SKT</title>
                 <link rel="stylesheet" href="/css/index.css" />
-                <script>
-                    window.BSGlobal={
-                        sktData:${serialize(loginUser)}
-                    }
-                </script>
+
             </head>
             <body>
                 <div id="root">${html}</div>
@@ -45,8 +41,8 @@ const renderPage = (html, initialState,loginUser) => {
 export default function reactServerMiddleware(req,res,next){
 
     const { url  } = req ;
-    const location = createLocation(url);
-    match({routes, location}, (error, redirectLocation, renderProps) => {
+
+    match({routes, location: url}, (error, redirectLocation, renderProps) => {
 
             if(error){
 
@@ -56,21 +52,27 @@ export default function reactServerMiddleware(req,res,next){
             } else {
                 const { session } = req ;
                 let loginUser = (session && session.user) ? session.user : null;
-                console.log(loginUser);
-                const store = configureStore({user : loginUser});
 
+
+
+                 const store = configureStore({
+                        user:{
+                            authenticated: loginUser ? true :false,
+                            isWaiting: false,
+                            ...loginUser
+                        }
+                 });
 
                 fetchComponentDataBeforeRender(store.dispatch, renderProps.components, renderProps.params)
                   .then(html=>{
-                        const InitialView = (
+                         const InitialView = (
                             <Provider store={store} >
-                                <RoutingContext {...renderProps} />
+                               <RoutingContext {...renderProps} />
                             </Provider>
-                        );
-                        const componentHTML = renderToString(InitialView);
-                        const initialState = store.getState();
-
-                        res.status(200).send(renderPage(componentHTML,initialState,loginUser))
+                 );
+                    const componentHTML = renderToString(InitialView);
+                    const initialState = store.getState();
+                        res.status(200).send(renderPage(componentHTML,initialState))
                   }).catch(err =>{
                         console.log(err)
                         res.end(renderPage("",{}))

@@ -7,18 +7,20 @@ import * as TopicDetailActions from '../actions/topicDetail';
 //Data that needs to be called before rendering the component
 //This is used for server side rending via the fetchComponentDataBeforeRending() method
 
+TopicDetail.need = [
+    TopicDetailActions.fetchTopicDetail
+];
+
 function mapStateToProps(state) {
 
-    let { topicDetail } = state;
+    let { topicDetail ,  user} = state;
 
     const {
         data,
         error,
-        user,
         newAnswer,
         isFetching
     } =  topicDetail || {
-        user:null,
         data:null,
         error:false,
         newAnswer:null,

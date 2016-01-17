@@ -3,6 +3,8 @@ import async from 'async';
 import moment from 'moment';
 import uuid from 'node-uuid';
 import _ from 'lodash';
+import mditor from "mditor";
+const parser = new mditor.Parser();
 /**
  * Topic实体
  * Topic & Tag == many to manny
@@ -124,7 +126,27 @@ TopicSchema.statics.getDetail = function(topicId , callback ){
                 let _answers = answers.map((item)=>{
                      return item.toObject();
                 });
-               cb(err,topic,tags,user,_answers);
+                cb(err,topic,tags,user,_answers);
+            });
+        }
+        ,function(topic,tags,user,answers,cb){ //获取每一个回答者的信息
+            let userIds = _.union(_.map(answers,(item)=>item.userId));
+            //params,fieldsStr,ids,cb
+            User.getAllByIds({},'id name',userIds,(err,users)=>{
+                if(err ||!user){
+                    cb(err);
+                }
+                answers.map(as=>{
+                    as.content =parser.parse(as.content);
+                    let auser= _.find(users,(user)=>{
+                        return user.id == as.userId;
+                    });
+
+                    if(auser){
+                        as.userInfo = auser.toObject();
+                    }
+                });
+                cb(err,topic,tags,user,answers,cb);
             });
         }
     ],function(err,topic,tags,user,answers){

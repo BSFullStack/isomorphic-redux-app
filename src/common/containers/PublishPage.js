@@ -12,7 +12,8 @@ Publish.need = [
 function mapStateToProps(state) {
 
     return {
-        publishInfo:state.publish
+        publishInfo:state.publish,
+        user:state.user
     };
 }
 

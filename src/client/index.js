@@ -4,7 +4,7 @@ import { render }           from 'react-dom';
 import { Router }           from 'react-router';
 import createBrowserHistory from 'history/lib/createBrowserHistory'
 import { Provider } from 'react-redux';
-import { ReduxRouter } from 'redux-router';
+import { syncReduxAndRouter } from 'redux-simple-router';
 import configureStore from '../common/store/configureStore';
 import routes from '../common/routes';
 import makeRouteHooksSafe from '../common/api/makeRouteHooksSafe';
@@ -14,7 +14,7 @@ const history = createBrowserHistory();
 const initialState = window.__INITIAL_STATE__;
 const store = configureStore(initialState);
 
-
+syncReduxAndRouter(history, store);
 
 
 moment.locale('en', {
@@ -51,6 +51,7 @@ moment.locale('zh-cn', {
         yy: "%d年前"
     }
 });
+
 //挂载点
 const mountId = document.getElementById('root');
  /* BJ_REPORT.init({
@@ -62,9 +63,9 @@ const mountId = document.getElementById('root');
 //渲染
 render(
     <Provider store={store} >
-        <ReduxRouter>
-            <Router children={routes} history={history} />
-        </ReduxRouter>
+        <Router history={history}>
+            {routes}
+        </Router>
     </Provider>,
     mountId
 );

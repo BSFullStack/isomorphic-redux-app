@@ -12,7 +12,7 @@ export const ADDANSWER_FAILURE = 'ADDANSWER_FAILURE';
 
 
 
-export function fetchTopicDetail(topicId) {
+export function fetchTopicDetail({topicId}) {
 
     return {
           type: TOPICDETAIL,
@@ -39,26 +39,26 @@ export function fetchTopicDetailIfNeeded(topicId) {
     return (dispatch, getState) => {
       if (shouldFetchTopicDetail(getState(), topicId)) {
 
-        return dispatch(fetchTopicDetail(topicId));
+        return dispatch(fetchTopicDetail({topicId}));
       }
     };
 }
 
-function _sendAnswer(answerUserId,topicId,answerContent){
+function _sendAnswer(topicId,answerContent){
     return {
         type: ADDANSWER,
-        answerUserId,
+
         topicId,
         answerContent,
-        promise: request.post("http://localhost:8000/topics/addAnswer",{answerUserId,topicId,answerContent})
+        promise: request.post("http://localhost:8000/topics/addAnswer",{topicId,answerContent})
     }
 }
 
 /**
  * 发表答案
  */
-export function sendAnswer(answerUserId,topicId,answerContent){
+export function sendAnswer(topicId,answerContent){
     return (dispatch, getState) => {
-        return dispatch(_sendAnswer(answerUserId,topicId,answerContent));
+        return dispatch(_sendAnswer(topicId,answerContent));
     };
 }

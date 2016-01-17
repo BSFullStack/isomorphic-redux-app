@@ -37,16 +37,24 @@ export default  function (app, config) {
 
     app.use(compress());
     app.use(express.static(config.root + '/public'));
+    app.set('trust proxy', 'loopback');
     app.use(methodOverride());
 
     app.use(cookieParser());
     app.use(session({
-        resave: false,
-        saveUninitialized: true,
+        resave: true,
+        saveUninitialized: false,
+        proxy: true, // The "X-Forwarded-Proto" header will be used.
+        name: 'sessionId',
         secret: config.cookieSecret,
+        cookie: {
+          httpOnly: true,
+          secure: false,
+        },
         store:new mongoStore({
             url:config.db,
             secret: config.cookieSecret,
+            autoReconnect: true
         })
     }));
     const models = glob.sync(config.root + '/src/server/models/*.js');

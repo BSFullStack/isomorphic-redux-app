@@ -1,7 +1,7 @@
 import React, {PropTypes, cloneElement} from 'react';
 import { findDOMNode } from 'react-dom';
 import cx from 'classnames';
-import jss from 'js-stylesheet';
+
 import uuid from '../helpers/uuid';
 import childrenPropType from '../helpers/childrenPropType';
 
@@ -19,7 +19,6 @@ let useDefaultStyles = true;
 
 module.exports = React.createClass({
   displayName: 'Tabs',
-
 
 
   childContextTypes: {
@@ -51,9 +50,7 @@ module.exports = React.createClass({
   },
 
   componentWillMount() {
-    if (useDefaultStyles) {
-      jss(require('../helpers/styles.js'));
-    }
+
   },
 
   componentWillReceiveProps(newProps) {

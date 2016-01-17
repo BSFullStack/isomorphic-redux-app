@@ -45,12 +45,13 @@ export default function topicDetail(state = initialState , action) {
                 data:null
             });
         case TOPICDETAIL_SUCCESS:
-         debugger;
-            const { data ,user} = action.req.data;
+            console.log("--------成功了----------");
+
+            const { data } = action.req.data;
+            console.log(data);
             return Object.assign({}, state, {
                 isFetching: false,
-                data,
-                user
+                data
             });
         case TOPICDETAIL_FAILURE:
             return Object.assign({}, state, {

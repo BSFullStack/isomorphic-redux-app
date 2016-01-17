@@ -3,7 +3,7 @@
  */
 export default {
     gmail:{
-        user:"",
-        password:""
+        user:"18301590621@163.com",
+        password:"nktzsnqpnvurdtsl"
     }
 }

@@ -34,6 +34,7 @@ class Topic extends Component {
     }
 
     render () {
+
         const {
             selectedCategory ,
             topics ,
@@ -79,10 +80,10 @@ class Topic extends Component {
                                 <Topics topics={topics} handlerClickTitle={::this.handlerClickTitle}></Topics>
                                 { moreComponent }
                             </div>
-
+                            <Sidebar />
                         </div>
+
                     </div>
-                    <Sidebar />
                 </div>
                 <Footer />
             </div>

@@ -19,18 +19,12 @@ const middlewareBuilder = () => {
     if(process.env.NODE_ENV === 'production' || process.env.NODE_ENV === 'test'){
       middleware = applyMiddleware(...universalMiddleware);
       allComposeElements = [
-        middleware,
-        reduxReactRouter({
-          createHistory
-        })
+        middleware
       ]
     }else{
       middleware = applyMiddleware(...universalMiddleware,createLogger());
       allComposeElements = [
-        middleware,
-        reduxReactRouter({
-          createHistory
-        })
+        middleware
       ]
     }
   }else{

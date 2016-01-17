@@ -28,6 +28,7 @@ function topics(state = initialState , action) {
             });
         case TOPICS_GET_SUCCESS:
 
+
           /*  const { topics } = state[action.category];
             topics.concat(action.topics);*/
             return Object.assign({}, state, {
@@ -66,7 +67,9 @@ export function topicsByCategory(state = { }, action) {
         let count = 0;
         let result = [];
         let user = null;
+
         if(action.req && action.req.data && action.req.data.topics){
+            console.log(state);
            const { topics } = state[action.category];
 
            topicsArray = topics.concat(action.req.data.topics);
@@ -91,7 +94,7 @@ export function topicsByCategory(state = { }, action) {
               category: action.category,
               topics:  result,
               count:count,
-              user:user,
+
               receivedAt: Date.now()
             })
         });

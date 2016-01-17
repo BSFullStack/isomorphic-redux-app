@@ -21,8 +21,8 @@ class TopicDetail extends Component {
     }
 
     componentDidMount() {
-        /*const { selectedReddit } = this.props;
-        this.props.fetchPostsIfNeeded(selectedReddit);*/
+        const { selectedReddit } = this.props;
+
 
         const { params } = this.props;
         const { topicId } = params;
@@ -74,14 +74,7 @@ class TopicDetail extends Component {
                         return this.getAttribute('data-original-title');
                     }
                 });
-                if(answerEditor&& !this.hasRender ){
 
-                    this.mdEditor = new Mditor(answerEditor,{
-                        height:300,
-                        fixedHeight:true
-                    });
-                    this.hasRender = true;
-                }
             },0);
 
         });
@@ -120,6 +113,8 @@ class TopicDetail extends Component {
                                              <div className="editor" id="questionText">
                                                     <textarea ref="answerEditor" name="text"
                                                         className="form-control" rows="4"
+                                                        style={{minHeight:"300px"}}
+                                                        onFocus={::this.changeTextarea}
                                                                     placeholder="告诉ta答案..."></textarea>
                                             </div>
                                             <div id="answerSubmit" className="mt15 clearfix">
@@ -149,14 +144,25 @@ class TopicDetail extends Component {
             </div>
         );
     }
+    changeTextarea(e){
+         if (typeof window !== 'undefined') {
+            if(!this.mdEditor) {
+                const { answerEditor } = this.refs;
+                this.mdEditor = new Mditor(answerEditor,{
+                    height:300
+                });
+
+            }
+         }
+
+    }
     handlerAnswer(){
+
         const  { id } = this.props.data;
 
         const answer = this.mdEditor.getValue();
 
-        const currentUser = window.BSGlobeData.extraData.loginUser;
-
-        this.props.sendAnswer(currentUser.id,id,answer);
+        this.props.sendAnswer(id,answer);
         this.mdEditor.setValue("")
     }
 }

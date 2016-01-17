@@ -22,11 +22,12 @@ export function invalidateCategory(category) {
     };
 }
 
-export function fetchTopics(category = 'hot') {
+export function fetchTopics({category = 'hot'}) {
+
     return {
           type: TOPICS_GET,
           category,
-          promise: request.post("http://localhost:8000/topics/get",{category:category})
+          promise: request.post("http://localhost:8000/topics/get",{category})
     }
 }
 

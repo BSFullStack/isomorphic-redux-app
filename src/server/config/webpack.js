@@ -18,6 +18,6 @@ export default  function(app,config){
     app.use(devMiddleware);
     app.use(hotMiddleware);
     //集成服务端渲染中间件
-    app.get("/*",reactServerRenderMiddleware);
+    app.get("*",reactServerRenderMiddleware);
 
 }
