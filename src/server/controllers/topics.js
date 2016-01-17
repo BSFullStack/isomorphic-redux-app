@@ -46,8 +46,6 @@ router.post('/addAnswer',function(req,res){
 
 
 });
-<<<<<<< HEAD
-=======
 
 
 //发布话题
@@ -55,4 +53,4 @@ router.post('/publish', function (req, res) {
 
     res.status(200).json({...data});
 });
->>>>>>> ab47b857e3107717a7bbad7658276cf05b29d030
+

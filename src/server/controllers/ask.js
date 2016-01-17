@@ -15,7 +15,7 @@ router.post('/ask/publish', jsonParser,function (req, res) {
 	res.status(300).end()
 	const{title , content, typeId } = req.body;
 	const{id:id ,userId: _id, viewtotals:__v,status: status} = req.session;
-    )
+    
 	const topic = new Topic({title ,content, typeId,id,userId,viewtotals,status})
    
 	topic.save((err,topic)=>{
