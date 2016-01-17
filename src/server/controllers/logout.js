@@ -8,7 +8,7 @@ module.exports= function (app) {
     app.use("/logout",router);
 };
 //用户登录
-router.post('/', function (req, res) {
+router.post('/api', function (req, res) {
     res.session.user = null;
     res.session.error = null;
     res.redirct("/");

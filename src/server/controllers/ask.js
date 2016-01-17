@@ -21,6 +21,7 @@ router.post('/ask/publish', function (req, res) {
     } = req.body;
 
     const { user } = req.session;
+
     const { id:userId } = user;
     const topicId = uuid.v4();
     const tagIds = tagId.split(",");
@@ -48,7 +49,7 @@ router.post('/ask/publish', function (req, res) {
             if(err){
                 res.status(200).json(setError({msg:"发表失败！"}));
             }
-            res.status(200).json(setOk({msg:"发表成功",topic}));
+            res.status(200).json(setOk({msg:"发表成功",topic,user:req.session.user}));
         });
 
     });

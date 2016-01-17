@@ -2,7 +2,7 @@
  * 问题详情页
  */
 import React, { Component, PropTypes } from 'react';
-
+import _ from 'lodash';
 import TopHeader from './ui/topicDetail/TopHeader';
 import Question from './ui/topicDetail/Question';
 import Header from './layout/Header';
@@ -17,6 +17,7 @@ class TopicDetail extends Component {
 
     constructor(props) {
         super(props);
+        this.cached={};
     }
 
     componentDidMount() {
@@ -41,10 +42,22 @@ class TopicDetail extends Component {
             this.props.history.push('/404');
             return ;
         }
+
         if(newAnswer){
-            const {answers} = data;
+            let { answers } = data;
+            let target =  _.find(answers,(item)=>{
+                return item.id ==newAnswer.id;
+            })
+           if(!target){
             answers.push(newAnswer);
+           }
         }
+        /*if(newAnswer && !this.cached[newAnswer.id]){
+
+
+            answers.push(newAnswer);
+            this.cached[newAnswer.id]=true;
+        }*/
         this.setState({
             data,
             error,
@@ -76,7 +89,7 @@ class TopicDetail extends Component {
 
     render () {
 
-        const { isFetching , data  , error } = this.props;
+        const { isFetching , data  , error,user } = this.props;
         let contentComponent ;
         if(isFetching || data== null || data.error){
             contentComponent = (
@@ -127,7 +140,7 @@ class TopicDetail extends Component {
         }
         return (
             <div>
-                <Header />
+                <Header user={user}/>
                 {contentComponent}
 
                 <Footer />

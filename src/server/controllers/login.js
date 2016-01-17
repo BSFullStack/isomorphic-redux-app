@@ -18,12 +18,12 @@ router.post('/', function (req, res) {
 
     //根据用户名查询
     User.checkUser({email:email,password:passHash},(error,user)=>{
-
-        if(!user){
-            return res.status(200).json(setError({msg:"账号或者密码不正确!"}));
+        console.log(user);
+        if(error || !user){
+            res.status(200).json(setError({msg:"账号或者密码不正确!"}));
         }else {
             req.session.user = user;
-            return res.status(200).json(setOk({msg:"登录成功！",user}));
+            res.status(200).json(setOk({msg:"登录成功！",user}));
         }
     });
 });

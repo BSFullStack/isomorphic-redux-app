@@ -14,9 +14,11 @@ function mapStateToProps(state) {
     const {
         data,
         error,
+        user,
         newAnswer,
         isFetching
     } =  topicDetail || {
+        user:null,
         data:null,
         error:false,
         newAnswer:null,
@@ -26,6 +28,7 @@ function mapStateToProps(state) {
     return {
         newAnswer,
         data,
+        user,
         error,
         isFetching
     };

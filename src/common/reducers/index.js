@@ -1,7 +1,7 @@
 import { combineReducers } from 'redux';
 import { routerStateReducer } from 'redux-router';
 import undoable from 'redux-undo';
-
+import user from './user';
 import layout from './layout';
 
 import publish from './publish';
@@ -12,6 +12,7 @@ import topicDetail from './topicDetail';
 
 const rootReducer = combineReducers({
     layout : undoable(layout),
+    user:user,
     login :login,
     register:register,
     publish:publish,

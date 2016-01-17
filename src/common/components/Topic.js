@@ -7,11 +7,13 @@ import Sidebar from './ui/sidebar/Sidebar';
 class Topic extends Component {
 
     constructor(props) {
+
         super(props);
         this.pageIndex = 1;
-        /*this.state={
+        this.state={
             category:props.params.category || "hot"
-        }*/
+        }
+
     }
 
     componentDidMount() {
@@ -35,12 +37,14 @@ class Topic extends Component {
         const {
             selectedCategory ,
             topics ,
+            user,
             count ,
             isFetching ,
             lastUpdated ,
             error
         } = this.props;
         let moreComponent ;
+
         if(count>0 && count > topics.length){
             moreComponent = (
                 <div className="text-center">
@@ -54,7 +58,7 @@ class Topic extends Component {
         }
         return (
             <div>
-                <Header />
+                <Header user={user}/>
                 <div className="wrap" style={{"minHeight":"500px"}}>
                     <div className="container">
                         <div className="row">
@@ -88,9 +92,11 @@ class Topic extends Component {
     handlerLoaderMore(e){
         const { topics } = this.props;
         let lastTopic = topics[topics.length -1];
+
         const { createTime } = lastTopic;
+        this.pageIndex = this.pageIndex+1
         this.props.getTopics({
-            pageIndex:this.pageIndex+1,
+            pageIndex:this.pageIndex,
             pageSize:15,
             lastTime:createTime
         });

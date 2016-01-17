@@ -33,7 +33,8 @@ export default function topicDetail(state = initialState , action) {
 
             return Object.assign({}, state,{
                 data:stateData,
-                newAnswer:answerData
+                newAnswer:answerData,
+
             });
 
 
@@ -44,11 +45,12 @@ export default function topicDetail(state = initialState , action) {
                 data:null
             });
         case TOPICDETAIL_SUCCESS:
-
-            const { data } = action.req.data;
+         debugger;
+            const { data ,user} = action.req.data;
             return Object.assign({}, state, {
                 isFetching: false,
-                data
+                data,
+                user
             });
         case TOPICDETAIL_FAILURE:
             return Object.assign({}, state, {

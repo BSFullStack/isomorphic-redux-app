@@ -18,19 +18,21 @@ export default function publish(state = initialState, action) {
 
      switch (action.type) {
         case TAG_GET_SUCCESS:
-            const { data:tags } = action.req.data;
+            const { data:tags,user } = action.req.data;
+            console.log("laile");
+            console.log(action.req);
+            console.log("---------");
             return Object.assign(
                 {},
                 state,
                 {
-                    tags
+                    tags,
+                    user
                 }
             );
         case PUBLISH_GET_REQUEST:
             return state;
         case PUBLISH_GET_SUCCESS:
-            console.log("****************发布成功***********************");
-            console.log(action.req.data.data);
             return Object.assign({}, state.data, action.req.data.data);
         case PUBLISH_GET_FAILURE:
             return state;

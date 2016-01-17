@@ -2992,3 +2992,435 @@ Error: Error setting TTL index on collection : sessions
     at Db.collection (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:495:44)
 =======
 >>>>>>> bc1ecab69b7f7d842c02c83f5f5b4037542759a9
+[Sun Jan 17 2016 18:19:42 GMT+0800 (中国标准时间)] /logout/api
+TypeError: Cannot set property 'user' of undefined
+    at F:/yowork/isomorphic-redux-app/src/server/controllers/logout.js:12:21
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\route.js:131:13)
+    at Route.dispatch (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:277:22
+    at Function.process_params (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:330:12)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:271:10)
+    at Function.handle (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:176:3)
+    at router (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:46:12)
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:312:13)
+    at F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:330:12)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:271:10)
+    at F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:618:15
+[Sun Jan 17 2016 18:20:35 GMT+0800 (中国标准时间)] /logout/api
+TypeError: Cannot set property 'user' of undefined
+    at F:/yowork/isomorphic-redux-app/src/server/controllers/logout.js:12:21
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\route.js:131:13)
+    at Route.dispatch (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:277:22
+    at Function.process_params (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:330:12)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:271:10)
+    at Function.handle (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:176:3)
+    at router (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:46:12)
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:312:13)
+    at F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:330:12)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:271:10)
+    at F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:618:15
+[Sun Jan 17 2016 18:33:44 GMT+0800 (中国标准时间)] /__webpack_hmr
+Error: Error setting TTL index on collection : sessions
+    at F:\yowork\isomorphic-redux-app\node_modules\connect-mongo\lib\connect-mongo.js:161:23
+    at F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1404:28
+    at F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1542:30
+    at F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\cursor.js:159:22
+    at commandHandler (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\cursor.js:678:48)
+    at F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1806:9
+    at __executeQueryCommand (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1636:44)
+    at Db._executeQueryCommand (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1805:7)
+    at Cursor.nextObject (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\cursor.js:729:13)
+    at Cursor.toArray (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\cursor.js:158:10)
+    at Cursor.toArray (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\scope.js:10:20)
+    at F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1541:65
+    at Db.collection (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:495:44)
+    at Db.indexInformation (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1539:8)
+    at Db.ensureIndex (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1403:8)
+    at Collection.ensureIndex (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\collection\index.js:65:11)
+[Sun Jan 17 2016 18:46:59 GMT+0800 (中国标准时间)] /__webpack_hmr
+Error: Error setting TTL index on collection : sessions
+    at F:\yowork\isomorphic-redux-app\node_modules\connect-mongo\lib\connect-mongo.js:161:23
+    at F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1404:28
+    at F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1542:30
+    at F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\cursor.js:159:22
+    at commandHandler (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\cursor.js:678:48)
+    at Db._executeQueryCommand (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1802:12)
+    at Cursor.nextObject (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\cursor.js:729:13)
+    at Cursor.toArray (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\cursor.js:158:10)
+    at Cursor.toArray (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\scope.js:10:20)
+    at F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1541:65
+    at Db.collection (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:495:44)
+    at Db.indexInformation (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1539:8)
+    at Db.ensureIndex (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1403:8)
+    at Collection.ensureIndex (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\collection\index.js:65:11)
+    at F:\yowork\isomorphic-redux-app\node_modules\connect-mongo\lib\connect-mongo.js:159:29
+    at Db.collection (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:495:44)
+[Sun Jan 17 2016 18:47:23 GMT+0800 (中国标准时间)] /__webpack_hmr
+Error: Error setting TTL index on collection : sessions
+    at F:\yowork\isomorphic-redux-app\node_modules\connect-mongo\lib\connect-mongo.js:161:23
+    at F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1404:28
+    at F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1542:30
+    at F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\cursor.js:159:22
+    at commandHandler (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\cursor.js:678:48)
+    at F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1806:9
+    at __executeQueryCommand (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1636:44)
+    at Db._executeQueryCommand (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1805:7)
+    at Cursor.nextObject (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\cursor.js:729:13)
+    at Cursor.toArray (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\cursor.js:158:10)
+    at Cursor.toArray (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\scope.js:10:20)
+    at F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1541:65
+    at Db.collection (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:495:44)
+    at Db.indexInformation (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1539:8)
+    at Db.ensureIndex (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1403:8)
+    at Collection.ensureIndex (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\collection\index.js:65:11)
+[Sun Jan 17 2016 18:50:11 GMT+0800 (中国标准时间)] /__webpack_hmr
+Error: Error setting TTL index on collection : sessions
+    at F:\yowork\isomorphic-redux-app\node_modules\connect-mongo\lib\connect-mongo.js:161:23
+    at F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1404:28
+    at F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1542:30
+    at F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\cursor.js:159:22
+    at commandHandler (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\cursor.js:678:48)
+    at Db._executeQueryCommand (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1802:12)
+    at Cursor.nextObject (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\cursor.js:729:13)
+    at Cursor.toArray (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\cursor.js:158:10)
+    at Cursor.toArray (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\scope.js:10:20)
+    at F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1541:65
+    at Db.collection (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:495:44)
+    at Db.indexInformation (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1539:8)
+    at Db.ensureIndex (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1403:8)
+    at Collection.ensureIndex (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\collection\index.js:65:11)
+    at F:\yowork\isomorphic-redux-app\node_modules\connect-mongo\lib\connect-mongo.js:159:29
+    at Db.collection (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:495:44)
+[Sun Jan 17 2016 18:52:32 GMT+0800 (中国标准时间)] /__webpack_hmr
+Error: Error setting TTL index on collection : sessions
+    at F:\yowork\isomorphic-redux-app\node_modules\connect-mongo\lib\connect-mongo.js:161:23
+    at F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1404:28
+    at F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1542:30
+    at F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\cursor.js:159:22
+    at commandHandler (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\cursor.js:678:48)
+    at Db._executeQueryCommand (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1802:12)
+    at Cursor.nextObject (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\cursor.js:729:13)
+    at Cursor.toArray (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\cursor.js:158:10)
+    at Cursor.toArray (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\scope.js:10:20)
+    at F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1541:65
+    at Db.collection (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:495:44)
+    at Db.indexInformation (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1539:8)
+    at Db.ensureIndex (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1403:8)
+    at Collection.ensureIndex (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\collection\index.js:65:11)
+    at F:\yowork\isomorphic-redux-app\node_modules\connect-mongo\lib\connect-mongo.js:159:29
+    at Db.collection (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:495:44)
+[Sun Jan 17 2016 18:53:20 GMT+0800 (中国标准时间)] /__webpack_hmr
+Error: Error setting TTL index on collection : sessions
+    at F:\yowork\isomorphic-redux-app\node_modules\connect-mongo\lib\connect-mongo.js:161:23
+    at F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1404:28
+    at F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1542:30
+    at F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\cursor.js:159:22
+    at commandHandler (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\cursor.js:678:48)
+    at F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1806:9
+    at __executeQueryCommand (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1636:44)
+    at Db._executeQueryCommand (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1805:7)
+    at Cursor.nextObject (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\cursor.js:729:13)
+    at Cursor.toArray (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\cursor.js:158:10)
+    at Cursor.toArray (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\scope.js:10:20)
+    at F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1541:65
+    at Db.collection (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:495:44)
+    at Db.indexInformation (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1539:8)
+    at Db.ensureIndex (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1403:8)
+    at Collection.ensureIndex (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\collection\index.js:65:11)
+[Sun Jan 17 2016 18:57:48 GMT+0800 (中国标准时间)] /__webpack_hmr
+Error: Error setting TTL index on collection : sessions
+    at F:\yowork\isomorphic-redux-app\node_modules\connect-mongo\lib\connect-mongo.js:161:23
+    at F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1404:28
+    at F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1542:30
+    at F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\cursor.js:159:22
+    at commandHandler (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\cursor.js:678:48)
+    at F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1806:9
+    at __executeQueryCommand (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1636:44)
+    at Db._executeQueryCommand (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1805:7)
+    at Cursor.nextObject (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\cursor.js:729:13)
+    at Cursor.toArray (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\cursor.js:158:10)
+    at Cursor.toArray (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\scope.js:10:20)
+    at F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1541:65
+    at Db.collection (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:495:44)
+    at Db.indexInformation (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1539:8)
+    at Db.ensureIndex (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1403:8)
+    at Collection.ensureIndex (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\collection\index.js:65:11)
+[Sun Jan 17 2016 19:01:51 GMT+0800 (中国标准时间)] /__webpack_hmr
+Error: Error setting TTL index on collection : sessions
+    at F:\yowork\isomorphic-redux-app\node_modules\connect-mongo\lib\connect-mongo.js:161:23
+    at F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1404:28
+    at F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1542:30
+    at F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\cursor.js:159:22
+    at commandHandler (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\cursor.js:678:48)
+    at Db._executeQueryCommand (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1802:12)
+    at Cursor.nextObject (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\cursor.js:729:13)
+    at Cursor.toArray (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\cursor.js:158:10)
+    at Cursor.toArray (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\scope.js:10:20)
+    at F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1541:65
+    at Db.collection (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:495:44)
+    at Db.indexInformation (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1539:8)
+    at Db.ensureIndex (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1403:8)
+    at Collection.ensureIndex (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\collection\index.js:65:11)
+    at F:\yowork\isomorphic-redux-app\node_modules\connect-mongo\lib\connect-mongo.js:159:29
+    at Db.collection (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:495:44)
+[Sun Jan 17 2016 19:09:55 GMT+0800 (中国标准时间)] /__webpack_hmr
+Error: Error setting TTL index on collection : sessions
+    at F:\yowork\isomorphic-redux-app\node_modules\connect-mongo\lib\connect-mongo.js:161:23
+    at F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1404:28
+    at F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1542:30
+    at F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\cursor.js:159:22
+    at commandHandler (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\cursor.js:678:48)
+    at F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1806:9
+    at __executeQueryCommand (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1636:44)
+    at Db._executeQueryCommand (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1805:7)
+    at Cursor.nextObject (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\cursor.js:729:13)
+    at Cursor.toArray (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\cursor.js:158:10)
+    at Cursor.toArray (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\scope.js:10:20)
+    at F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1541:65
+    at Db.collection (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:495:44)
+    at Db.indexInformation (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1539:8)
+    at Db.ensureIndex (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1403:8)
+    at Collection.ensureIndex (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\collection\index.js:65:11)
+[Sun Jan 17 2016 19:09:56 GMT+0800 (中国标准时间)] /topics
+Error: Cannot determine state of server
+    at canCheckoutReader (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\connection\server.js:767:12)
+    at Server.checkoutReader (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\connection\server.js:779:16)
+    at Cursor.nextObject (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\cursor.js:720:48)
+    at Cursor.nextObject (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\scope.js:22:20)
+    at Collection.findOne (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\collection\query.js:145:10)
+    at F:\yowork\isomorphic-redux-app\node_modules\connect-mongo\lib\connect-mongo.js:214:18
+    at MongoStore._get_collection (F:\yowork\isomorphic-redux-app\node_modules\connect-mongo\lib\connect-mongo.js:148:21)
+    at MongoStore.get (F:\yowork\isomorphic-redux-app\node_modules\connect-mongo\lib\connect-mongo.js:213:10)
+    at session (F:\yowork\isomorphic-redux-app\node_modules\express-session\index.js:356:11)
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:312:13)
+    at F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:330:12)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:271:10)
+    at cookieParser (F:\yowork\isomorphic-redux-app\node_modules\cookie-parser\index.js:68:5)
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+[Sun Jan 17 2016 19:12:03 GMT+0800 (中国标准时间)] /__webpack_hmr
+Error: Error setting TTL index on collection : sessions
+    at F:\yowork\isomorphic-redux-app\node_modules\connect-mongo\lib\connect-mongo.js:161:23
+    at F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1404:28
+    at F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1542:30
+    at F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\cursor.js:159:22
+    at commandHandler (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\cursor.js:678:48)
+    at F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1806:9
+    at __executeQueryCommand (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1636:44)
+    at Db._executeQueryCommand (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1805:7)
+    at Cursor.nextObject (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\cursor.js:729:13)
+    at Cursor.toArray (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\cursor.js:158:10)
+    at Cursor.toArray (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\scope.js:10:20)
+    at F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1541:65
+    at Db.collection (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:495:44)
+    at Db.indexInformation (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1539:8)
+    at Db.ensureIndex (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1403:8)
+    at Collection.ensureIndex (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\collection\index.js:65:11)
+[Sun Jan 17 2016 19:13:02 GMT+0800 (中国标准时间)] /__webpack_hmr
+Error: Error setting TTL index on collection : sessions
+    at F:\yowork\isomorphic-redux-app\node_modules\connect-mongo\lib\connect-mongo.js:161:23
+    at F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1404:28
+    at F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1542:30
+    at F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\cursor.js:159:22
+    at commandHandler (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\cursor.js:678:48)
+    at F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1806:9
+    at __executeQueryCommand (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1636:44)
+    at Db._executeQueryCommand (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1805:7)
+    at Cursor.nextObject (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\cursor.js:729:13)
+    at Cursor.toArray (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\cursor.js:158:10)
+    at Cursor.toArray (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\scope.js:10:20)
+    at F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1541:65
+    at Db.collection (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:495:44)
+    at Db.indexInformation (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1539:8)
+    at Db.ensureIndex (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1403:8)
+    at Collection.ensureIndex (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\collection\index.js:65:11)
+[Sun Jan 17 2016 19:26:25 GMT+0800 (中国标准时间)] /__webpack_hmr
+Error: Error setting TTL index on collection : sessions
+    at F:\yowork\isomorphic-redux-app\node_modules\connect-mongo\lib\connect-mongo.js:161:23
+    at F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1404:28
+    at F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1542:30
+    at F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\cursor.js:159:22
+    at commandHandler (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\cursor.js:678:48)
+    at Db._executeQueryCommand (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1802:12)
+    at Cursor.nextObject (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\cursor.js:729:13)
+    at Cursor.toArray (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\cursor.js:158:10)
+    at Cursor.toArray (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\scope.js:10:20)
+    at F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1541:65
+    at Db.collection (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:495:44)
+    at Db.indexInformation (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1539:8)
+    at Db.ensureIndex (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1403:8)
+    at Collection.ensureIndex (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\collection\index.js:65:11)
+    at F:\yowork\isomorphic-redux-app\node_modules\connect-mongo\lib\connect-mongo.js:159:29
+    at Db.collection (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:495:44)
+[Sun Jan 17 2016 19:27:38 GMT+0800 (中国标准时间)] /__webpack_hmr
+Error: Error setting TTL index on collection : sessions
+    at F:\yowork\isomorphic-redux-app\node_modules\connect-mongo\lib\connect-mongo.js:161:23
+    at F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1404:28
+    at F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1542:30
+    at F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\cursor.js:159:22
+    at commandHandler (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\cursor.js:678:48)
+    at F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1806:9
+    at __executeQueryCommand (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1636:44)
+    at Db._executeQueryCommand (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1805:7)
+    at Cursor.nextObject (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\cursor.js:729:13)
+    at Cursor.toArray (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\cursor.js:158:10)
+    at Cursor.toArray (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\scope.js:10:20)
+    at F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1541:65
+    at Db.collection (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:495:44)
+    at Db.indexInformation (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1539:8)
+    at Db.ensureIndex (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1403:8)
+    at Collection.ensureIndex (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\collection\index.js:65:11)
+[Sun Jan 17 2016 19:31:59 GMT+0800 (中国标准时间)] /__webpack_hmr
+Error: Error setting TTL index on collection : sessions
+    at F:\yowork\isomorphic-redux-app\node_modules\connect-mongo\lib\connect-mongo.js:161:23
+    at F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1404:28
+    at F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1542:30
+    at F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\cursor.js:159:22
+    at commandHandler (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\cursor.js:678:48)
+    at Db._executeQueryCommand (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1802:12)
+    at Cursor.nextObject (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\cursor.js:729:13)
+    at Cursor.toArray (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\cursor.js:158:10)
+    at Cursor.toArray (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\scope.js:10:20)
+    at F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1541:65
+    at Db.collection (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:495:44)
+    at Db.indexInformation (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1539:8)
+    at Db.ensureIndex (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1403:8)
+    at Collection.ensureIndex (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\collection\index.js:65:11)
+    at F:\yowork\isomorphic-redux-app\node_modules\connect-mongo\lib\connect-mongo.js:159:29
+    at Db.collection (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:495:44)
+[Sun Jan 17 2016 19:34:22 GMT+0800 (中国标准时间)] /__webpack_hmr
+Error: Error setting TTL index on collection : sessions
+    at F:\yowork\isomorphic-redux-app\node_modules\connect-mongo\lib\connect-mongo.js:161:23
+    at F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1404:28
+    at F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1542:30
+    at F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\cursor.js:159:22
+    at commandHandler (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\cursor.js:678:48)
+    at Db._executeQueryCommand (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1802:12)
+    at Cursor.nextObject (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\cursor.js:729:13)
+    at Cursor.toArray (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\cursor.js:158:10)
+    at Cursor.toArray (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\scope.js:10:20)
+    at F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1541:65
+    at Db.collection (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:495:44)
+    at Db.indexInformation (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1539:8)
+    at Db.ensureIndex (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1403:8)
+    at Collection.ensureIndex (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\collection\index.js:65:11)
+    at F:\yowork\isomorphic-redux-app\node_modules\connect-mongo\lib\connect-mongo.js:159:29
+    at Db.collection (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:495:44)
+[Sun Jan 17 2016 19:37:57 GMT+0800 (中国标准时间)] /topics
+Error: Error setting TTL index on collection : sessions
+    at F:\yowork\isomorphic-redux-app\node_modules\connect-mongo\lib\connect-mongo.js:161:23
+    at F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1404:28
+    at F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1542:30
+    at F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\cursor.js:159:22
+    at commandHandler (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\cursor.js:678:48)
+    at F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1806:9
+    at __executeQueryCommand (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1636:44)
+    at Db._executeQueryCommand (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1805:7)
+    at Cursor.nextObject (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\cursor.js:729:13)
+    at Cursor.toArray (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\cursor.js:158:10)
+    at Cursor.toArray (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\scope.js:10:20)
+    at F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1541:65
+    at Db.collection (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:495:44)
+    at Db.indexInformation (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1539:8)
+    at Db.ensureIndex (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1403:8)
+    at Collection.ensureIndex (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\collection\index.js:65:11)
+[Sun Jan 17 2016 19:48:25 GMT+0800 (中国标准时间)] /bundle.js
+Error: Cannot determine state of server
+    at canCheckoutReader (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\connection\server.js:767:12)
+    at Server.checkoutReader (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\connection\server.js:779:16)
+    at Cursor.nextObject (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\cursor.js:720:48)
+    at Cursor.nextObject (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\scope.js:22:20)
+    at Collection.findOne (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\collection\query.js:145:10)
+    at F:\yowork\isomorphic-redux-app\node_modules\connect-mongo\lib\connect-mongo.js:214:18
+    at MongoStore._get_collection (F:\yowork\isomorphic-redux-app\node_modules\connect-mongo\lib\connect-mongo.js:148:21)
+    at MongoStore.get (F:\yowork\isomorphic-redux-app\node_modules\connect-mongo\lib\connect-mongo.js:213:10)
+    at session (F:\yowork\isomorphic-redux-app\node_modules\express-session\index.js:356:11)
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:312:13)
+    at F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:330:12)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:271:10)
+    at cookieParser (F:\yowork\isomorphic-redux-app\node_modules\cookie-parser\index.js:68:5)
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+[Sun Jan 17 2016 20:33:12 GMT+0800 (中国标准时间)] /__webpack_hmr
+Error: Error setting TTL index on collection : sessions
+    at F:\yowork\isomorphic-redux-app\node_modules\connect-mongo\lib\connect-mongo.js:161:23
+    at F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1404:28
+    at F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1542:30
+    at F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\cursor.js:159:22
+    at commandHandler (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\cursor.js:678:48)
+    at F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1806:9
+    at __executeQueryCommand (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1636:44)
+    at Db._executeQueryCommand (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1805:7)
+    at Cursor.nextObject (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\cursor.js:729:13)
+    at Cursor.toArray (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\cursor.js:158:10)
+    at Cursor.toArray (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\scope.js:10:20)
+    at F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1541:65
+    at Db.collection (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:495:44)
+    at Db.indexInformation (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1539:8)
+    at Db.ensureIndex (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1403:8)
+    at Collection.ensureIndex (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\collection\index.js:65:11)
+[Sun Jan 17 2016 23:03:31 GMT+0800 (中国标准时间)] /favicon.ico
+Error: Error setting TTL index on collection : sessions
+    at F:\yowork\isomorphic-redux-app\node_modules\connect-mongo\lib\connect-mongo.js:161:23
+    at F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1404:28
+    at F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1542:30
+    at F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\cursor.js:159:22
+    at commandHandler (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\cursor.js:678:48)
+    at Db._executeQueryCommand (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1802:12)
+    at Cursor.nextObject (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\cursor.js:729:13)
+    at Cursor.toArray (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\cursor.js:158:10)
+    at Cursor.toArray (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\scope.js:10:20)
+    at F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1541:65
+    at Db.collection (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:495:44)
+    at Db.indexInformation (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1539:8)
+    at Db.ensureIndex (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1403:8)
+    at Collection.ensureIndex (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\collection\index.js:65:11)
+    at F:\yowork\isomorphic-redux-app\node_modules\connect-mongo\lib\connect-mongo.js:159:29
+    at Db.collection (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:495:44)
+[Sun Jan 17 2016 23:03:32 GMT+0800 (中国标准时间)] /ask
+Error: no open connections
+    at Db._executeQueryCommand (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1802:21)
+    at Cursor.nextObject (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\cursor.js:729:13)
+    at Cursor.nextObject (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\scope.js:22:20)
+    at Collection.findOne (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\collection\query.js:145:10)
+    at F:\yowork\isomorphic-redux-app\node_modules\connect-mongo\lib\connect-mongo.js:214:18
+    at MongoStore._get_collection (F:\yowork\isomorphic-redux-app\node_modules\connect-mongo\lib\connect-mongo.js:148:21)
+    at MongoStore.get (F:\yowork\isomorphic-redux-app\node_modules\connect-mongo\lib\connect-mongo.js:213:10)
+    at session (F:\yowork\isomorphic-redux-app\node_modules\express-session\index.js:356:11)
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:312:13)
+    at F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:330:12)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:271:10)
+    at cookieParser (F:\yowork\isomorphic-redux-app\node_modules\cookie-parser\index.js:68:5)
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:312:13)
+[Sun Jan 17 2016 23:03:33 GMT+0800 (中国标准时间)] /__webpack_hmr
+Error: Cannot determine state of server
+    at canCheckoutReader (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\connection\server.js:767:12)
+    at Server.checkoutReader (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\connection\server.js:779:16)
+    at Cursor.nextObject (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\cursor.js:720:48)
+    at Cursor.nextObject (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\scope.js:22:20)
+    at Collection.findOne (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\collection\query.js:145:10)
+    at F:\yowork\isomorphic-redux-app\node_modules\connect-mongo\lib\connect-mongo.js:214:18
+    at MongoStore._get_collection (F:\yowork\isomorphic-redux-app\node_modules\connect-mongo\lib\connect-mongo.js:148:21)
+    at MongoStore.get (F:\yowork\isomorphic-redux-app\node_modules\connect-mongo\lib\connect-mongo.js:213:10)
+    at session (F:\yowork\isomorphic-redux-app\node_modules\express-session\index.js:356:11)
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:312:13)
+    at F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:330:12)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:271:10)
+    at cookieParser (F:\yowork\isomorphic-redux-app\node_modules\cookie-parser\index.js:68:5)
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)

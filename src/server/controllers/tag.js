@@ -23,7 +23,7 @@ router.post('/getAll', function (req, res) {
                 }
             });
         }
-        res.status(200).send({data:tags});
+        res.status(200).send({data:tags,user:req.session.user});
     });
 });
 

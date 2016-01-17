@@ -39,7 +39,7 @@ export default class Publish extends Component {
 
     }
     render(){
-        const { tags = [] } = this.props.publishInfo;
+        const { tags = [] ,user} = this.props.publishInfo;
 
         const { title } = this.state;
 
@@ -49,7 +49,7 @@ export default class Publish extends Component {
         })
         return (
             <div className="qa-ask">
-                <Header />
+                <Header user={user}/>
                 <div className="wrap publish">
                     <div className="container">
                         <h1 className="h4 mt20">

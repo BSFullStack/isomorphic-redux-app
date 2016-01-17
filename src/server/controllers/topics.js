@@ -3,18 +3,56 @@ import  mongoose from 'mongoose';
 import _ from 'lodash';
 import { isLoginAuth } from '../middlewares/loginAuth';
 import { setError , setOk ,sendOk} from '../lib/utils';
+import moment from 'moment';
 const router = express.Router();
 
 const Topic = mongoose.model('Topic');
+
+moment.locale('en', {
+    relativeTime : {
+        future: "在 %s",
+        past:   "%s",
+        s:  "刚刚",
+        m:  "1分钟前",
+        mm: "%d分钟前",
+        h:  "1小时前",
+        hh: "%d小时前",
+        d:  "1天前",
+        dd: "%d天前",
+        M:  "1个月前",
+        MM: "%d个月前",
+        y:  "1年前",
+        yy: "%d年前"
+    }
+});
+moment.locale('zh-cn', {
+    relativeTime : {
+        future: "在%s",
+        past:   "%s",
+        s:  "刚刚",
+        m:  "1分钟前",
+        mm: "%d分钟前",
+        h:  "1小时前",
+        hh: "%d小时前",
+        d:  "1天前",
+        dd: "%d天前",
+        M:  "1个月前",
+        MM: "%d个月前",
+        y:  "1年前",
+        yy: "%d年前"
+    }
+});
 module.exports= function (app) {
     app.use("/topics",router);
 };
 //查询列表
 router.post('/get', function (req, res) {
+
     const { pageIndex = 1 , pageSize = 15 ,lastTime } = req.body;
     Topic.get({pageIndex,pageSize,lastTime},(err,result)=>{
         if(result){
-            res.status(200).json({...result});
+
+            res.status(200).json({...result,user:req.session.user});
         }
 
     })
@@ -35,7 +73,7 @@ router.post('/getDetail', function (req, res) {
             });
         }
         if(result){
-            res.status(200).json({data:result});
+            res.status(200).json({data:result,user:req.session.user});
         }
 
     })

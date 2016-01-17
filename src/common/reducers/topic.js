@@ -6,7 +6,7 @@ import {
     TOPICS_GET_SUCCESS,
     TOPICS_GET_FAILURE
 } from '../actions/topic';
-
+import _ from 'lodash';
 const initialState = {
     error: {},
     count:0,
@@ -35,6 +35,7 @@ function topics(state = initialState , action) {
                 didInvalidate: false,
                 topics: action.topics,
                 count:action.count,
+                user:action.user,
                 lastUpdated: action.receivedAt
             });
         case TOPICS_GET_FAILURE:
@@ -63,20 +64,34 @@ export function topicsByCategory(state = { }, action) {
     case TOPICS_GET_SUCCESS:
         let topicsArray = [];
         let count = 0;
-
+        let result = [];
+        let user = null;
         if(action.req && action.req.data && action.req.data.topics){
            const { topics } = state[action.category];
-           topicsArray = topics.concat(action.req.data.topics);
-           count = action.req.data.count;
-           // topicsArray = data.map(child => child.data);
 
+           topicsArray = topics.concat(action.req.data.topics);
+           user = action.req.data.user;
+           count = action.req.data.count;
+
+           //topicsArray = data.map(child => child.data);
+
+           let _meobj = {} ;
+           _.find(topicsArray,(item)=>{
+                const { id } = item;
+                if(!_meobj[id]){
+                    result.push(item);
+                }
+                _meobj[id]=true;
+
+           })
         }
         return Object.assign({}, state, {
             [action.category]: topics(state[action.category], {
               type: action.type,
               category: action.category,
-              topics: topicsArray,
+              topics:  result,
               count:count,
+              user:user,
               receivedAt: Date.now()
             })
         });

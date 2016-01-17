@@ -1,8 +1,11 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router';
 import { Tab , Tabs , TabList , TabPanel  } from './ui/tabs';
+
+
 class Login extends Component {
     constructor(props) {
+
         super(props);
         let selectedIndex=1;
         if(props.location.hash == "#signin"){
@@ -140,9 +143,7 @@ class Login extends Component {
     componentDidMount(){
          const { registerEmailInput , registerPasswordInput , registerUserNameInput ,e1,e2,e3} = this.refs;
 
-        $(registerEmailInput).click(function(){
-            alert()
-        })
+
     }
     //隐藏错误信息
     hideError(){
@@ -162,6 +163,8 @@ class Login extends Component {
     }
     //注册
     handlerRegister(){
+
+
         const { registerEmailInput , registerPasswordInput , registerUserNameInput ,e1,e2,e3} = this.refs;
         const [
                 email ,
@@ -247,5 +250,7 @@ class Login extends Component {
         });
     }
 }
+
+
 
 export default Login;

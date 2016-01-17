@@ -14,8 +14,7 @@ const history = createBrowserHistory();
 const initialState = window.__INITIAL_STATE__;
 const store = configureStore(initialState);
 
-//引入样式
-import "../../public/css/index.css";
+
 
 
 moment.locale('en', {

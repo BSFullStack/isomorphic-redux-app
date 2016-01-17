@@ -34,13 +34,13 @@ function shouldFetchTopics(state, category) {
 
     const topics = state.topicsByCategory[category];
 
-    if (!topics) {
+    //if (!topics) {
         return true;
-    } else if (topics.isFetching) {
-        return false;
-    } else {
-        return topics.didInvalidate;
-    }
+    //} else if (topics.isFetching) {
+        //return false;
+   // } else {
+    //    return topics.didInvalidate;
+    //}
 }
 
 export function fetchTopicsIfNeeded(reddit) {

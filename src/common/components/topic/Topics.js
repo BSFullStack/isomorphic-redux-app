@@ -7,11 +7,11 @@ import NoTopic from './NoTopic';
 class Topics extends Component{
 
     render(){
-        const { topics } = this.props;
+        const { topics , isFetching } = this.props;
         let topicsComponent ;
-        if( topics.length == 0 ){
+        if( topics.length == 0 && isFetching){
             topicsComponent = (
-                <p>暂无问题!</p>
+                <p>正在加载...</p>
             );
         } else {
             topicsComponent = this._renderTopic(topics);

@@ -2,6 +2,8 @@ import React, { Component, PropTypes } from 'react';
 import EixtWidget from './ExitHeader';
 export default class Header extends Component {
     render() {
+        const { user } = this.props;
+
         return (
            <div className="global-nav" xmlns="http://www.w3.org/1999/html">
                 <nav className="container nav">
@@ -28,7 +30,7 @@ export default class Header extends Component {
                         <span className="glyphicon glyphicon-pencil"></span>
                     </a>
 
-                    <EixtWidget />
+                    <EixtWidget user={user}/>
                     <ul className="opts pull-right list-inline hidden-xs">
                         <li className="opts__item dropdown hoverDropdown write-btns">
                         <a className="dropdownBtn" data-toggle="dropdown" href="/ask" >我要提问</a>

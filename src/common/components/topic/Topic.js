@@ -4,7 +4,7 @@ import cx from 'classnames';
 import moment from 'moment';
 import TagList from '../ui/topicDetail/TagList';
 /**
- * 图书列表明细
+ * 列表明细
  */
 class Topic extends Component{
 

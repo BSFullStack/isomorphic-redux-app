@@ -1,26 +1,43 @@
 import React,{Component,PropTypes} from 'react';
 export default class EixtWidget extends Component {
 	constructor (props) {
-		super (props);		
+		super (props);
 	}
-	mouseover () {		
-		$(".exit-menu").show();	
+	mouseover () {
+		$(".exit-menu").show();
 	}
-	mouseout () {	
-		$(".exit-menu").hide();	
-		
+	mouseout () {
+		$(".exit-menu").hide();
+
 	}
-	render () {		
+	render () {
+        const { user } = this.props;
+        let menuComponent;
+        if(user){
+            menuComponent = (
+                <ul className="opts pull-right list-inline hidden-xs">
+                        <li className="opts__item">
+                            <a href="/login#signup" className="SFLogin em ml10" >退出</a>
+                        </li>
+                </ul>
+            )
+        }else{
+            menuComponent = (
+                <ul className="opts pull-right list-inline hidden-xs">
+                    <li className="opts__item">
+                        <a href="/login#signup" className="SFLogin em ml10" >注册 · 登录</a>
+                    </li>
+                </ul>
+            )
+        }
 		return (
-			<div className="exitBox" onMouseOver={this.mouseover.bind(this)} onMouseOut={this.mouseout.bind(this)}>
-				<span className="photoMenu"></span>
-				<div className="exit-menu">
-					<ul className="exit-content">
-						<li><a href="#">我的主页</a></li>
-						<li><a href="#">退出</a></li>
-					</ul>
-				</div>
+			<div className="exitBox">
+                { menuComponent }
 			</div>
 		);
 	}
+    //处理登出单击
+    handlerClick(e){
+
+    }
 }
