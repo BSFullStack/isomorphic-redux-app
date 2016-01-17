@@ -25,6 +25,15 @@ router.post('/getDetail', function (req, res) {
     const { topicId } = req.body;
 
     Topic.getDetail(topicId,(err,result)=>{
+        if(err){
+
+            res.status(200).json({
+                data:{
+                    error:true,
+                    code:404
+                }
+            });
+        }
         if(result){
             res.status(200).json({data:result});
         }
