@@ -60,7 +60,7 @@ TopicSchema.statics.addAnswer = function({answerUserId,topicId,answerContent},cb
     const Answers = mongoose.model('Answers');
 
     const nowTime = moment(new Date()).format("YYYY-MM-DD HH:mm:ss");
-    console.log(nowTime);
+
     const answers = new Answers({
         id:uuid.v4(),
         content:answerContent,
