@@ -13499,3 +13499,49 @@ Original style from softwaremaniacs.org (c) Ivan Sagalaev <Maniac@SoftwareManiac
     -webkit-transform: scale(1.0);
   }
 }
+
+/*头部退出登录*/
+.global-nav .exitBox{float:right;}
+.global-nav .photoMenu{
+	width:30px;
+	height:30px;
+	margin:12px 0 0 27px;
+	display: inline-block;
+	background:url("/img/user-64.png") no-repeat left top;
+	cursor: pointer;
+	background-size: contain;
+}
+.global-nav .exitBox{
+	position: relative;
+}
+.global-nav .exit-menu{
+	width:100px;
+	padding:10px 10px 0;
+	background:#fff;
+	border: 1px solid rgba(0,0,0,.15);
+    border-radius: 3px;
+    -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+    box-shadow: 0 6px 12px rgba(0,0,0,.175);
+    background-clip: padding-box;
+    position: absolute;
+    right:0;
+    top:43px;
+    z-index:3333;
+    display: none;
+}
+.global-nav .exit-menu li{list-style: none;width:100%;}
+.global-nav .exit-menu .exit-content li a {
+	display: inline-block;
+	width:100%;
+    font-weight: 400;
+    color: #333;
+    font-size:14px;
+    padding:5px;
+}
+
+.global-nav .exit-menu .exit-content>li>a:focus,.global-nav .exit-menu .exit-content>li>a:hover {
+    text-decoration: none;
+    color: #262626;
+    background-color: #f5f5f5
+}
+
