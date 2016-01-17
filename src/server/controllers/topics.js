@@ -3,9 +3,14 @@ import  mongoose from 'mongoose';
 import _ from 'lodash';
 import { isLoginAuth } from '../middlewares/loginAuth';
 import { setError , setOk ,sendOk} from '../lib/utils';
+import emailService from '../lib/emailHelper';
+import credentials from '../config/credentials';
+
+const eS = emailService(credentials);
 const router = express.Router();
 
 const Topic = mongoose.model('Topic');
+const User = mongoose.model('User')
 module.exports= function (app) {
     app.use("/topics",router);
 };
@@ -50,6 +55,13 @@ router.post('/addAnswer',isLoginAuth,function(req,res){
             res.status(200).json(setError());
         }
         if(answer){
+            //发邮件
+            Topic.getDetail(topicId,function(err,userInfo){
+                User.getOne(userInfo.id,function(err,user){
+                    eS.send(user.email,"您有新的消息，亲及时查收","")
+                })
+            })
+            
             res.status(200).json({data:answer});
         }
    });

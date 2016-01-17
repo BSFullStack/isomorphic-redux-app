@@ -24,7 +24,7 @@ class Login extends Component {
         const { loginInfo , registerInfo } = nextProps;
         const { bl , msg , error  } = loginInfo.data;
         const { bl:regbl , msg:regmsg , error:regerr } = registerInfo;
-        
+        debugger;
         //登录成功 || 注册成功
         if( ( bl == "1" && !error ) || (regbl == "1" && !regerr) ){
             return this.props.history.push("/topics");
@@ -46,7 +46,7 @@ class Login extends Component {
             bl ,
             msg ,
             error , 
-            showError ,
+            showError1 ,
             showError2 ,
             selectedIndex,
 
@@ -129,7 +129,7 @@ class Login extends Component {
 
                                         <div className="weibo-signup-wrapper">
                                         </div>
-                                        {showError && <label className="loginerror2 show">{msg}</label> }
+                                        {showError1 && <label className="loginerror2 show">{msg}</label> }
                                 </TabPanel>
                             </Tabs>
 
