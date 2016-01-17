@@ -17,13 +17,13 @@ const initialState = {
 
 //登录
 export function login(state = initialState , action) {
-
+    
     switch (action.type) {
         case LOGIN_REQUEST:
             return Object.assign({},initialState);
         case LOGIN_SUCCESS:
 
-            return Object.assign({},state,action.req.data);
+            return Object.assign({},state.data,action.req.data);
         default:
 
             return state;

@@ -137,6 +137,7 @@ class TopicDetail extends Component {
         );
     }
     handlerAnswer(){
+        debugger;
         const  { id } = this.props.data;
 
         const answer = this.mdEditor.getValue();

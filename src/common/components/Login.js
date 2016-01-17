@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router';
+import ReactDOM from 'react-dom';
 import { Tab , Tabs , TabList , TabPanel  } from './ui/tabs';
 class Login extends Component {
     constructor(props) {
@@ -23,6 +24,7 @@ class Login extends Component {
         const { loginInfo , registerInfo } = nextProps;
         const { bl , msg , error  } = loginInfo.data;
         const { bl:regbl , msg:regmsg , error:regerr } = registerInfo;
+        
         //登录成功 || 注册成功
         if( ( bl == "1" && !error ) || (regbl == "1" && !regerr) ){
             return this.props.history.push("/topics");
@@ -32,7 +34,8 @@ class Login extends Component {
             bl : bl  == "" || regbl,
             msg :msg || regmsg,
             error:error || regerr ,
-            showError :error || regerr,
+            showError1 :error ,
+            showError2 :regerr,
             errArr:[]
 
         });
@@ -42,8 +45,9 @@ class Login extends Component {
         const {
             bl ,
             msg ,
-            error ,
+            error , 
             showError ,
+            showError2 ,
             selectedIndex,
 
             showErr
@@ -61,7 +65,7 @@ class Login extends Component {
                     <div className="index-main-body">
                         <div className="index-header">
                             <h1 className="logo hide-text">SKT-Topic</h1>
-                            <h2 className="subtitle">share your exprience with BEISEN colleague</h2>
+                            <h2 className="subtitle">SKT一个专注于话题的平台</h2>
                         </div>
                         <div className="desk-front sign-flow clearfix sign-flow-simple">
                             <Tabs
@@ -79,16 +83,16 @@ class Login extends Component {
                                         <div className="group-inputs">
                                             <div className="name input-wrapper">
 
-                                                <input required type="text" name="name" onFocus={::this.hideError} ref="registerUserNameInput" aria-label="用户名" placeholder="用户名" />
-                                                <label className="errTip" ref="e1" >请填写正确的</label>
+                                                <input required type="text" name="name" onFocus={::this.hideError}  ref="registerUserNameInput" aria-label="用户名" placeholder="用户名" />
+                                                <label className="errTip" ref="e1" >请填写正确的用户名</label>
 
                                             </div>
                                             <div className="email input-wrapper">
-                                                <input required="" type="text" className="account"  ref="registerEmailInput" name="phone_num" aria-label="常用邮箱" placeholder="常用邮箱" />
+                                                <input required="" type="text" className="account" onFocus={::this.hideError}  ref="registerEmailInput" name="phone_num" aria-label="常用邮箱" placeholder="常用邮箱" />
                                                 <label className="errTip" ref="e2">请填写正确的E-Mail</label>
                                             </div>
                                             <div className="input-wrapper">
-                                                <input required="" type="password" name="password"  ref="registerPasswordInput" aria-label="密码" placeholder="密码（不少于 6 位）"/>
+                                                <input required="" type="password" name="password" onFocus={::this.hideError}  ref="registerPasswordInput" aria-label="密码" placeholder="密码（不少于 6 位）"/>
                                                 <label className="errTip" ref="e3">请填写正确的密码</label>
 
                                             </div>
@@ -99,8 +103,8 @@ class Login extends Component {
                                             <button className="sign-button submit" type="button" onClick={::this.handlerRegister}>注册SKT-Topic</button>
                                         </div>
 
-
-                                        {showError && <label className="error show">{msg}</label> }
+                                        {showError2 && <label className="loginerror show">{msg}</label> }
+                                        
                                 </TabPanel>
                                 <TabPanel className="view-signup" >
 
@@ -111,7 +115,7 @@ class Login extends Component {
                                                 <label className="errTip" ref="e4">请填写正确的E-Mail</label>
                                             </div>
                                             <div className="input-wrapper">
-                                                <input type="password" name="password"  aria-label="密码" ref="loginPasswordInput" placeholder="密码" required="" />
+                                                <input type="password" name="password" onFocus={::this.hideError}  aria-label="密码" ref="loginPasswordInput" placeholder="密码" required="" />
                                                 <label className="errTip" ref="e5">请填写正确的密码</label>
                                             </div>
 
@@ -125,7 +129,7 @@ class Login extends Component {
 
                                         <div className="weibo-signup-wrapper">
                                         </div>
-                                        {showError && <label className="error show">{msg}</label> }
+                                        {showError && <label className="loginerror2 show">{msg}</label> }
                                 </TabPanel>
                             </Tabs>
 
@@ -140,14 +144,15 @@ class Login extends Component {
     componentDidMount(){
          const { registerEmailInput , registerPasswordInput , registerUserNameInput ,e1,e2,e3} = this.refs;
 
-        $(registerEmailInput).click(function(){
-            alert()
-        })
+       
     }
     //隐藏错误信息
-    hideError(){
-
-
+    hideError(e){
+        
+        // var err = ReactDOM.findDOMNode(cur);
+        
+        var err = $(e.target.nextSibling);
+        err.css({"opacity":0,"visibility":"hidden"});
 
     }
     //切换标签页，粗劣实现
@@ -161,7 +166,7 @@ class Login extends Component {
         //this.setState({selectedIndex});
     }
     //注册
-    handlerRegister(){
+    saveValidate(){
         const { registerEmailInput , registerPasswordInput , registerUserNameInput ,e1,e2,e3} = this.refs;
         const [
                 email ,
@@ -172,7 +177,7 @@ class Login extends Component {
                 registerPasswordInput.value ,
                 registerUserNameInput.value
             ];
-
+            
 
         //前端验证 交给盛刚 提示淡入效果 粗劣实现!!!
         let valid = true
@@ -202,7 +207,21 @@ class Login extends Component {
         // this.setState({errArr:errmsg.join()},()=>{
 
         // })
-        if(!valid) return false;
+        return valid?true:false;
+    }
+    handlerRegister(){
+        
+        const { registerEmailInput , registerPasswordInput , registerUserNameInput } = this.refs;
+        const [
+                email ,
+                password ,
+                name
+            ] = [
+                registerEmailInput.value ,
+                registerPasswordInput.value ,
+                registerUserNameInput.value
+            ];
+        if(!this.saveValidate()) return false;
 
 
         //
