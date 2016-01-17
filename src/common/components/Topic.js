@@ -52,10 +52,10 @@ class Topic extends Component {
                                 <p className="main-title hidden-xs"></p>
                                 <Topics topics={topics} handlerClickTitle={::this.handlerClickTitle}></Topics>
                             </div>
-
+                            <Sidebar />
                         </div>
+                        
                     </div>
-                    <Sidebar />
                 </div>
                 <Footer />
             </div>

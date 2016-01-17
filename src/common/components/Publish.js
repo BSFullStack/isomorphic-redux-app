@@ -11,12 +11,14 @@ import AnswersDetail from './ui/topicDetail/Answers';
 import { Select } from 'antd';
 const Option = Select.Option;
 
-
 export default class Publish extends Component {
     constructor(props){
         super(props);
         this.state={
-            title:""
+            title:"",
+            isWrite:false,
+            isTitle:false,
+            isTextarea:false
         }
         this.tagIds = [];
     }
@@ -46,7 +48,8 @@ export default class Publish extends Component {
         let children = tags.map(tag=>{
             const { id , name } = tag;
             return <Option key={id} data-id={id}>{name}</Option>;
-        })
+        });
+        
         return (
             <div className="qa-ask">
                 <Header />
@@ -60,6 +63,7 @@ export default class Publish extends Component {
                         <div className="form-group">
                             <label htmlFor="title" className="sr-only">标题</label>
                             <input id="myTitle" ref='titleInput' data-required={true} onChange={::this.onChange} type="text" name="title" required="" data-error="" autoComplete="off" className="form-control tagClose input-lg" placeholder="标题：一句话说清问题，用问号结尾" value={title} />
+                                {this.validate()}
                         </div>
                         <div className="form-group">
                             <label htmlFor="title" className="sr-only">标题</label>
@@ -76,6 +80,7 @@ export default class Publish extends Component {
                         <div id="questionText" className="editor editMode" style={{minHeight:"203px"}}>
                             <div className="editor" id="questionText">
                                 <textarea ref='answerEditor' name="text" className="form-control" rows="4"></textarea>
+                                {this.validate()}
                             </div>
                         </div>
                         <div className="operations mt20">
@@ -105,13 +110,41 @@ export default class Publish extends Component {
         const content = _.trim(this.mdeditor.getValue());
         //获取选择标签()
         const tagId = this.tagIds.join(",");
-
-        this.props.doPublish({
-            title,
-            content,
-            tagId,
-            r:Math.random()
-        });
+        if(title==""){
+            this.setState({
+                "isWrite":true,
+                "isTitle":true
+            });
+            return;
+        }else if(content==""){
+            this.setState({
+                "isWrite":true,
+                "isTitle":false,
+                "isTextarea":false
+            });
+        }else{
+            this.setState({"isWrite":false});
+            this.setState({"isTitle":true});
+            this.setState({"isTextarea":true});
+            this.props.doPublish({
+                title,
+                content,
+                tagId,
+                r:Math.random()
+            });
+        }
+        
+    }
+    validate(){
+        let isWrite=this.state.isWrite;
+        let isTitle=this.state.isTitle; 
+        if(isWrite){
+            return (
+                <span className="validate-error">*必填项</span>
+            );
+        }else{
+            return;
+        }
     }
     onChange(e){
         this.setState({
