@@ -34,7 +34,13 @@ class TopicDetail extends Component {
     }
 
     componentWillReceiveProps(nextProps) {
-       const { data, error , isFetching } = nextProps;
+
+        const { data, error , isFetching,newAnswer } = nextProps;
+
+        if(newAnswer){
+            const {answers} = data;
+            answers.push(newAnswer);
+        }
         this.setState({
             data,
             error,
@@ -120,7 +126,7 @@ class TopicDetail extends Component {
                 {contentComponent}
 
                 <Footer />
-               
+
 
             </div>
         );
@@ -133,6 +139,7 @@ class TopicDetail extends Component {
         const currentUser = window.BSGlobeData.extraData.loginUser;
 
         this.props.sendAnswer(currentUser.id,id,answer);
+        this.mdEditor.setValue("")
     }
 }
 

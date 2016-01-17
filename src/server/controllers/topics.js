@@ -1,6 +1,7 @@
 import express from 'express';
 import  mongoose from 'mongoose';
 import _ from 'lodash';
+import { isLoginAuth } from '../middlewares/loginAuth';
 import { setError , setOk ,sendOk} from '../lib/utils';
 const router = express.Router();
 
@@ -32,9 +33,9 @@ router.post('/getDetail', function (req, res) {
 });
 
 //详情页 发表回答
-router.post('/addAnswer',function(req,res){
+router.post('/addAnswer',isLoginAuth,function(req,res){
    const { answerUserId , topicId , answerContent } = req.body;
-   console.log("---------------------------------------------------");
+
    Topic.addAnswer({answerUserId , topicId , answerContent},(err,answer)=>{
         if(err || !answer){
             res.status(200).json(setError());

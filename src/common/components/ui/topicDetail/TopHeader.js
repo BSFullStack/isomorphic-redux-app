@@ -1,4 +1,4 @@
-﻿import React, { Component, PropTypes } from 'react';
+import React, { Component, PropTypes } from 'react';
 import FromNow from '../common/FromNow';
 import ButtonWiget from '../common/Button';
 export default class TopHeader extends Component {
@@ -37,17 +37,16 @@ export default class TopHeader extends Component {
                                 <strong className="text-black mr10">
                                     {' '}
                                 </strong>
-                                1 小时前 提问
 
                             </div>
                         </div>
                         <div className="col-md-3">
                             <ul className="widget-action--ver list-unstyled">
                                 <li>
-                                    <ButtonWiget text="关注" className="ttip btn btn-success btn-sm" titpText="关注后将获得更新提醒" />                                          
+                                    <ButtonWiget text="关注" className="ttip btn btn-success btn-sm" titpText="关注后将获得更新提醒" />
                                     <span className="num-attention"><strong>8</strong> 关注</span>
                                 </li>
-                                <li>                                  
+                                <li>
                                     <ButtonWiget text="收藏" className="btn btn-default btn-sm" titpText="" />
                                     <span className="num-attention">
                                         <strong id="sideBookmarked">2</strong> 收藏，<strong className="no-stress">155</strong> 浏览</span>

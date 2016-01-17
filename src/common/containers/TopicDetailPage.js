@@ -10,18 +10,21 @@ import * as TopicDetailActions from '../actions/topicDetail';
 function mapStateToProps(state) {
 
     let { topicDetail } = state;
+
     const {
         data,
         error,
+        newAnswer,
         isFetching
     } =  topicDetail || {
         data:null,
         error:false,
+        newAnswer:null,
         isFetching:false
     };
 
     return {
-
+        newAnswer,
         data,
         error,
         isFetching
