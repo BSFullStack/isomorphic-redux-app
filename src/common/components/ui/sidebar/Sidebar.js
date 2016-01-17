@@ -18,12 +18,16 @@ export default class Sidebar extends Component {
                     ,{title:"222",answers:10,isSolved:true,href:"222.com"}
                     ]
         
-
+        let tags=[
+                 {"name":"nodeJs"}
+                ,{"name":"talentJs"}
+                ,{"name":"react"}
+                ]
         return (
             <div className="col-xs-12 col-md-3 side mt30">                              
                 <div className="widget-box">
                     <h2 className="h4 widget-box__title">全部标签 <a href="/tags" title="更多">»</a></h2>
-                     <TagList className="mb20" tags={[{},{},{}]}/>
+                     <TagList className="mb20" tags={tags}/>
                 </div>
                 <div className="widget-box">
 

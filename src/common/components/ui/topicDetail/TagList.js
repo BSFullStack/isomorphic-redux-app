@@ -14,7 +14,7 @@ export default class TagList extends Component {
     }
     _getChildren(tags){
         return tags.map((tag,index)=>{
-            const { id } = tag;
+            const { id,name } = tag;
             return <Tag {...tag} key={id}/>
         })
     }
