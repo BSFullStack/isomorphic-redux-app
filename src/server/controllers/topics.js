@@ -11,8 +11,8 @@ module.exports= function (app) {
 };
 //查询列表
 router.post('/get', function (req, res) {
-    const { pageIndex = 1 , pageSize = 15 } = req.body;
-    Topic.get({pageIndex,pageSize,queryParam:{}},(err,result)=>{
+    const { pageIndex = 1 , pageSize = 15 ,lastTime } = req.body;
+    Topic.get({pageIndex,pageSize,lastTime},(err,result)=>{
         if(result){
             res.status(200).json({...result});
         }

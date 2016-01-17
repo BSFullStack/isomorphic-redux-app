@@ -17,16 +17,19 @@ function mapStateToProps(state) {
         isFetching,
         lastUpdated,
         error,
+        count,
         topics
     } = topicsByCategory[selectedCategory] || {
         isFetching: true,
         error:{},
+        count:0,
         topics: []
     };
 
     return {
         selectedCategory ,
         topics ,
+        count,
         isFetching ,
         lastUpdated ,
         error

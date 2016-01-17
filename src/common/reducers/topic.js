@@ -9,7 +9,7 @@ import {
 
 const initialState = {
     error: {},
-
+    count:0,
     isFetching: false,
     didInvalidate: false,
     topics: []
@@ -27,11 +27,14 @@ function topics(state = initialState , action) {
                 didInvalidate: false
             });
         case TOPICS_GET_SUCCESS:
-            console.log("****************请求成功***********************");
+
+          /*  const { topics } = state[action.category];
+            topics.concat(action.topics);*/
             return Object.assign({}, state, {
                 isFetching: false,
                 didInvalidate: false,
                 topics: action.topics,
+                count:action.count,
                 lastUpdated: action.receivedAt
             });
         case TOPICS_GET_FAILURE:
@@ -59,10 +62,12 @@ export function topicsByCategory(state = { }, action) {
     case TOPICS_GET_REQUEST:
     case TOPICS_GET_SUCCESS:
         let topicsArray = [];
+        let count = 0;
 
         if(action.req && action.req.data && action.req.data.topics){
-
-           topicsArray = action.req.data.topics;
+           const { topics } = state[action.category];
+           topicsArray = topics.concat(action.req.data.topics);
+           count = action.req.data.count;
            // topicsArray = data.map(child => child.data);
 
         }
@@ -71,6 +76,7 @@ export function topicsByCategory(state = { }, action) {
               type: action.type,
               category: action.category,
               topics: topicsArray,
+              count:count,
               receivedAt: Date.now()
             })
         });

@@ -15,19 +15,18 @@ export default class Header extends Component {
                         </ul>
                     </div>
 
-                    <h1 className="logo"><a className="sf" href="/">SKT-TOPIC</a></h1>
-
+                    <h1 className="logo"><a className="sf" href="/topics">SKT-TOPIC</a></h1>
+                    <ul className="menu list-inline pull-left hidden-xs">
+                        {'                 '}
+                    </ul>
+                    <ul className="menu list-inline pull-left hidden-xs">
+                        <li className="menu__item"><a href="/topics">问答</a></li>
+                        <li className="menu__item"><a className="disabled" href="javascript:;">文章</a></li>
+                        <li className="menu__item"><a className="disabled" href="javascript:;">活动</a></li>
+                    </ul>
                     <a href="/ask" className="visible-xs-block pull-right m-ask m-toptools">
                         <span className="glyphicon glyphicon-pencil"></span>
                     </a>
-
-                    <form action="/search" className="header-search pull-left hidden-sm hidden-xs">
-                        <button className="btn btn-link">
-                            <span className="sr-only">搜索</span>
-                            <span className="glyphicon glyphicon-search"></span>
-                        </button>
-                        <input id="searchBox" name="q" type="text" placeholder="输入关键字搜索" className="form-control" value="" />
-                    </form>
 
                     <EixtWidget />
                     <ul className="opts pull-right list-inline hidden-xs">
@@ -35,7 +34,7 @@ export default class Header extends Component {
                         <a className="dropdownBtn" data-toggle="dropdown" href="/ask" >我要提问</a>
                         </li>
                     </ul>
-                    
+
             </nav>
         </div>
         );

@@ -148,10 +148,9 @@ TopicSchema.statics.getDetail = function(topicId , callback ){
 
 
 //分页查询
-TopicSchema.statics.get = function({ pageIndex , pageSize = 15, queryParam } , callback ){
+TopicSchema.statics.get = function({ pageIndex , pageSize = 15, lastTime } , callback ){
     const User = mongoose.model('User');
     const Answers = mongoose.model('Answers');
-    const { updateTime , ...other } = queryParam ;
     const that = this;
     async.waterfall([
         function(cb){ //查询总数
@@ -160,9 +159,16 @@ TopicSchema.statics.get = function({ pageIndex , pageSize = 15, queryParam } , c
             });
         },
         function(count,cb){ //分页处理
-            that.find({...other}).sort({"createTime":-1}).limit(pageSize).exec((err,topics)=>{
-                cb(err,count,topics)
-            });
+
+            if(pageIndex == 1 || !lastTime){
+                that.find({}).sort({"createTime":-1}).limit(pageSize).exec((err,topics)=>{
+                    cb(err,count,topics)
+                });
+            }else{
+                that.find({"createTime":{"$lt":new Date(lastTime)}}).sort({"createTime":-1}).limit(pageSize).exec((err,topics)=>{
+                    cb(err,count,topics)
+                });
+            }
         },
         function(count,topics,cb){ //查询人员信息
             //找到所有的userId

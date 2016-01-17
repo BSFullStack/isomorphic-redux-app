@@ -24773,3 +24773,9 @@ ul li.ant-transfer-list-highlight-enter {
     color: #262626;
     background-color: #f5f5f5
 }
+
+.nav-tabs-zen > li > a.countNum{
+    border:0px solid #ddd !important;
+    min-width: 100px !important;
+    background-color: #fff !important;
+}
