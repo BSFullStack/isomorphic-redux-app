@@ -1852,3 +1852,1029 @@ Error: Error setting TTL index on collection : sessions
     at Db.indexInformation (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1539:8)
     at Db.ensureIndex (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1403:8)
     at Collection.ensureIndex (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\collection\index.js:65:11)
+[Sun Jan 17 2016 09:51:27 GMT+0800 (中国标准时间)] /__webpack_hmr
+Error: Error setting TTL index on collection : sessions
+    at F:\yowork\isomorphic-redux-app\node_modules\connect-mongo\lib\connect-mongo.js:161:23
+    at F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1404:28
+    at F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1542:30
+    at F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\cursor.js:159:22
+    at commandHandler (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\cursor.js:678:48)
+    at Db._executeQueryCommand (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1802:12)
+    at Cursor.nextObject (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\cursor.js:729:13)
+    at Cursor.toArray (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\cursor.js:158:10)
+    at Cursor.toArray (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\scope.js:10:20)
+    at F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1541:65
+    at Db.collection (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:495:44)
+    at Db.indexInformation (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1539:8)
+    at Db.ensureIndex (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1403:8)
+    at Collection.ensureIndex (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\collection\index.js:65:11)
+    at F:\yowork\isomorphic-redux-app\node_modules\connect-mongo\lib\connect-mongo.js:159:29
+    at Db.collection (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:495:44)
+[Sun Jan 17 2016 09:52:03 GMT+0800 (中国标准时间)] /__webpack_hmr
+Error: Error setting TTL index on collection : sessions
+    at F:\yowork\isomorphic-redux-app\node_modules\connect-mongo\lib\connect-mongo.js:161:23
+    at F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1404:28
+    at F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1542:30
+    at F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\cursor.js:159:22
+    at commandHandler (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\cursor.js:678:48)
+    at Db._executeQueryCommand (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1802:12)
+    at Cursor.nextObject (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\cursor.js:729:13)
+    at Cursor.toArray (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\cursor.js:158:10)
+    at Cursor.toArray (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\scope.js:10:20)
+    at F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1541:65
+    at Db.collection (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:495:44)
+    at Db.indexInformation (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1539:8)
+    at Db.ensureIndex (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1403:8)
+    at Collection.ensureIndex (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\collection\index.js:65:11)
+    at F:\yowork\isomorphic-redux-app\node_modules\connect-mongo\lib\connect-mongo.js:159:29
+    at Db.collection (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:495:44)
+[Sun Jan 17 2016 09:56:22 GMT+0800 (中国标准时间)] /__webpack_hmr
+Error: Error setting TTL index on collection : sessions
+    at F:\yowork\isomorphic-redux-app\node_modules\connect-mongo\lib\connect-mongo.js:161:23
+    at F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1404:28
+    at F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1542:30
+    at F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\cursor.js:159:22
+    at commandHandler (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\cursor.js:678:48)
+    at Db._executeQueryCommand (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1802:12)
+    at Cursor.nextObject (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\cursor.js:729:13)
+    at Cursor.toArray (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\cursor.js:158:10)
+    at Cursor.toArray (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\scope.js:10:20)
+    at F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1541:65
+    at Db.collection (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:495:44)
+    at Db.indexInformation (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1539:8)
+    at Db.ensureIndex (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1403:8)
+    at Collection.ensureIndex (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\collection\index.js:65:11)
+    at F:\yowork\isomorphic-redux-app\node_modules\connect-mongo\lib\connect-mongo.js:159:29
+    at Db.collection (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:495:44)
+[Sun Jan 17 2016 09:56:49 GMT+0800 (中国标准时间)] /__webpack_hmr
+Error: Error setting TTL index on collection : sessions
+    at F:\yowork\isomorphic-redux-app\node_modules\connect-mongo\lib\connect-mongo.js:161:23
+    at F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1404:28
+    at F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1542:30
+    at F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\cursor.js:159:22
+    at commandHandler (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\cursor.js:678:48)
+    at F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1806:9
+    at __executeQueryCommand (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1636:44)
+    at Db._executeQueryCommand (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1805:7)
+    at Cursor.nextObject (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\cursor.js:729:13)
+    at Cursor.toArray (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\cursor.js:158:10)
+    at Cursor.toArray (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\scope.js:10:20)
+    at F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1541:65
+    at Db.collection (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:495:44)
+    at Db.indexInformation (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1539:8)
+    at Db.ensureIndex (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1403:8)
+    at Collection.ensureIndex (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\collection\index.js:65:11)
+[Sun Jan 17 2016 09:56:49 GMT+0800 (中国标准时间)] /__webpack_hmr
+Error: Cannot determine state of server
+    at canCheckoutReader (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\connection\server.js:767:12)
+    at Server.checkoutReader (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\connection\server.js:779:16)
+    at Cursor.nextObject (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\cursor.js:720:48)
+    at Cursor.nextObject (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\scope.js:22:20)
+    at Collection.findOne (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\collection\query.js:145:10)
+    at F:\yowork\isomorphic-redux-app\node_modules\connect-mongo\lib\connect-mongo.js:214:18
+    at MongoStore._get_collection (F:\yowork\isomorphic-redux-app\node_modules\connect-mongo\lib\connect-mongo.js:148:21)
+    at MongoStore.get (F:\yowork\isomorphic-redux-app\node_modules\connect-mongo\lib\connect-mongo.js:213:10)
+    at session (F:\yowork\isomorphic-redux-app\node_modules\express-session\index.js:356:11)
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:312:13)
+    at F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:330:12)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:271:10)
+    at cookieParser (F:\yowork\isomorphic-redux-app\node_modules\cookie-parser\index.js:68:5)
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+[Sun Jan 17 2016 11:36:15 GMT+0800 (中国标准时间)] /ask
+Error: Error setting TTL index on collection : sessions
+    at F:\yowork\isomorphic-redux-app\node_modules\connect-mongo\lib\connect-mongo.js:161:23
+    at F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1404:28
+    at F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1542:30
+    at F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\cursor.js:159:22
+    at commandHandler (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\cursor.js:678:48)
+    at Db._executeQueryCommand (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1802:12)
+    at Cursor.nextObject (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\cursor.js:729:13)
+    at Cursor.toArray (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\cursor.js:158:10)
+    at Cursor.toArray (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\scope.js:10:20)
+    at F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1541:65
+    at Db.collection (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:495:44)
+    at Db.indexInformation (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1539:8)
+    at Db.ensureIndex (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1403:8)
+    at Collection.ensureIndex (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\collection\index.js:65:11)
+    at F:\yowork\isomorphic-redux-app\node_modules\connect-mongo\lib\connect-mongo.js:159:29
+    at Db.collection (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:495:44)
+[Sun Jan 17 2016 11:40:08 GMT+0800 (中国标准时间)] /ask
+Error: Error setting TTL index on collection : sessions
+    at F:\yowork\isomorphic-redux-app\node_modules\connect-mongo\lib\connect-mongo.js:161:23
+    at F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1404:28
+    at F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1542:30
+    at F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\cursor.js:159:22
+    at commandHandler (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\cursor.js:678:48)
+    at F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1806:9
+    at __executeQueryCommand (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1636:44)
+    at Db._executeQueryCommand (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1805:7)
+    at Cursor.nextObject (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\cursor.js:729:13)
+    at Cursor.toArray (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\cursor.js:158:10)
+    at Cursor.toArray (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\scope.js:10:20)
+    at F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1541:65
+    at Db.collection (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:495:44)
+    at Db.indexInformation (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1539:8)
+    at Db.ensureIndex (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1403:8)
+    at Collection.ensureIndex (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\collection\index.js:65:11)
+[Sun Jan 17 2016 11:44:59 GMT+0800 (中国标准时间)] /__webpack_hmr
+Error: Error setting TTL index on collection : sessions
+    at F:\yowork\isomorphic-redux-app\node_modules\connect-mongo\lib\connect-mongo.js:161:23
+    at F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1404:28
+    at F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1542:30
+    at F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\cursor.js:159:22
+    at commandHandler (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\cursor.js:678:48)
+    at F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1806:9
+    at __executeQueryCommand (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1636:44)
+    at Db._executeQueryCommand (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1805:7)
+    at Cursor.nextObject (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\cursor.js:729:13)
+    at Cursor.toArray (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\cursor.js:158:10)
+    at Cursor.toArray (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\scope.js:10:20)
+    at F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1541:65
+    at Db.collection (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:495:44)
+    at Db.indexInformation (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1539:8)
+    at Db.ensureIndex (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1403:8)
+    at Collection.ensureIndex (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\collection\index.js:65:11)
+[Sun Jan 17 2016 11:51:03 GMT+0800 (中国标准时间)] /__webpack_hmr
+Error: Error setting TTL index on collection : sessions
+    at F:\yowork\isomorphic-redux-app\node_modules\connect-mongo\lib\connect-mongo.js:161:23
+    at F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1404:28
+    at F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1542:30
+    at F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\cursor.js:159:22
+    at commandHandler (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\cursor.js:678:48)
+    at Db._executeQueryCommand (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1802:12)
+    at Cursor.nextObject (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\cursor.js:729:13)
+    at Cursor.toArray (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\cursor.js:158:10)
+    at Cursor.toArray (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\scope.js:10:20)
+    at F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1541:65
+    at Db.collection (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:495:44)
+    at Db.indexInformation (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1539:8)
+    at Db.ensureIndex (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1403:8)
+    at Collection.ensureIndex (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\collection\index.js:65:11)
+    at F:\yowork\isomorphic-redux-app\node_modules\connect-mongo\lib\connect-mongo.js:159:29
+    at Db.collection (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:495:44)
+[Sun Jan 17 2016 11:53:40 GMT+0800 (中国标准时间)] /__webpack_hmr
+Error: Error setting TTL index on collection : sessions
+    at F:\yowork\isomorphic-redux-app\node_modules\connect-mongo\lib\connect-mongo.js:161:23
+    at F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1404:28
+    at F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1542:30
+    at F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\cursor.js:159:22
+    at commandHandler (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\cursor.js:678:48)
+    at Db._executeQueryCommand (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1802:12)
+    at Cursor.nextObject (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\cursor.js:729:13)
+    at Cursor.toArray (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\cursor.js:158:10)
+    at Cursor.toArray (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\scope.js:10:20)
+    at F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1541:65
+    at Db.collection (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:495:44)
+    at Db.indexInformation (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1539:8)
+    at Db.ensureIndex (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1403:8)
+    at Collection.ensureIndex (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\collection\index.js:65:11)
+    at F:\yowork\isomorphic-redux-app\node_modules\connect-mongo\lib\connect-mongo.js:159:29
+    at Db.collection (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:495:44)
+[Sun Jan 17 2016 12:20:23 GMT+0800 (中国标准时间)] /__webpack_hmr
+Error: Error setting TTL index on collection : sessions
+    at F:\yowork\isomorphic-redux-app\node_modules\connect-mongo\lib\connect-mongo.js:161:23
+    at F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1404:28
+    at F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1542:30
+    at F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\cursor.js:159:22
+    at commandHandler (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\cursor.js:678:48)
+    at F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1806:9
+    at __executeQueryCommand (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1636:44)
+    at Db._executeQueryCommand (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1805:7)
+    at Cursor.nextObject (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\cursor.js:729:13)
+    at Cursor.toArray (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\cursor.js:158:10)
+    at Cursor.toArray (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\scope.js:10:20)
+    at F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1541:65
+    at Db.collection (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:495:44)
+    at Db.indexInformation (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1539:8)
+    at Db.ensureIndex (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1403:8)
+    at Collection.ensureIndex (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\collection\index.js:65:11)
+[Sun Jan 17 2016 12:22:39 GMT+0800 (中国标准时间)] /__webpack_hmr
+Error: Error setting TTL index on collection : sessions
+    at F:\yowork\isomorphic-redux-app\node_modules\connect-mongo\lib\connect-mongo.js:161:23
+    at F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1404:28
+    at F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1542:30
+    at F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\cursor.js:159:22
+    at commandHandler (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\cursor.js:678:48)
+    at F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1806:9
+    at __executeQueryCommand (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1636:44)
+    at Db._executeQueryCommand (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1805:7)
+    at Cursor.nextObject (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\cursor.js:729:13)
+    at Cursor.toArray (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\cursor.js:158:10)
+    at Cursor.toArray (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\scope.js:10:20)
+    at F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1541:65
+    at Db.collection (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:495:44)
+    at Db.indexInformation (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1539:8)
+    at Db.ensureIndex (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1403:8)
+    at Collection.ensureIndex (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\collection\index.js:65:11)
+[Sun Jan 17 2016 12:50:21 GMT+0800 (中国标准时间)] /ask/publish
+ReferenceError: userId is not defined
+    at F:/yowork/isomorphic-redux-app/src/server/controllers/ask.js:19:53
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\route.js:131:13)
+    at jsonParser (F:\yowork\isomorphic-redux-app\node_modules\body-parser\lib\types\json.js:93:44)
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\route.js:131:13)
+    at Route.dispatch (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:277:22
+    at Function.process_params (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:330:12)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:271:10)
+    at Function.handle (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:176:3)
+    at router (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:46:12)
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:312:13)
+    at F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:280:7
+[Sun Jan 17 2016 12:50:44 GMT+0800 (中国标准时间)] /ask/publish
+ReferenceError: userId is not defined
+    at F:/yowork/isomorphic-redux-app/src/server/controllers/ask.js:19:53
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\route.js:131:13)
+    at jsonParser (F:\yowork\isomorphic-redux-app\node_modules\body-parser\lib\types\json.js:93:44)
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\route.js:131:13)
+    at Route.dispatch (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:277:22
+    at Function.process_params (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:330:12)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:271:10)
+    at Function.handle (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:176:3)
+    at router (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:46:12)
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:312:13)
+    at F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:280:7
+[Sun Jan 17 2016 12:51:44 GMT+0800 (中国标准时间)] /ask/publish
+ReferenceError: userId is not defined
+    at F:/yowork/isomorphic-redux-app/src/server/controllers/ask.js:19:53
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\route.js:131:13)
+    at jsonParser (F:\yowork\isomorphic-redux-app\node_modules\body-parser\lib\types\json.js:93:44)
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\route.js:131:13)
+    at Route.dispatch (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:277:22
+    at Function.process_params (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:330:12)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:271:10)
+    at Function.handle (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:176:3)
+    at router (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:46:12)
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:312:13)
+    at F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:280:7
+[Sun Jan 17 2016 12:51:45 GMT+0800 (中国标准时间)] /ask/publish
+ReferenceError: userId is not defined
+    at F:/yowork/isomorphic-redux-app/src/server/controllers/ask.js:19:53
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\route.js:131:13)
+    at jsonParser (F:\yowork\isomorphic-redux-app\node_modules\body-parser\lib\types\json.js:93:44)
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\route.js:131:13)
+    at Route.dispatch (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:277:22
+    at Function.process_params (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:330:12)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:271:10)
+    at Function.handle (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:176:3)
+    at router (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:46:12)
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:312:13)
+    at F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:280:7
+[Sun Jan 17 2016 12:51:45 GMT+0800 (中国标准时间)] /ask/publish
+ReferenceError: userId is not defined
+    at F:/yowork/isomorphic-redux-app/src/server/controllers/ask.js:19:53
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\route.js:131:13)
+    at jsonParser (F:\yowork\isomorphic-redux-app\node_modules\body-parser\lib\types\json.js:93:44)
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\route.js:131:13)
+    at Route.dispatch (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:277:22
+    at Function.process_params (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:330:12)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:271:10)
+    at Function.handle (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:176:3)
+    at router (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:46:12)
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:312:13)
+    at F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:280:7
+[Sun Jan 17 2016 12:51:45 GMT+0800 (中国标准时间)] /ask/publish
+ReferenceError: userId is not defined
+    at F:/yowork/isomorphic-redux-app/src/server/controllers/ask.js:19:53
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\route.js:131:13)
+    at jsonParser (F:\yowork\isomorphic-redux-app\node_modules\body-parser\lib\types\json.js:93:44)
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\route.js:131:13)
+    at Route.dispatch (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:277:22
+    at Function.process_params (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:330:12)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:271:10)
+    at Function.handle (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:176:3)
+    at router (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:46:12)
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:312:13)
+    at F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:280:7
+[Sun Jan 17 2016 12:51:52 GMT+0800 (中国标准时间)] /ask/publish
+ReferenceError: userId is not defined
+    at F:/yowork/isomorphic-redux-app/src/server/controllers/ask.js:19:53
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\route.js:131:13)
+    at jsonParser (F:\yowork\isomorphic-redux-app\node_modules\body-parser\lib\types\json.js:93:44)
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\route.js:131:13)
+    at Route.dispatch (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:277:22
+    at Function.process_params (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:330:12)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:271:10)
+    at Function.handle (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:176:3)
+    at router (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:46:12)
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:312:13)
+    at F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:280:7
+[Sun Jan 17 2016 12:51:52 GMT+0800 (中国标准时间)] /ask/publish
+ReferenceError: userId is not defined
+    at F:/yowork/isomorphic-redux-app/src/server/controllers/ask.js:19:53
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\route.js:131:13)
+    at jsonParser (F:\yowork\isomorphic-redux-app\node_modules\body-parser\lib\types\json.js:93:44)
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\route.js:131:13)
+    at Route.dispatch (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:277:22
+    at Function.process_params (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:330:12)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:271:10)
+    at Function.handle (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:176:3)
+    at router (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:46:12)
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:312:13)
+    at F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:280:7
+[Sun Jan 17 2016 12:51:53 GMT+0800 (中国标准时间)] /ask/publish
+ReferenceError: userId is not defined
+    at F:/yowork/isomorphic-redux-app/src/server/controllers/ask.js:19:53
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\route.js:131:13)
+    at jsonParser (F:\yowork\isomorphic-redux-app\node_modules\body-parser\lib\types\json.js:93:44)
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\route.js:131:13)
+    at Route.dispatch (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:277:22
+    at Function.process_params (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:330:12)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:271:10)
+    at Function.handle (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:176:3)
+    at router (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:46:12)
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:312:13)
+    at F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:280:7
+[Sun Jan 17 2016 12:51:53 GMT+0800 (中国标准时间)] /ask/publish
+ReferenceError: userId is not defined
+    at F:/yowork/isomorphic-redux-app/src/server/controllers/ask.js:19:53
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\route.js:131:13)
+    at jsonParser (F:\yowork\isomorphic-redux-app\node_modules\body-parser\lib\types\json.js:93:44)
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\route.js:131:13)
+    at Route.dispatch (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:277:22
+    at Function.process_params (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:330:12)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:271:10)
+    at Function.handle (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:176:3)
+    at router (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:46:12)
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:312:13)
+    at F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:280:7
+[Sun Jan 17 2016 12:51:53 GMT+0800 (中国标准时间)] /ask/publish
+ReferenceError: userId is not defined
+    at F:/yowork/isomorphic-redux-app/src/server/controllers/ask.js:19:53
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\route.js:131:13)
+    at jsonParser (F:\yowork\isomorphic-redux-app\node_modules\body-parser\lib\types\json.js:93:44)
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\route.js:131:13)
+    at Route.dispatch (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:277:22
+    at Function.process_params (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:330:12)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:271:10)
+    at Function.handle (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:176:3)
+    at router (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:46:12)
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:312:13)
+    at F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:280:7
+[Sun Jan 17 2016 12:51:53 GMT+0800 (中国标准时间)] /ask/publish
+ReferenceError: userId is not defined
+    at F:/yowork/isomorphic-redux-app/src/server/controllers/ask.js:19:53
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\route.js:131:13)
+    at jsonParser (F:\yowork\isomorphic-redux-app\node_modules\body-parser\lib\types\json.js:93:44)
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\route.js:131:13)
+    at Route.dispatch (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:277:22
+    at Function.process_params (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:330:12)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:271:10)
+    at Function.handle (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:176:3)
+    at router (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:46:12)
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:312:13)
+    at F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:280:7
+[Sun Jan 17 2016 12:51:53 GMT+0800 (中国标准时间)] /ask/publish
+ReferenceError: userId is not defined
+    at F:/yowork/isomorphic-redux-app/src/server/controllers/ask.js:19:53
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\route.js:131:13)
+    at jsonParser (F:\yowork\isomorphic-redux-app\node_modules\body-parser\lib\types\json.js:93:44)
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\route.js:131:13)
+    at Route.dispatch (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:277:22
+    at Function.process_params (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:330:12)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:271:10)
+    at Function.handle (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:176:3)
+    at router (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:46:12)
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:312:13)
+    at F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:280:7
+[Sun Jan 17 2016 12:51:54 GMT+0800 (中国标准时间)] /ask/publish
+ReferenceError: userId is not defined
+    at F:/yowork/isomorphic-redux-app/src/server/controllers/ask.js:19:53
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\route.js:131:13)
+    at jsonParser (F:\yowork\isomorphic-redux-app\node_modules\body-parser\lib\types\json.js:93:44)
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\route.js:131:13)
+    at Route.dispatch (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:277:22
+    at Function.process_params (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:330:12)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:271:10)
+    at Function.handle (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:176:3)
+    at router (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:46:12)
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:312:13)
+    at F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:280:7
+[Sun Jan 17 2016 12:51:54 GMT+0800 (中国标准时间)] /ask/publish
+ReferenceError: userId is not defined
+    at F:/yowork/isomorphic-redux-app/src/server/controllers/ask.js:19:53
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\route.js:131:13)
+    at jsonParser (F:\yowork\isomorphic-redux-app\node_modules\body-parser\lib\types\json.js:93:44)
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\route.js:131:13)
+    at Route.dispatch (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:277:22
+    at Function.process_params (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:330:12)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:271:10)
+    at Function.handle (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:176:3)
+    at router (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:46:12)
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:312:13)
+    at F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:280:7
+[Sun Jan 17 2016 12:51:54 GMT+0800 (中国标准时间)] /ask/publish
+ReferenceError: userId is not defined
+    at F:/yowork/isomorphic-redux-app/src/server/controllers/ask.js:19:53
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\route.js:131:13)
+    at jsonParser (F:\yowork\isomorphic-redux-app\node_modules\body-parser\lib\types\json.js:93:44)
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\route.js:131:13)
+    at Route.dispatch (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:277:22
+    at Function.process_params (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:330:12)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:271:10)
+    at Function.handle (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:176:3)
+    at router (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:46:12)
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:312:13)
+    at F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:280:7
+[Sun Jan 17 2016 12:51:54 GMT+0800 (中国标准时间)] /ask/publish
+ReferenceError: userId is not defined
+    at F:/yowork/isomorphic-redux-app/src/server/controllers/ask.js:19:53
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\route.js:131:13)
+    at jsonParser (F:\yowork\isomorphic-redux-app\node_modules\body-parser\lib\types\json.js:93:44)
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\route.js:131:13)
+    at Route.dispatch (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:277:22
+    at Function.process_params (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:330:12)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:271:10)
+    at Function.handle (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:176:3)
+    at router (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:46:12)
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:312:13)
+    at F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:280:7
+[Sun Jan 17 2016 12:51:54 GMT+0800 (中国标准时间)] /ask/publish
+ReferenceError: userId is not defined
+    at F:/yowork/isomorphic-redux-app/src/server/controllers/ask.js:19:53
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\route.js:131:13)
+    at jsonParser (F:\yowork\isomorphic-redux-app\node_modules\body-parser\lib\types\json.js:93:44)
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\route.js:131:13)
+    at Route.dispatch (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:277:22
+    at Function.process_params (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:330:12)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:271:10)
+    at Function.handle (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:176:3)
+    at router (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:46:12)
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:312:13)
+    at F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:280:7
+[Sun Jan 17 2016 12:51:55 GMT+0800 (中国标准时间)] /ask/publish
+ReferenceError: userId is not defined
+    at F:/yowork/isomorphic-redux-app/src/server/controllers/ask.js:19:53
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\route.js:131:13)
+    at jsonParser (F:\yowork\isomorphic-redux-app\node_modules\body-parser\lib\types\json.js:93:44)
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\route.js:131:13)
+    at Route.dispatch (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:277:22
+    at Function.process_params (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:330:12)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:271:10)
+    at Function.handle (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:176:3)
+    at router (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:46:12)
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:312:13)
+    at F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:280:7
+[Sun Jan 17 2016 12:52:31 GMT+0800 (中国标准时间)] /ask/publish
+ReferenceError: userId is not defined
+    at F:/yowork/isomorphic-redux-app/src/server/controllers/ask.js:19:53
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\route.js:131:13)
+    at jsonParser (F:\yowork\isomorphic-redux-app\node_modules\body-parser\lib\types\json.js:93:44)
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\route.js:131:13)
+    at Route.dispatch (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:277:22
+    at Function.process_params (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:330:12)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:271:10)
+    at Function.handle (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:176:3)
+    at router (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:46:12)
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:312:13)
+    at F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:280:7
+[Sun Jan 17 2016 12:53:21 GMT+0800 (中国标准时间)] /ask/publish
+ReferenceError: userId is not defined
+    at F:/yowork/isomorphic-redux-app/src/server/controllers/ask.js:19:53
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\route.js:131:13)
+    at jsonParser (F:\yowork\isomorphic-redux-app\node_modules\body-parser\lib\types\json.js:93:44)
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\route.js:131:13)
+    at Route.dispatch (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:277:22
+    at Function.process_params (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:330:12)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:271:10)
+    at Function.handle (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:176:3)
+    at router (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:46:12)
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:312:13)
+    at F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:280:7
+[Sun Jan 17 2016 12:53:21 GMT+0800 (中国标准时间)] /ask/publish
+ReferenceError: userId is not defined
+    at F:/yowork/isomorphic-redux-app/src/server/controllers/ask.js:19:53
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\route.js:131:13)
+    at jsonParser (F:\yowork\isomorphic-redux-app\node_modules\body-parser\lib\types\json.js:93:44)
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\route.js:131:13)
+    at Route.dispatch (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:277:22
+    at Function.process_params (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:330:12)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:271:10)
+    at Function.handle (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:176:3)
+    at router (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:46:12)
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:312:13)
+    at F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:280:7
+[Sun Jan 17 2016 12:55:19 GMT+0800 (中国标准时间)] /ask/publish
+ReferenceError: userId is not defined
+    at F:/yowork/isomorphic-redux-app/src/server/controllers/ask.js:19:53
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\route.js:131:13)
+    at jsonParser (F:\yowork\isomorphic-redux-app\node_modules\body-parser\lib\types\json.js:93:44)
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\route.js:131:13)
+    at Route.dispatch (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:277:22
+    at Function.process_params (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:330:12)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:271:10)
+    at Function.handle (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:176:3)
+    at router (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:46:12)
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:312:13)
+    at F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:280:7
+[Sun Jan 17 2016 12:55:20 GMT+0800 (中国标准时间)] /ask/publish
+ReferenceError: userId is not defined
+    at F:/yowork/isomorphic-redux-app/src/server/controllers/ask.js:19:53
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\route.js:131:13)
+    at jsonParser (F:\yowork\isomorphic-redux-app\node_modules\body-parser\lib\types\json.js:93:44)
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\route.js:131:13)
+    at Route.dispatch (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:277:22
+    at Function.process_params (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:330:12)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:271:10)
+    at Function.handle (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:176:3)
+    at router (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:46:12)
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:312:13)
+    at F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:280:7
+[Sun Jan 17 2016 12:55:20 GMT+0800 (中国标准时间)] /ask/publish
+ReferenceError: userId is not defined
+    at F:/yowork/isomorphic-redux-app/src/server/controllers/ask.js:19:53
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\route.js:131:13)
+    at jsonParser (F:\yowork\isomorphic-redux-app\node_modules\body-parser\lib\types\json.js:93:44)
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\route.js:131:13)
+    at Route.dispatch (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:277:22
+    at Function.process_params (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:330:12)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:271:10)
+    at Function.handle (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:176:3)
+    at router (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:46:12)
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:312:13)
+    at F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:280:7
+[Sun Jan 17 2016 12:55:20 GMT+0800 (中国标准时间)] /ask/publish
+ReferenceError: userId is not defined
+    at F:/yowork/isomorphic-redux-app/src/server/controllers/ask.js:19:53
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\route.js:131:13)
+    at jsonParser (F:\yowork\isomorphic-redux-app\node_modules\body-parser\lib\types\json.js:93:44)
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\route.js:131:13)
+    at Route.dispatch (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:277:22
+    at Function.process_params (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:330:12)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:271:10)
+    at Function.handle (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:176:3)
+    at router (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:46:12)
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:312:13)
+    at F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:280:7
+[Sun Jan 17 2016 12:55:20 GMT+0800 (中国标准时间)] /ask/publish
+ReferenceError: userId is not defined
+    at F:/yowork/isomorphic-redux-app/src/server/controllers/ask.js:19:53
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\route.js:131:13)
+    at jsonParser (F:\yowork\isomorphic-redux-app\node_modules\body-parser\lib\types\json.js:93:44)
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\route.js:131:13)
+    at Route.dispatch (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:277:22
+    at Function.process_params (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:330:12)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:271:10)
+    at Function.handle (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:176:3)
+    at router (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:46:12)
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:312:13)
+    at F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:280:7
+[Sun Jan 17 2016 12:55:21 GMT+0800 (中国标准时间)] /ask/publish
+ReferenceError: userId is not defined
+    at F:/yowork/isomorphic-redux-app/src/server/controllers/ask.js:19:53
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\route.js:131:13)
+    at jsonParser (F:\yowork\isomorphic-redux-app\node_modules\body-parser\lib\types\json.js:93:44)
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\route.js:131:13)
+    at Route.dispatch (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:277:22
+    at Function.process_params (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:330:12)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:271:10)
+    at Function.handle (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:176:3)
+    at router (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:46:12)
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:312:13)
+    at F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:280:7
+[Sun Jan 17 2016 12:55:21 GMT+0800 (中国标准时间)] /ask/publish
+ReferenceError: userId is not defined
+    at F:/yowork/isomorphic-redux-app/src/server/controllers/ask.js:19:53
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\route.js:131:13)
+    at jsonParser (F:\yowork\isomorphic-redux-app\node_modules\body-parser\lib\types\json.js:93:44)
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\route.js:131:13)
+    at Route.dispatch (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:277:22
+    at Function.process_params (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:330:12)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:271:10)
+    at Function.handle (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:176:3)
+    at router (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:46:12)
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:312:13)
+    at F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:280:7
+[Sun Jan 17 2016 12:55:24 GMT+0800 (中国标准时间)] /ask/publish
+ReferenceError: userId is not defined
+    at F:/yowork/isomorphic-redux-app/src/server/controllers/ask.js:19:53
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\route.js:131:13)
+    at jsonParser (F:\yowork\isomorphic-redux-app\node_modules\body-parser\lib\types\json.js:93:44)
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\route.js:131:13)
+    at Route.dispatch (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:277:22
+    at Function.process_params (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:330:12)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:271:10)
+    at Function.handle (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:176:3)
+    at router (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:46:12)
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:312:13)
+    at F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:280:7
+[Sun Jan 17 2016 12:55:24 GMT+0800 (中国标准时间)] /ask/publish
+ReferenceError: userId is not defined
+    at F:/yowork/isomorphic-redux-app/src/server/controllers/ask.js:19:53
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\route.js:131:13)
+    at jsonParser (F:\yowork\isomorphic-redux-app\node_modules\body-parser\lib\types\json.js:93:44)
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\route.js:131:13)
+    at Route.dispatch (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:277:22
+    at Function.process_params (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:330:12)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:271:10)
+    at Function.handle (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:176:3)
+    at router (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:46:12)
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:312:13)
+    at F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:280:7
+[Sun Jan 17 2016 12:55:24 GMT+0800 (中国标准时间)] /ask/publish
+ReferenceError: userId is not defined
+    at F:/yowork/isomorphic-redux-app/src/server/controllers/ask.js:19:53
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\route.js:131:13)
+    at jsonParser (F:\yowork\isomorphic-redux-app\node_modules\body-parser\lib\types\json.js:93:44)
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\route.js:131:13)
+    at Route.dispatch (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:277:22
+    at Function.process_params (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:330:12)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:271:10)
+    at Function.handle (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:176:3)
+    at router (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:46:12)
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:312:13)
+    at F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:280:7
+[Sun Jan 17 2016 12:55:24 GMT+0800 (中国标准时间)] /ask/publish
+ReferenceError: userId is not defined
+    at F:/yowork/isomorphic-redux-app/src/server/controllers/ask.js:19:53
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\route.js:131:13)
+    at jsonParser (F:\yowork\isomorphic-redux-app\node_modules\body-parser\lib\types\json.js:93:44)
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\route.js:131:13)
+    at Route.dispatch (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:277:22
+    at Function.process_params (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:330:12)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:271:10)
+    at Function.handle (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:176:3)
+    at router (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:46:12)
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:312:13)
+    at F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:280:7
+[Sun Jan 17 2016 12:55:25 GMT+0800 (中国标准时间)] /ask/publish
+ReferenceError: userId is not defined
+    at F:/yowork/isomorphic-redux-app/src/server/controllers/ask.js:19:53
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\route.js:131:13)
+    at jsonParser (F:\yowork\isomorphic-redux-app\node_modules\body-parser\lib\types\json.js:93:44)
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\route.js:131:13)
+    at Route.dispatch (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:277:22
+    at Function.process_params (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:330:12)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:271:10)
+    at Function.handle (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:176:3)
+    at router (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:46:12)
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:312:13)
+    at F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:280:7
+[Sun Jan 17 2016 12:55:32 GMT+0800 (中国标准时间)] /ask/publish
+ReferenceError: userId is not defined
+    at F:/yowork/isomorphic-redux-app/src/server/controllers/ask.js:19:53
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\route.js:131:13)
+    at jsonParser (F:\yowork\isomorphic-redux-app\node_modules\body-parser\lib\types\json.js:93:44)
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\route.js:131:13)
+    at Route.dispatch (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:277:22
+    at Function.process_params (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:330:12)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:271:10)
+    at Function.handle (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:176:3)
+    at router (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:46:12)
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:312:13)
+    at F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:280:7
+[Sun Jan 17 2016 12:55:33 GMT+0800 (中国标准时间)] /ask/publish
+ReferenceError: userId is not defined
+    at F:/yowork/isomorphic-redux-app/src/server/controllers/ask.js:19:53
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\route.js:131:13)
+    at jsonParser (F:\yowork\isomorphic-redux-app\node_modules\body-parser\lib\types\json.js:93:44)
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\route.js:131:13)
+    at Route.dispatch (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:277:22
+    at Function.process_params (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:330:12)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:271:10)
+    at Function.handle (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:176:3)
+    at router (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:46:12)
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:312:13)
+    at F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:280:7
+[Sun Jan 17 2016 12:56:12 GMT+0800 (中国标准时间)] /ask/publish
+ReferenceError: userId is not defined
+    at F:/yowork/isomorphic-redux-app/src/server/controllers/ask.js:19:53
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\route.js:131:13)
+    at jsonParser (F:\yowork\isomorphic-redux-app\node_modules\body-parser\lib\types\json.js:93:44)
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\route.js:131:13)
+    at Route.dispatch (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:277:22
+    at Function.process_params (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:330:12)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:271:10)
+    at Function.handle (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:176:3)
+    at router (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:46:12)
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:312:13)
+    at F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:280:7
+[Sun Jan 17 2016 12:56:13 GMT+0800 (中国标准时间)] /ask/publish
+ReferenceError: userId is not defined
+    at F:/yowork/isomorphic-redux-app/src/server/controllers/ask.js:19:53
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\route.js:131:13)
+    at jsonParser (F:\yowork\isomorphic-redux-app\node_modules\body-parser\lib\types\json.js:93:44)
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\route.js:131:13)
+    at Route.dispatch (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:277:22
+    at Function.process_params (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:330:12)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:271:10)
+    at Function.handle (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:176:3)
+    at router (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:46:12)
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:312:13)
+    at F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:280:7
+[Sun Jan 17 2016 13:17:41 GMT+0800 (中国标准时间)] /ask/publish
+ReferenceError: userId is not defined
+    at F:/yowork/isomorphic-redux-app/src/server/controllers/ask.js:19:53
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\route.js:131:13)
+    at jsonParser (F:\yowork\isomorphic-redux-app\node_modules\body-parser\lib\types\json.js:93:44)
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\route.js:131:13)
+    at Route.dispatch (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:277:22
+    at Function.process_params (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:330:12)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:271:10)
+    at Function.handle (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:176:3)
+    at router (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:46:12)
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:312:13)
+    at F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:280:7
+[Sun Jan 17 2016 13:17:55 GMT+0800 (中国标准时间)] /ask/publish
+ReferenceError: userId is not defined
+    at F:/yowork/isomorphic-redux-app/src/server/controllers/ask.js:19:53
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\route.js:131:13)
+    at jsonParser (F:\yowork\isomorphic-redux-app\node_modules\body-parser\lib\types\json.js:93:44)
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\route.js:131:13)
+    at Route.dispatch (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:277:22
+    at Function.process_params (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:330:12)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:271:10)
+    at Function.handle (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:176:3)
+    at router (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:46:12)
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:312:13)
+    at F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:280:7
+[Sun Jan 17 2016 13:55:50 GMT+0800 (中国标准时间)] /ask/publish
+ReferenceError: topic is not defined
+    at F:/yowork/isomorphic-redux-app/src/server/controllers/ask.js:33:2
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\route.js:131:13)
+    at Route.dispatch (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:277:22
+    at Function.process_params (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:330:12)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:271:10)
+    at Function.handle (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:176:3)
+    at router (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:46:12)
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:312:13)
+    at F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:330:12)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:271:10)
+    at F:\yowork\isomorphic-redux-app\node_modules\express-session\index.js:385:7
+[Sun Jan 17 2016 15:13:03 GMT+0800 (中国标准时间)] /topics/
+Error: Error setting TTL index on collection : sessions
+    at F:\yowork\isomorphic-redux-app\node_modules\connect-mongo\lib\connect-mongo.js:161:23
+    at F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1404:28
+    at F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1542:30
+    at F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\cursor.js:159:22
+    at commandHandler (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\cursor.js:678:48)
+    at Db._executeQueryCommand (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1802:12)
+    at Cursor.nextObject (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\cursor.js:729:13)
+    at Cursor.toArray (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\cursor.js:158:10)
+    at Cursor.toArray (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\scope.js:10:20)
+    at F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1541:65
+    at Db.collection (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:495:44)
+    at Db.indexInformation (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1539:8)
+    at Db.ensureIndex (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:1403:8)
+    at Collection.ensureIndex (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\collection\index.js:65:11)
+    at F:\yowork\isomorphic-redux-app\node_modules\connect-mongo\lib\connect-mongo.js:159:29
+    at Db.collection (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:495:44)
+[Sun Jan 17 2016 15:24:35 GMT+0800 (中国标准时间)] /ask/publish
+TypeError: Cannot read property 'id' of undefined
+    at F:/yowork/isomorphic-redux-app/src/server/controllers/ask.js:23:31
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\route.js:131:13)
+    at Route.dispatch (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:277:22
+    at Function.process_params (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:330:12)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:271:10)
+    at Function.handle (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:176:3)
+    at router (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:46:12)
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:312:13)
+    at F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:330:12)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:271:10)
+    at F:\yowork\isomorphic-redux-app\node_modules\express-session\index.js:385:7
+[Sun Jan 17 2016 15:24:45 GMT+0800 (中国标准时间)] /ask/publish
+TypeError: Cannot read property 'id' of undefined
+    at F:/yowork/isomorphic-redux-app/src/server/controllers/ask.js:23:31
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\route.js:131:13)
+    at Route.dispatch (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:277:22
+    at Function.process_params (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:330:12)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:271:10)
+    at Function.handle (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:176:3)
+    at router (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:46:12)
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:312:13)
+    at F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:330:12)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:271:10)
+    at F:\yowork\isomorphic-redux-app\node_modules\express-session\index.js:385:7
+[Sun Jan 17 2016 15:25:08 GMT+0800 (中国标准时间)] /ask/publish
+TypeError: Cannot read property 'id' of undefined
+    at F:/yowork/isomorphic-redux-app/src/server/controllers/ask.js:23:31
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\route.js:131:13)
+    at Route.dispatch (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:277:22
+    at Function.process_params (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:330:12)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:271:10)
+    at Function.handle (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:176:3)
+    at router (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:46:12)
+    at Layer.handle [as handle_request] (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:312:13)
+    at F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:330:12)
+    at next (F:\yowork\isomorphic-redux-app\node_modules\express\lib\router\index.js:271:10)
+    at F:\yowork\isomorphic-redux-app\node_modules\express-session\index.js:385:7

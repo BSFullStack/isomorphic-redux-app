@@ -1,10 +1,9 @@
 import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
 import Topics from './topic/Topics';
-
+import Footer from './layout/Footer';
 import Header from './layout/Header';
-import CategoryBar from './topic/CategoryBar';
-import CategoryItem from './topic/CategoryItem';
+
 class Topic extends Component {
 
     constructor(props) {
@@ -38,16 +37,26 @@ class Topic extends Component {
         return (
             <div>
                 <Header />
-                <div className="wrap">
+                <div className="wrap" style={{"minHeight":"500px"}}>
                     <div className="container">
                         <div className="row">
                             <div className="col-xs-12 col-md-9 main">
+                                <p className="main-title hidden-xs">
+                                    把你的问题告诉交给我们！
+                                </p>
+                                <ul className="nav nav-tabs nav-tabs-zen mb10">
+                                    <li className="active"><a href="/topics">最新的</a></li>
+                                    <li className="disabled"><a href="javascript:;">热门的</a></li>
+                                    <li className="disabled"><a href="javascript:;">未回答</a></li>
+                                </ul>
                                 <p className="main-title hidden-xs"></p>
                                 <Topics topics={topics} handlerClickTitle={::this.handlerClickTitle}></Topics>
                             </div>
+
                         </div>
                     </div>
                 </div>
+                <Footer />
             </div>
         );
     }

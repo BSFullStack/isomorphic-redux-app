@@ -2,38 +2,50 @@
  * 发表话题
  */
 import  React , { Component } from 'react';
-
+import _ from 'lodash';
 import TopHeader from './ui/topicDetail/TopHeader';
 import Question from './ui/topicDetail/Question';
 import Header from './layout/Header';
 import AnswersWidget from './ui/topicDetail/widgets/Answers'
 import AnswersDetail from './ui/topicDetail/Answers';
+import { Select } from 'antd';
+const Option = Select.Option;
+
+
 export default class Publish extends Component {
     constructor(props){
         super(props);
+        this.state={
+            title:""
+        }
+        this.tagIds = [];
     }
     componentDidMount(){
-         const { answerEditor } = this.refs;
+        const { answerEditor } = this.refs;
         setTimeout(()=>{
-            new Mditor(answerEditor,{
+            this.mdeditor = new Mditor(answerEditor,{
                 height:300
             });
-        },0); 
+        },0);
     }
     componentWillReceiveProps(nextProps){
-        
-       
+
         const { bl, msg , error } = nextProps.publishInfo;
-        
         //发布成功
-        //alert(msg);
         if(  bl == 1  ){
-           return this.props.history.push("/t/123");
+           return this.props.history.push("/topics/");
         }
-    
+
     }
     render(){
+        const { tags = [] } = this.props.publishInfo;
 
+        const { title } = this.state;
+
+        let children = tags.map(tag=>{
+            const { id , name } = tag;
+            return <Option key={id} data-id={id}>{name}</Option>;
+        })
         return (
             <div className="qa-ask">
                 <Header />
@@ -46,11 +58,19 @@ export default class Publish extends Component {
                         </h1>
                         <div className="form-group">
                             <label htmlFor="title" className="sr-only">标题</label>
-                            <input id="myTitle" ref='title' onChange={::this.onchange} type="text" name="title" required="" data-error="" autoComplete="off" className="form-control tagClose input-lg" placeholder="标题：一句话说清问题，用问号结尾" value="" />
+                            <input id="myTitle" ref='titleInput' data-required={true} onChange={::this.onChange} type="text" name="title" required="" data-error="" autoComplete="off" className="form-control tagClose input-lg" placeholder="标题：一句话说清问题，用问号结尾" value={title} />
                         </div>
                         <div className="form-group">
                             <label htmlFor="title" className="sr-only">标题</label>
-                            <input id="myTitle" ref='type' onChange={::this.onchange} type="text" name="title" required="" data-error="" autoComplete="off" className="form-control tagClose input-lg" placeholder="标题：一句话说清问题，用问号结尾" value="" />
+                            <Select multiple
+                                ref="tagscomponet"
+                                style={{width: '100%'}}
+                                searchPlaceholder="标签"
+                                notFoundContent={"暂无标签"}
+                                onChange={::this.tagsComponetChange}
+                               >
+                               {children}
+                              </Select>
                         </div>
                         <div id="questionText" className="editor editMode" style={{minHeight:"203px"}}>
                             <div className="editor" id="questionText">
@@ -71,26 +91,30 @@ export default class Publish extends Component {
             </div>
         );
     }
-    handlerSubmit(){
-       
-        
-        const {title,type,answerEditor} = this.refs;
-        this.props.dopublish({
-            
-            title:title.value,
-            content:answerEditor.value,
-            typeId:type.value, 
-            r:Math.random()
-        })
+    tagsComponetChange(value,label){
+        this.tagIds = value;
     }
-    onchange(e){
-        
-        const name = e.target.name;
-        const value = e.target.value;
-        
-        
-        let state = this.state;
-        state[name] = value;
-        this.setState(state);
+    handlerSubmit(){
+        const {
+            titleInput
+        } = this.refs;
+        //获取问题名称
+        const title =  _.trim(titleInput.value);
+        //获取问题内容
+        const content = _.trim(this.mdeditor.getValue());
+        //获取选择标签()
+        const tagId = this.tagIds.join(",");
+
+        this.props.doPublish({
+            title,
+            content,
+            tagId,
+            r:Math.random()
+        });
+    }
+    onChange(e){
+        this.setState({
+            title: (e.target && e.target.value) || ""
+        });
     }
 }

@@ -8,27 +8,35 @@ import _ from 'lodash';
  * Topic & Tag == many to manny
  */
 const TopicSchema = new Schema({
-    id:String,
-    title:String,
-    content:String,
-    typeId:String, //话题类型
-    userId:String,
-    viewtotals:Number,
-    star:{
+    id:String, //唯一性id
+    title:String, //名称
+    content:String, //内容
+    userId:String, //发表人
+    viewtotals:{ //浏览总数
         type:Number,
         default:0
     },
-    status:Number,
-    createTime:{
+    star:{ //赞
+        type:Number,
+        default:0
+    },
+    status:{ //状态 -1  已删除  0 待审核 1 审核通过  2 未通过审核
+        type:Number,
+        default:1
+    },
+    createTime:{ //创建时间
         type:Date,
         default:Date.now
     },
-    updateTime:{
+    updateTime:{ //更新时间
         type:Date,
-        default:Date.now
+        default:null
     },
     tagIds:Array //标签ID数组
 });
+
+
+
 //发表话题
 /*TopicSchema.methods.publish = function(cb){
     this.model('Topic').save(cb)
@@ -152,9 +160,9 @@ TopicSchema.statics.get = function({ pageIndex , pageSize = 15, queryParam } , c
             });
         },
         function(count,cb){ //分页处理
-           that.find({...other}).sort({"updateTime":-1}).limit(pageSize).exec((err,topics)=>{
+            that.find({...other}).sort({"createTime":-1}).limit(pageSize).exec((err,topics)=>{
                 cb(err,count,topics)
-           })
+            });
         },
         function(count,topics,cb){ //查询人员信息
             //找到所有的userId
@@ -203,11 +211,14 @@ TopicSchema.statics.get = function({ pageIndex , pageSize = 15, queryParam } , c
                 //遍历topics
                 topics.map((topic)=>{
                     const { tagIds } = topic;
-                    const tagArr = tagIds.map((tagId)=>{
+                    let tagArr = tagIds.map((tagId)=>{
                         return  _.find(tags,(tag)=>{
                             return tag.id == tagId;
-                        }) || { id:"0000000000-0000000000",name:"数据异常"};
+                        });
                     });
+                    tagArr = _.filter(tagArr,(tag)=>{
+                        return tag;
+                    })
                     topic.tags = tagArr;
                 });
 

@@ -18,7 +18,6 @@
     "express": "^4.13.3",
     "express-session": "",
     "glob": "^5.0.3",
-
     "method-override": "^2.3.0",
     "mongoose": "^4.1.2",
     "morgan": "^1.6.1",
@@ -29,6 +28,7 @@
     "serve-favicon": "^2.3.0"
   },
   "devDependencies": {
+    "antd": "^0.11.2",
     "async": "^1.5.0",
     "autoprefixer-loader": "^3.1.0",
     "axios": "^0.7.0",

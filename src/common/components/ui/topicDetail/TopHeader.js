@@ -11,7 +11,7 @@ export default class TopHeader extends Component {
                         <div className="col-md-9">
                             <ol className="breadcrumb">
                                 <li>
-                                    <a href="/questions/newest">
+                                    <a href="/topics">
                                         问题
                                     </a>
                                 </li>

@@ -36,6 +36,10 @@ Tag.statics.getTagByIds=function(params,ids,fields,cb){
         cb(err,tags);
     });
 }
+Tag.statics.getAll=function(cb){
+    this.find({}).select('id name description').exec(cb)
+}
+
 
 
 //编译Tag实体

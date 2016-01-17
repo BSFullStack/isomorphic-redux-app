@@ -21,18 +21,18 @@ import "../../public/css/index.css";
 moment.locale('en', {
     relativeTime : {
         future: "在 %s",
-        past:   "%s 前",
+        past:   "%s",
         s:  "刚刚",
-        m:  "1分钟",
-        mm: "%d分钟",
-        h:  "an小时",
-        hh: "%d小时",
-        d:  "1天",
-        dd: "%d天",
-        M:  "1个月",
-        MM: "%d个月",
-        y:  "1年",
-        yy: "%d年"
+        m:  "1分钟前",
+        mm: "%d分钟前",
+        h:  "1小时前",
+        hh: "%d小时前",
+        d:  "1天前",
+        dd: "%d天前",
+        M:  "1个月前",
+        MM: "%d个月前",
+        y:  "1年前",
+        yy: "%d年前"
     }
 });
 moment.locale('zh-cn', {
@@ -42,7 +42,7 @@ moment.locale('zh-cn', {
         s:  "刚刚",
         m:  "1分钟前",
         mm: "%d分钟前",
-        h:  "an小时前",
+        h:  "1小时前",
         hh: "%d小时前",
         d:  "1天前",
         dd: "%d天前",

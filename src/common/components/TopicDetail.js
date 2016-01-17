@@ -102,6 +102,7 @@ class TopicDetail extends Component {
                                             })
                                         }
                                         <h4>我来回答</h4>
+                                        <br />
                                         <div className="editor-wrap">
                                              <div className="editor" id="questionText">
                                                     <textarea ref="answerEditor" name="text"
