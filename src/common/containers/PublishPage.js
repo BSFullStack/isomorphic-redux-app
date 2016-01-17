@@ -6,10 +6,10 @@ import * as PublishActions from '../actions/publish';
 
 function mapStateToProps(state) {
 
-    var publishInfo= state;
-       console.log(publishInfo+"123")
+    
+       
     return {
-        publishInfo
+        publishInfo:state.publish
     };
 }
 

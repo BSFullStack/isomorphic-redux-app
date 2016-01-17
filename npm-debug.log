@@ -1,37 +1,66 @@
 0 info it worked if it ends with ok
+<<<<<<< HEAD
 1 verbose cli [ 'E:\\software\\nodejs\\node.exe',
 1 verbose cli   'E:\\software\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
 1 verbose cli   'run',
 1 verbose cli   'dev' ]
 2 info using npm@3.3.12
 3 info using node@v5.1.0
+=======
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'run',
+1 verbose cli   'dev' ]
+2 info using npm@3.5.2
+3 info using node@v4.2.3
+>>>>>>> 3e641007ac374ed686727704be6e3e3076a1ef97
 4 verbose run-script [ 'predev', 'dev', 'postdev' ]
 5 info lifecycle webcy@0.0.1~predev: webcy@0.0.1
 6 silly lifecycle webcy@0.0.1~predev: no script for predev, continuing
 7 info lifecycle webcy@0.0.1~dev: webcy@0.0.1
 8 verbose lifecycle webcy@0.0.1~dev: unsafe-perm in lifecycle true
+<<<<<<< HEAD
 9 verbose lifecycle webcy@0.0.1~dev: PATH: E:\software\nodejs\node_modules\npm\bin\node-gyp-bin;F:\yowork\isomorphic-redux-app\node_modules\.bin;C:\Users\lgp\bin;E:\software\Git2\mingw64\bin;E:\software\Git2\usr\local\bin;E:\software\Git2\usr\bin;E:\software\Git2\usr\bin;E:\software\Git2\mingw64\bin;E:\software\Git2\usr\bin;C:\Users\lgp\bin;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\NetSarang;E:\software\Ruby22\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0; %JAVA_HOME%\bin;%JAVA_HOME%\jre\bin;C:\Program Files\Intel\WiFi\bin;C:\Program Files\Common Files\Intel\WirelessCommon;E:\software\svn\bin;C:\Program Files\Microsoft\Web Platform Installer;C:\Program Files (x86)\Microsoft ASP.NET\ASP.NET Web Pages\v1.0;C:\Program Files\Microsoft SQL Server\110\Tools\Binn;E:\software\py;E:\software\nodejs;E:\software\jdk\bin;E:\software\android-sdk\platform-tools;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn;C:\Program Files\Microsoft SQL Server\100\Tools\Binn;C:\Program Files\Microsoft SQL Server\100\DTS\Binn;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\VSShell\Common7\IDE;C:\Program Files (x86)\Microsoft SQL Server\100\DTS\Binn;C:\Program Files (x86)\Microsoft Visual Studio 9.0\Common7\IDE\PrivateAssemblies;C:\WINDOWS\system32\config\systemprofile\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm;C:\Program Files\Microsoft SQL Server\120\Tools\Binn;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit;C:\Program Files (x86)\MySQL\MySQL Fabric 1.5 & MySQL Utilities 1.5;C:\Program Files (x86)\MySQL\MySQL Fabric 1.5 & MySQL Utilities 1.5\Doctrine extensions for PHP;E:\software\tortoiseGit\bin;E:\software\Git2\cmd;E:\software\Git2\mingw64\bin;E:\software\Git2\usr\bin;E:\software\Ruby193\bin;C:\Program Files\Intel\WiFi\bin;C:\Program Files\Common Files\Intel\WirelessCommon;C:\Users\lgp\AppData\Roaming\npm;E:\software\cmder\bin;E:\software\phantomjs-1.9.8-windows\phantomjs.exe;E:\software\Git2\usr\bin\vendor_perl;E:\software\Git2\usr\bin\core_perl
 10 verbose lifecycle webcy@0.0.1~dev: CWD: F:\yowork\isomorphic-redux-app
+=======
+9 verbose lifecycle webcy@0.0.1~dev: PATH: C:\Program Files\nodejs\node_modules\npm\bin\node-gyp-bin;D:\bs_fullstack1\web-bookstore\node_modules\.bin;C:\Users\wanshenggang\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\wanshenggang\bin;E:\Ruby193\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Program Files\Intel\WiFi\bin;C:\Program Files\Common Files\Intel\WirelessCommon;C:\Program Files (x86)\AMD\ATI.ACE\Core-Static;E:\svn\bin;C:\Program Files\Microsoft\Web Platform Installer;C:\Program Files (x86)\Microsoft ASP.NET\ASP.NET Web Pages\v1.0;C:\Program Files (x86)\Windows Kits\8.0\Windows Performance Toolkit;C:\Program Files\Microsoft SQL Server\110\Tools\Binn;C:\Windows\system32\config\systemprofile\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm;C:\Program Files\Microsoft SQL Server\120\Tools\Binn;C:\Program Files\nodejs;C:\Python27;C:\Program Files (x86)\MySQL\MySQL Fabric 1.5 & MySQL Utilities 1.5;C:\Program Files (x86)\MySQL\MySQL Fabric 1.5 & MySQL Utilities 1.5\Doctrine extensions for PHP;C:\Program Files\MongoDB\Server\3.2\bin;C:\Program Files\TortoiseGit\bin;C:\Users\wanshenggang\AppData\Roaming\npm;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl
+10 verbose lifecycle webcy@0.0.1~dev: CWD: D:\bs_fullstack1\web-bookstore
+>>>>>>> 3e641007ac374ed686727704be6e3e3076a1ef97
 11 silly lifecycle webcy@0.0.1~dev: Args: [ '/d /s /c',
 11 silly lifecycle   'set NODE_ENV=development&&node ./src/server/index.js' ]
 12 silly lifecycle webcy@0.0.1~dev: Returned: code: 1  signal: null
 13 info lifecycle webcy@0.0.1~dev: Failed to exec dev script
 14 verbose stack Error: webcy@0.0.1 dev: `set NODE_ENV=development&&node ./src/server/index.js`
 14 verbose stack Exit status 1
+<<<<<<< HEAD
 14 verbose stack     at EventEmitter.<anonymous> (E:\software\nodejs\node_modules\npm\lib\utils\lifecycle.js:232:16)
 14 verbose stack     at emitTwo (events.js:87:13)
 14 verbose stack     at EventEmitter.emit (events.js:172:7)
 14 verbose stack     at ChildProcess.<anonymous> (E:\software\nodejs\node_modules\npm\lib\utils\spawn.js:24:14)
+=======
+14 verbose stack     at EventEmitter.<anonymous> (C:\Program Files\nodejs\node_modules\npm\lib\utils\lifecycle.js:232:16)
+14 verbose stack     at emitTwo (events.js:87:13)
+14 verbose stack     at EventEmitter.emit (events.js:172:7)
+14 verbose stack     at ChildProcess.<anonymous> (C:\Program Files\nodejs\node_modules\npm\lib\utils\spawn.js:24:14)
+>>>>>>> 3e641007ac374ed686727704be6e3e3076a1ef97
 14 verbose stack     at emitTwo (events.js:87:13)
 14 verbose stack     at ChildProcess.emit (events.js:172:7)
 14 verbose stack     at maybeClose (internal/child_process.js:818:16)
 14 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:211:5)
 15 verbose pkgid webcy@0.0.1
+<<<<<<< HEAD
 16 verbose cwd F:\yowork\isomorphic-redux-app
 17 error Windows_NT 10.0.10586
 18 error argv "E:\\software\\nodejs\\node.exe" "E:\\software\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "run" "dev"
 19 error node v5.1.0
 20 error npm  v3.3.12
+=======
+16 verbose cwd D:\bs_fullstack1\web-bookstore
+17 error Windows_NT 6.1.7601
+18 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "run" "dev"
+19 error node v4.2.3
+20 error npm  v3.5.2
+>>>>>>> 3e641007ac374ed686727704be6e3e3076a1ef97
 21 error code ELIFECYCLE
 22 error webcy@0.0.1 dev: `set NODE_ENV=development&&node ./src/server/index.js`
 22 error Exit status 1
@@ -41,7 +70,13 @@
 23 error not with npm itself.
 23 error Tell the author that this fails on your system:
 23 error     set NODE_ENV=development&&node ./src/server/index.js
+<<<<<<< HEAD
 23 error You can get their info via:
+=======
+23 error You can get information on how to open an issue for this project with:
+23 error     npm bugs webcy
+23 error Or if that isn't available, you can get their info via:
+>>>>>>> 3e641007ac374ed686727704be6e3e3076a1ef97
 23 error     npm owner ls webcy
 23 error There is likely additional logging output above.
 24 verbose exit [ 1, true ]
