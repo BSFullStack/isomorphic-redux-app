@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 [Mon Jan 11 2016 20:45:14 GMT+0800 (中国标准时间)] /__webpack_hmr
 Error: Error setting TTL index on collection : sessions
     at F:\yowork\isomorphic-redux-app\node_modules\connect-mongo\lib\connect-mongo.js:161:23
@@ -2989,3 +2990,5 @@ Error: Error setting TTL index on collection : sessions
     at Collection.ensureIndex (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\collection\index.js:65:11)
     at F:\yowork\isomorphic-redux-app\node_modules\connect-mongo\lib\connect-mongo.js:159:29
     at Db.collection (F:\yowork\isomorphic-redux-app\node_modules\mongodb\lib\mongodb\db.js:495:44)
+=======
+>>>>>>> bc1ecab69b7f7d842c02c83f5f5b4037542759a9
