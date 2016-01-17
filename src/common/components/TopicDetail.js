@@ -34,7 +34,17 @@ class TopicDetail extends Component {
     }
 
     componentWillReceiveProps(nextProps) {
-       const { data, error , isFetching } = nextProps;
+
+        const { data, error , isFetching,newAnswer } = nextProps;
+        if( data && data.code == 404 && data.error){
+            //数据异常
+            this.props.history.push('/404');
+            return ;
+        }
+        if(newAnswer){
+            const {answers} = data;
+            answers.push(newAnswer);
+        }
         this.setState({
             data,
             error,
@@ -68,13 +78,13 @@ class TopicDetail extends Component {
 
         const { isFetching , data  , error } = this.props;
         let contentComponent ;
-        if(isFetching || data== null){
+        if(isFetching || data== null || data.error){
             contentComponent = (
                 <div className="wrap">
                     <LoadingWidget />
                  </div>
             );
-        }else{
+        }else {
 
             const { answers } = data;
             contentComponent = (
@@ -120,7 +130,7 @@ class TopicDetail extends Component {
                 {contentComponent}
 
                 <Footer />
-               
+
 
             </div>
         );
@@ -133,6 +143,7 @@ class TopicDetail extends Component {
         const currentUser = window.BSGlobeData.extraData.loginUser;
 
         this.props.sendAnswer(currentUser.id,id,answer);
+        this.mdEditor.setValue("")
     }
 }
 
